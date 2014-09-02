@@ -1,1 +1,153 @@
-War
+	War
+
+O produto consiste em um jogo eletrônico que simula um jogo de tabuleiro. Com o número de jogadores entre 3 (três) e seis (6).
+O tabuleiro será representado por um grafo onde os vértices são os territórios e as arestas representarão as vizinhanças.
+Cada jogador terá um conjunto de peças de uma cor. No inicio do jogo cada cor pré-definida será escolhida por cada jogador.
+No inicio de cada jogo todos os jogadores receberão um objetivo cada um. O jogo terminará quando algum jogador completar o objetivo ou os outros se renderem.
+O jogo decorrerá em turnos. Cada jogador terá direito a um turno por vez em sequência.
+Em cada turno o jogador poderá atacar territórios vizinhos aos seus e movimentar suas peças entre os seus territórios vizinhos.
+Um jogador, em seu turno, poderá atacar quantas vezes quiser. Obedecendo aos quesitos:
+	*Cada ataque o jogador atacante poderá usar até 3 (três) peças para atacar. 
+O objetivo poderá ser ligado a uma quantidade de territórios a serem conquistados, territórios específicos, ou eliminar algum jogador.
+
+-------------------------------------
+
+
+REGRAS DO JOGO
+WAR é um jogo criado para ser jogado por 3 e no máximo 6 jogadores. Dificilmente um jogador conseguirá ganhar o jogo baseado somente na sorte: é necessário uma boa dose de estratégia para se sair vencedor.
+Vence o jogo aquele que atingir o objetivo que lhe couber. Este objetivo só é conhecido pelo próprio jogador, que em princípio deve usar esta vantagem : a clara demonstração do seu objetivo dificultará atingi-lo.
+Recomenda-se que se tente jogar à medida em que se vai lendo as regras, de modo a facilitar a compreensão dos mecanismos de WAR.
+
+COMPONENTES DO JOGO
+pecas-regras-jogo-warO jogo compõe-se de:
+- Um tabuleiro com um mapa contendo 6 continentes, cada um deles dividido em um determinado número de territórios.
+- 6 conjuntos de peças de cores diferentes, que representaram os exércitos dos jogadores. O valor de cada peça é :
+1 ficha pequena = 1 exército
+1 ficha grande = 10 exércitos
+- 6 caixas plásticas que devem ser destacadas e usadas individualmente.
+- 14 cartas especiais : cartas de objetivos
+- 44 cartas de jogo, sendo :
+42 representando cada um território combinado com uma figura geométrica (quadrado, triângulo e círculo);
+2 coringas (contendo as 3 figuras geométricas).
+- 6 dados, sendo :
+3 vermelhos usados para os ataques
+3 amarelos usados para as defesas
+
+EXÉRCITOS
+Cada jogador escolhe o exército da cor que lhe agrade dentro das 6 possíveis (branco, preto, vermelho, azul, amarelo e verde).
+
+OBJETIVOS
+regras-jogo-war-objetivoCada jogador receberá 1 objetivo dentre os 14 existentes, tomando conhecimento do seu teor e evitando revelá-lo aos seus adversários.
+É recomendado aos jogadores que estão se iniciando no jogo, que antes do sorteio seja feita uma leitura de todos os objetivos possíveis.
+Obs: no caso do número de jogadores ser inferior a 6, os objetivos relacionados com os exércitos não participantes devem ser excluídos do sorteio.
+
+Abaixo seguem todos os objetivos do jogo:
+- Conquistar na totalidade a EUROPA, a OCEANIA e mais um terceiro.
+- Conquistar na totalidade a ASIA e a AMÉRICA DO SUL.
+- Conquistar na totalidade a EUROPA, a AMÉRICA DO SUL e mais um terceiro.
+- Conquistar 18 TERRITÓRIOS e ocupar cada um deles com pelo menos dois exércitos.
+- Conquistar na totalidade a ASIA e a ÁFRICA.
+- Conquistar na totalidade a AMÉRICA DO NORTE e a ÁFRICA.
+- Conquistar 24 TERRITÓRIOS à sua escolha.
+- Conquistar na totalidade a AMÉRICA DO NORTE e a OCEANIA.
+- Destruir totalmente OS EXÉRCITOS AZUIS.
+- Destruir totalmente OS EXÉRCITOS AMARELOS.
+- Destruir totalmente OS EXÉRCITOS VERMELHOS.
+- Destruir totalmente OS EXÉRCITOS PRETOS.
+- Destruir totalmente OS EXÉRCITOS BRANCO.
+- Destruir totalmente OS EXÉRCITOS VERDES.
+
+O JOGO
+Cada jogador passa na sua vez, tanto na primeira como em todas as outras rodadas, pelas seguintes etapas, nesta ordem:
+a) receber novos exércitos e os colocar de acordo com a sua estratégia;
+b) se desejar, atacar os seus adversários;
+c) desloca seus exércitos se houver conveniência e
+d) receber uma carta se fizer jus a isto.
+
+Obs. importante : cada fase do jogo está explicada detalhadamente nos itens a seguir. Quando houver dúvida sobre algumas destas fases, volte e leia novamente a seção correspondente, onde está a explicação.
+
+COLOCAÇÃO DE EXÉRCITOS
+regras-jogo-war-exercitoO jogador, no início de sua jogada, recebe exércitos da seguinte forma : soma-se o número total de seus territórios e divide-se por 2, só se considerando a parte inteira do resultado.
+Exemplo: se o jogador possuir 8 territórios, então ele receberá 4 exércitos. Se possuir 11 territórios, receberá 5 exércitos.
+O jogador deverá colocar neste momento todos os exércitos recebidos, em um ou mais de seus territórios, conforme seja a sua estratégia. Em seguida pode-se ou não atacar algum adversário, tentando conquistar mais territórios.
+Se no início da sua vez de jogar o jogador possuir por inteiro um continente, então ele receberá, além dos exércitos a que fizer jus, outros exércitos de acordo com os valores da Tabela de Exércitos por Continentes. Os exércitos recebidos pela posse de um continente deverão ser distribuídos obrigatoriamente nos territórios do próprio continente.
+
+Exemplo: supondo-se que o jogador possua 19 territórios, sendo 15 espalhados por vários continentes e a América do Sul inteira (4 territórios) ele receberá no início de sua jogada :
+número de territórios possuídos : 15 + 4 = 19
+número de exércitos a receber : 9 + 2 = 11
+sendo que os 2 correspondentes à América do Sul devem ser colocados neste continente.
+Obs. 1 : o número mínimo de exércitos a receber é sempre 3, mesmo no caso do jogador possuir menos de 6 territórios.
+Obs. 2 : no início da jogada, o participante deve receber exércitos a partir do número de territórios possuídos, e conforme for o caso receber mais exércitos se possuir um continente por inteiro, ou se puder trocar as cartas (explicações na seção conquista de cartas).
+
+ATAQUES
+É necessário que haja pelo menos 1 exército em cada território ocupado. Assim, para atacar a partir de um território, são necessários ao menos 2 exércitos neste mesmo território.
+O exército de ocupação não tem o direito de atacar.
+
+REGRAS:
+1) O ataque, a partir de um território qualquer possuído, só pode ser dirigido a um território adversário que tenha fronteiras em comum (território contíguo) ou ligado através de um pontilhado (como a Terra é redonda, pode-se atacar Vladivostok a partir do Alaska e vice-versa).
+
+2) O número de exércitos que poderá participar de um ataque será igual ao número de exércitos situados no território atacante menos um, que é o exército de ocupação.
+
+3) O número máximo de exércitos participantes em cada ataque é de 3, mesmo que o número de exércitos possuídos no território seja superior a 4.
+
+4) Um jogador pode atacar tantas vezes quantas quiser para conquistar um território adversário, até ficar só um exército no seu território ou, ainda, até quando achar conveniente não atacar.
+
+5) Na sua vez de jogar, cada participante pode realizar ataques partindo de um ou vários territórios, de acordo com a sua estratégia. Se ele quiser atacar de mais de um território, ele deve indicar antes de qual território vai partir o ataque e contra qual território será feito. Uma vez finalizado o 1o. ataque, poderá iniciar outro ataque a partir do mesmo ou outro território que lhe pertença.
+
+6) O número de exércitos que a defesa pode usar, em cada batalha, é de no máximo 3 e no mínimo 1 (podendo utilizar inclusive o exército de ocupação).
+
+7) O jogador atacante jogará com tantos dados quantos forem os seus exércitos participantes da batalha, o mesmo ocorrendo com o jogador da defesa. Assim, se o atacante usar 3 exércitos contra um da defesa, ele jogará 3 dados contra um do defensor.
+
+CONTAGEM DOS DADOS
+8) Após uma batalha, a decisão de quem ganha e quem perde exércitos é feita da seguinte forma : compara-se o maior ponto do dado atacante (vermelho) com o maior ponto do dado defensor (amarelo) e o maior deles ganha, sendo que o empate é sempre da defesa. Em seguida compara-se o 2o. maior ponto atacante com o 2o. maior do defensor, e a decisão de vitória é como no caso anterior. Por fim, comparam os menores valores, baseando-se na mesma regra.
+Exemplos
+a) No caso do atacante possuir 4 exércitos no seu território e o defensor 3, ambos poderiam jogar com 3 dados. Supondo-se que o atacante tivesse tirado 5, 4 e 1 e o defensor 6, 3 e 1 a comparação seria feita da seguinte forma:
+Ataque Defesa Vencedor
+Maior 5 6 Defesa
+2o. 4 3 Ataque
+Menor 1 1 Defesa
+
+Como se vê, o atacante teria vencido uma jogada e perdido duas, ou então em outras palavras, teria perdido 2 exércitos e o defensor 1 exército.
+Assim, o território do atacante, que tinha 4 exércitos, passou a ficar com 2 e do defensor que tinha 3, ficou com 2. Se houvesse interesse, o atacante poderia atacar com 1 exército contra 2 da defesa.
+
+b) Atacante : 3 exércitos – Defesa : 1 exército. O atacante pode jogar 2 dados contra 1 da defesa. Supondo-se que os pontos tenham sido : ataque 3 e 2; defesa 6, compararia-se o maior ponto do ataque (3), com o maior ponto da defesa (no caso só um único valor 6). A vitória caberia à defesa, retirando o ataque uma de suas peças (notar que o atacante só deve retirar uma peça).
+
+c) Atacante com 10 exércitos e defensor tem 4 exércitos. Nesta caso, como já foi visto, cada um poderá usar, em cada batalha, um máximo de 3 exércitos.
+Supondo-se que os valores dos dados tenham sido :
+Ataque: 6, 3 e 2 – Defesa: 5, 4 e 2.
+O resultado seria: uma vitória do ataque contra duas da defesa. Portanto restaria ao atacante 8 exércitos e ao defensor 3. Se o atacante quiser ele pode continuar atacando, jogando novamente 3 dados contra 3 da defesa.
+Supondo-se que os resultados sejam :
+Ataque: 5, 3 e 2 – Defesa: 4, 2 e 1
+O atacante teria 3 vitórias, devendo a defesa retirar os seus 3 últimos exércitos do território.
+
+CONQUISTA DE TERRITÓRIOS
+Se após a batalha o atacante destruir todos os exércitos do território do defensor, terá então conquistado o território e deverá, após a conquista, deslocar seus exércitos atacantes para o território conquistado. Este deslocamento obedece à seguinte regra : o número de exércitos a ser deslocado neste instante é igual, no máximo, ao número de exércitos que participou do último ataque. No exemplo b ele poderia deslocar 1 ou no máximo 2 exércitos, enquanto que no exemplo c ele poderia deslocar, 1, 2 ou no máximo 3 exércitos.
+Se após conquistar um território, o atacante quiser, ele poderá deslocar seus exércitos para o território conquistado, respeitando a regra anterior, e a partir do território conquistado realizar novo ataque.
+
+REMANEJAMENTOS
+Ao finalizar seus ataques o jogador poderá, de acordo com a sua estratégia, efetuar deslocamentos de exércitos entre os seus territórios contíguos.
+Estes deslocamentos deverão obedecer as seguintes regras:
+1) em cada território deve permanecer sempre pelo menos um exército (de ocupação) que nunca pode ser deslocado;
+
+2) um exército pode ser deslocado uma única vez, isto é, não se pode deslocar um exército para um território contíguo e deste para outro, também contíguo, numa mesma jogada.
+Por exemplo, supondo-se que o jogador possua o Brasil, a Venezuela e o México, ele poderá deslocar seus exércitos do Brasil para a Venezuela, mas não poderá deslocar, na mesma jogada, estes mesmos exércitos da Venezuela para o México.
+
+CONQUISTA DE CARTAS
+Se durante a sua jogada, o jogador conseguir conquistar um ou mais territórios, terá direito a receber uma carta ao final da jogada, após ter realizado os deslocamentos. É importante notar que, por jogada, só se recebe uma única carta-território. O conteúdo desta carta deve ser mantido em segredo até o momento apropriado de sua troca.
+As cartas-territórios quando devidamente combinadas dão direito, no início da jogada, a receber um certo número de exércitos de acordo com a Tabela I que está impressa no tabuleiro.
+Exemplo: O primeiro jogador que trocar recebe 4 exércitos; o segundo jogador a trocar recebe 6, o terceiro 8, etc. As trocas de cartas por exércitos não se referem às trocas do jogador mais sim às trocas do jogo.
+Para se trocar cartas por exércitos, é necessário que o jogador possua no mínimo 3 cartas que obedeçam à seguinte regra de combinação : possuir 3 figuras geométricas distintas ou então 3 figuras geométricas iguais. No entanto o jogador não é obrigado a fazer a troca quando tiver feito uma das combinações descritas : isto vai depender do seu interesse no momento. No caso porém do jogador possuir 5 cartas, ele será obrigado, na sua vez de jogar, a trocar cartas por exércitos.
+Finalmente, se ao trocar as cartas o jogador possuir o território indicado na carta, então receberá mais 2 exércitos obrigatoriamente colocados naquele território.
+
+Notas:
+1) É importante a conquista de uma carta a cada jogada, pois as cartas dão direito ao recebimento de mais exércitos.
+2) As cartas trocadas são colocadas à parte do jogo. Quando todas as cartas tiverem sido distribuídas, devem ser recolhidas, embaralhadas e recolocadas em jogo, constituindo-se um novo “monte”.
+
+ELIMINAÇÃO DE UM CONCORRENTE
+Se durante o decorrer do jogo, um participante destruir por completo um outro, não sendo este o seu objetivo (caso em que teria ganho o jogo), ele recebe as cartas do jogador que foi destruído e pode usá-las para troca, combinando ou não com as suas ao final da sua jogada. Se não o fizer, poderá guardar as caras e usá-las em outra oportunidade, desde que não guarde mais de 5 cartas.
+Por exemplo, supondo-se que o jogador A, que tem 1 carta, destrua o B que possuia 3, ele poderá por ocasião do fim da sua jogada combinar 4 cartas e conforme o resultado, trocá-las. No caso de não conseguir trocar como ele conquistou um território, receberá no final de sua jogada mais uma carta, e no início da sua próxima jogada poderá trocar as cartas.
+
+ 
+
+FINAL DO JOGO
+O jogo termina quando um jogador lograr atinge o seu objetivo. Neste momento ele deverá mostrar a sua carta-objetivo, comprovando sua vitória.
