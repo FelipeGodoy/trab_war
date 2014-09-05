@@ -6,9 +6,13 @@ Cada jogador terá um conjunto de peças de uma cor. No inicio do jogo cada cor 
 No inicio de cada jogo todos os jogadores receberão um objetivo cada um. O jogo terminará quando algum jogador completar o objetivo ou os outros se renderem.
 O jogo decorrerá em turnos. Cada jogador terá direito a um turno por vez em sequência.
 Em cada turno o jogador poderá atacar territórios vizinhos aos seus e movimentar suas peças entre os seus territórios vizinhos.
-Um jogador, em seu turno, poderá atacar quantas vezes quiser. Obedecendo aos quesitos:
-	*Cada ataque o jogador atacante poderá usar até 3 (três) peças para atacar. 
+Um jogador poderá conquistar um território de outro jogador em um ataque, caso ele elimine todas as peças desse território.
 O objetivo poderá ser ligado a uma quantidade de territórios a serem conquistados, territórios específicos, ou eliminar algum jogador.
+O jogo terá uma opção de adicionar jogador controlado por inteligência artificial.
+A cada turno o jogo deverá mostrar detalhes gerais da partida.
+As peças e os dados do jogo deverão ser visualizados em 3D.
+O jogo deve obedecer as regras abaixo. * * * * ( não colocar no slide )
+
 
 -------------------------------------
 
