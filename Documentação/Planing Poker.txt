@@ -1,10 +1,14 @@
+---Tudo dependerá da modelagem.
+
+Número -- Tarefa -- Recursos -- Requisito
+
 Gerência
 
 1.1.1 --Apresentações - 1hh
 1.1.3.1 -- Concepção - 1hh
-1.1.3.2 -- Análise - 4hh
-1.1.3.3 -- Modelagem - 3hh
-1.1.3.4 -- Delegação de tarefas - 0hh
+1.1.3.2 -- Análise - 4hh -- Concepção
+1.1.3.3 -- Modelagem - 3hh -- Modelagem
+1.1.3.4 -- Delegação de tarefas - 0hh 
 1.1.4.1 -- Avaliação de Eficiência - 1h
 1.1.4.2 -- Avaliação de cronograma - 3h
 
@@ -19,33 +23,35 @@ Arte
 
 Programação
 
-1.3.1.1 -- Controlador do Jogo -- 5hh
-1.3.1.2.1 -- Mecânica de ataque -- 4hh
-1.3.1.2.2 -- Distribuição de tropas -- 3hh
-1.3.1.2.3 -- Movimentar tropas -- 1hh
-1.3.1.2.4 -- Mecânica de cartas -- 5hh
-1.3.1.2.5 -- Mecânica de rodadas -- 1hh
+
+1.3.1 -- Controladores -- Modelos
+	1.3.1.1 -- Controlador do Jogo -- 5hh 
+	1.3.1.2.1 -- Mecânica de ataque -- 4hh 
+	1.3.1.2.2 -- Distribuição de tropas -- 3hh
+	1.3.1.2.3 -- Movimentar tropas -- 1hh
+	1.3.1.2.4 -- Mecânica de cartas -- 5hh
+	1.3.1.2.5 -- Mecânica de rodadas -- 1hh -- Distribuição de tropas
 
 Views
 1.3.2.1 -- Callbacks -- 2hh
-1.3.2.2 -- Efeitos FX -- 4hh
+1.3.2.2 -- Efeitos FX -- 4hh -- Territórios
 
 1.3.3 -- Modelos
 
-1.3.3.1 -- Objetivo -- 3hh
+1.3.3.1 -- Objetivo -- 3hh -- Jogador, Território
 1.3.3.2 -- Jogador -- 1hh
 1.3.3.3 -- Território -- 1hh
 
 IA
 
 1.3.4.1 -- Pesquisar modelos de IA -- 2hh
-1.3.4.2 -- Sobrescrever interface de jogador -- 2hh
+1.3.4.2 -- Sobrescrever interface de jogador -- 2hh -- Modelos
 
 Implementação da IA
-1.3.4.3.1 -- Ataque -- 4hh
-1.3.4.3.2 -- Movimentação de tropas -- 4hh
-1.3.4.3.3 -- Alocação de tropas -- 4hh
+1.3.4.3.1 -- Ataque -- 4hh -- Pesquisar modelos de IA
+1.3.4.3.2 -- Movimentação de tropas -- 4hh -- Pesquisar modelos de IA
+1.3.4.3.3 -- Alocação de tropas -- 4hh -- Pesquisar modelos de IA
 
 Tabuleiro
-1.3.5.1 -- Posicionar Territórios -- 2hh
-1.3.5.2 -- Ajustes Gerais -- 4hh
+1.3.5.1 -- Posicionar Territórios -- 2hh -- Modelos
+1.3.5.2 -- Ajustes Gerais -- 4hh -- Última tarefa
