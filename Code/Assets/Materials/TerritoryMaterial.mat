@@ -8,7 +8,8 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: TerritoryMaterial
   m_Shader: {fileID: 4800000, guid: c19d92e1e1b2210448e98799a0aa1c15, type: 3}
-  m_ShaderKeywords: []
+  m_ShaderKeywords:
+  - PIXELSNAP_ON
   m_CustomRenderQueue: -1
   m_SavedProperties:
     serializedVersion: 2
@@ -38,11 +39,15 @@ Material:
       data:
         first:
           name: PixelSnap
-        second: 0
+        second: 1
       data:
         first:
           name: _Shininess
         second: .078125
+      data:
+        first:
+          name: _OutLineSpread
+        second: .0120000001
       data:
         first:
           name: _OutlineSize
@@ -55,10 +60,6 @@ Material:
         first:
           name: _Parallax
         second: .0199999996
-      data:
-        first:
-          name: _OutLineSpread
-        second: .0120000001
     m_Colors:
       data:
         first:
@@ -72,3 +73,7 @@ Material:
         first:
           name: _OutlineColor
         second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _Detail
+        second: {r: 0, g: 0, b: 1, a: 0}
