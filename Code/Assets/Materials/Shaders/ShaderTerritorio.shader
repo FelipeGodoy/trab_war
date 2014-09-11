@@ -56,7 +56,7 @@
 				v2f OUT;
 				OUT.vertex = mul(UNITY_MATRIX_MVP, IN.vertex);
 				OUT.texcoord = IN.texcoord;
-				OUT.color = IN.color * _Color;
+				OUT.color = IN.color * (_Color);
 				#ifdef PIXELSNAP_ON
 				OUT.vertex = UnityPixelSnap (OUT.vertex);
 				#endif
@@ -68,8 +68,8 @@
 
 			fixed4 frag(v2f IN) : SV_Target
 			{
-				fixed4 c = tex2D(_MainTex, IN.texcoord) * IN.color;
-				c.rgb *= c.a;
+				fixed4 c = IN.color;
+				c.rgb *= tex2D(_MainTex, IN.texcoord).a;
 				return c;
 			}
 		ENDCG
@@ -106,10 +106,6 @@
 			v2f vert(appdata_t IN)
 			{
 				v2f OUT;
-//				float4 vert = IN.vertex;
-//				vert.x = vert.x +(IN.normal.x* _OutlineSize);
-//				vert.y = vert.y +(IN.normal.y* _OutlineSize);
-//				//vert.z = vert.z - 0.999;
 				OUT.vertex = mul(UNITY_MATRIX_MVP, IN.vertex);
 				OUT.texcoord = IN.texcoord;
 				OUT.color = IN.color * _Color;
