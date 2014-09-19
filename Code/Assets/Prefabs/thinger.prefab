@@ -24,8 +24,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0437549353, y: 5.44191265, z: 2.77107906}
+  m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
+  m_LocalPosition: {x: -.0437549353, y: 2.77107882, z: -5.4419136}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -71,12 +71,12 @@ SpringJoint:
   m_ConnectedBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.40380168, y: .282720566, z: -.278522253}
+  m_ConnectedAnchor: {x: -.40380168, y: .282720625, z: -.278522253}
   m_Spring: 20
   m_Damper: .200000003
   m_MinDistance: 0
   m_MaxDistance: 0
-  m_BreakForce: 2
+  m_BreakForce: 2.5
   m_BreakTorque: Infinity
   m_EnableCollision: 0
 --- !u!1001 &100100000

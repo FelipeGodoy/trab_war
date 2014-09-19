@@ -5,12 +5,14 @@ public class DiceSideInfo : MonoBehaviour {
 
 	public int diceNumber = -1;
 
-	// Update is called once per frame
+	private readonly Vector3 defaultAngle = new Vector3(90f,0f,0f);
+
 	void Update () {
-		diceNumber = DiceSide(transform.rotation.eulerAngles);
+		diceNumber = DiceSide(Quaternion.Inverse(Quaternion.Euler(Camera.main.transform.rotation.eulerAngles - defaultAngle)) * transform.rotation);
 	}
 
-	public int DiceSide(Vector3 eulerAngles){
+	public int DiceSide(Quaternion angle){
+		Vector3 eulerAngles = angle.eulerAngles;
 		eulerAngles.x = Mathf.Round(eulerAngles.x / 90f) % 4f;
 		eulerAngles.y = Mathf.Round(eulerAngles.y / 90f) % 4f;
 		eulerAngles.z = Mathf.Round(eulerAngles.z / 90f) % 4f;

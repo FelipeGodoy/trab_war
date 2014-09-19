@@ -122,21 +122,24 @@
 				fixed4 c = fixed4(0,0,0,0);
 				fixed4 mainColor = fixed4(0,0,0,0);
 				fixed bord = 0;
-				if(_OutlineSize > 0.0){
+				fixed inside = 0;
+				if(_OutlineSize > 0.01){
+					inside = tex2D(_MainTex, IN.texcoord).a;
+					#define INLINE 0.25
 					mainColor = (tex2D(_MainTex, IN.texcoord + half2(_OutlineSize,_OutlineSize)).a
 					 	  	   + tex2D(_MainTex, IN.texcoord - half2(_OutlineSize,_OutlineSize)).a
 							   + tex2D(_MainTex, IN.texcoord + half2(-_OutlineSize,_OutlineSize)).a
 							   + tex2D(_MainTex, IN.texcoord + half2(_OutlineSize,-_OutlineSize)).a) * _OutlineColor;
-					bord = (tex2D(_MainTex, IN.texcoord + half2(_OutlineSize,_OutlineSize) * 0.1).a
-						  * tex2D(_MainTex, IN.texcoord - half2(_OutlineSize,_OutlineSize)* 0.1).a
-						  * tex2D(_MainTex, IN.texcoord + half2(-_OutlineSize,_OutlineSize)* 0.1).a
-						  * tex2D(_MainTex, IN.texcoord + half2(_OutlineSize,-_OutlineSize)* 0.1).a);
+					bord = (tex2D(_MainTex, IN.texcoord + half2(_OutlineSize,_OutlineSize) * INLINE).a
+						  * tex2D(_MainTex, IN.texcoord - half2(_OutlineSize,_OutlineSize)* INLINE).a
+						  * tex2D(_MainTex, IN.texcoord + half2(-_OutlineSize,_OutlineSize)* INLINE).a
+						  * tex2D(_MainTex, IN.texcoord + half2(_OutlineSize,-_OutlineSize)* INLINE).a);
+				  	if(inside > 0.5 && bord > 0.05){
+	            		mainColor = fixed4(0,0,0,0);
+	            	}
 				}
-	            fixed inside = tex2D(_MainTex, IN.texcoord).a;
 	 
-	            if(inside > 0.5 && bord > 0.05){
-	            	mainColor = fixed4(0,0,0,0);
-	            }
+	            
 	            
 	            return mainColor;
 			}
