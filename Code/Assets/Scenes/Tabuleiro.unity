@@ -3468,6 +3468,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3499,6 +3503,78 @@ Prefab:
     - target: {fileID: 400058, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
       propertyPath: m_RootMapOrder
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.data[0].r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.data[0].g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.data[0].b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.data[1].r
+      value: .986206889
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.data[1].g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.data[1].b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.data[2].r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.data[2].g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.data[2].b
+      value: .00689649582
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.data[3].r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.data[3].g
+      value: .420689344
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.data[3].b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.data[4].r
+      value: .944827557
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.data[4].g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.data[4].b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.data[5].r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.data[5].g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: playersColors.Array.data[5].b
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
@@ -4932,6 +5008,7 @@ MonoBehaviour:
   animationTime: .5
   ease: 28
   animationColor: {r: .899999976, g: .899999976, b: .899999976, a: 1}
+  animationNeibColor: {r: .100000001, g: .100000001, b: .100000001, a: 1}
   troopPrefab: {fileID: 100000, guid: cddad89db0200cc4d95e0f58aecbc46f, type: 2}
   troopOffset: {x: 0, y: .00999999978, z: 0}
 --- !u!1 &1336647874
@@ -4983,7 +5060,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   players: []
-  playersColors: []
+  playersColors:
+  - {r: 1, g: 1, b: 1, a: 0}
+  - {r: .986206889, g: 1, b: 0, a: 0}
+  - {r: 0, g: 1, b: .00689649582, a: 0}
+  - {r: 0, g: .420689344, b: 1, a: 0}
+  - {r: .944827557, g: 0, b: 1, a: 0}
+  - {r: 1, g: 0, b: 0, a: 0}
   currentMap: {fileID: 1336647877}
 --- !u!114 &1336647877
 MonoBehaviour:
