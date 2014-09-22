@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21200000}
   - 60: {fileID: 6000000}
   - 114: {fileID: 11400064}
+  - 114: {fileID: 11400162}
   m_Layer: 0
   m_Name: AS8
   m_TagString: Untagged
@@ -29,6 +30,7 @@ GameObject:
   - 212: {fileID: 21200002}
   - 60: {fileID: 6000002}
   - 114: {fileID: 11400012}
+  - 114: {fileID: 11400172}
   m_Layer: 0
   m_Name: EU6
   m_TagString: Untagged
@@ -44,6 +46,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400004}
+  - 114: {fileID: 11400098}
   m_Layer: 0
   m_Name: Asia
   m_TagString: Untagged
@@ -62,6 +65,7 @@ GameObject:
   - 212: {fileID: 21200004}
   - 60: {fileID: 6000004}
   - 114: {fileID: 11400040}
+  - 114: {fileID: 11400130}
   m_Layer: 0
   m_Name: NA5
   m_TagString: Untagged
@@ -77,6 +81,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400008}
+  - 114: {fileID: 11400090}
   m_Layer: 0
   m_Name: Africa
   m_TagString: Untagged
@@ -95,6 +100,7 @@ GameObject:
   - 212: {fileID: 21200006}
   - 60: {fileID: 6000006}
   - 114: {fileID: 11400056}
+  - 114: {fileID: 11400166}
   m_Layer: 0
   m_Name: AS4
   m_TagString: Untagged
@@ -113,6 +119,7 @@ GameObject:
   - 212: {fileID: 21200008}
   - 60: {fileID: 6000008}
   - 114: {fileID: 11400006}
+  - 114: {fileID: 11400116}
   m_Layer: 0
   m_Name: EU4
   m_TagString: Untagged
@@ -131,6 +138,7 @@ GameObject:
   - 212: {fileID: 21200010}
   - 60: {fileID: 6000010}
   - 114: {fileID: 11400062}
+  - 114: {fileID: 11400106}
   m_Layer: 0
   m_Name: AS6
   m_TagString: Untagged
@@ -149,6 +157,7 @@ GameObject:
   - 212: {fileID: 21200012}
   - 60: {fileID: 6000012}
   - 114: {fileID: 11400010}
+  - 114: {fileID: 11400136}
   m_Layer: 0
   m_Name: EU7
   m_TagString: Untagged
@@ -167,6 +176,7 @@ GameObject:
   - 212: {fileID: 21200014}
   - 60: {fileID: 6000014}
   - 114: {fileID: 11400022}
+  - 114: {fileID: 11400102}
   m_Layer: 0
   m_Name: AF6
   m_TagString: Untagged
@@ -185,6 +195,7 @@ GameObject:
   - 212: {fileID: 21200016}
   - 60: {fileID: 6000016}
   - 114: {fileID: 11400080}
+  - 114: {fileID: 11400126}
   m_Layer: 0
   m_Name: SUL4
   m_TagString: Untagged
@@ -203,6 +214,7 @@ GameObject:
   - 212: {fileID: 21200018}
   - 60: {fileID: 6000018}
   - 114: {fileID: 11400050}
+  - 114: {fileID: 11400108}
   m_Layer: 0
   m_Name: AS1
   m_TagString: Untagged
@@ -221,6 +233,7 @@ GameObject:
   - 212: {fileID: 21200020}
   - 60: {fileID: 6000020}
   - 114: {fileID: 11400014}
+  - 114: {fileID: 11400110}
   m_Layer: 0
   m_Name: AF4
   m_TagString: Untagged
@@ -239,6 +252,7 @@ GameObject:
   - 212: {fileID: 21200022}
   - 60: {fileID: 6000022}
   - 114: {fileID: 11400036}
+  - 114: {fileID: 11400104}
   m_Layer: 0
   m_Name: NA6
   m_TagString: Untagged
@@ -257,6 +271,7 @@ GameObject:
   - 212: {fileID: 21200024}
   - 60: {fileID: 6000024}
   - 114: {fileID: 11400046}
+  - 114: {fileID: 11400154}
   m_Layer: 0
   m_Name: AS10
   m_TagString: Untagged
@@ -275,6 +290,7 @@ GameObject:
   - 212: {fileID: 21200026}
   - 60: {fileID: 6000026}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400168}
   m_Layer: 0
   m_Name: EU3
   m_TagString: Untagged
@@ -293,6 +309,7 @@ GameObject:
   - 212: {fileID: 21200028}
   - 60: {fileID: 6000028}
   - 114: {fileID: 11400042}
+  - 114: {fileID: 11400120}
   m_Layer: 0
   m_Name: NA9
   m_TagString: Untagged
@@ -311,6 +328,7 @@ GameObject:
   - 212: {fileID: 21200030}
   - 60: {fileID: 6000030}
   - 114: {fileID: 11400034}
+  - 114: {fileID: 11400152}
   m_Layer: 0
   m_Name: NA1
   m_TagString: Untagged
@@ -329,6 +347,7 @@ GameObject:
   - 212: {fileID: 21200032}
   - 60: {fileID: 6000032}
   - 114: {fileID: 11400058}
+  - 114: {fileID: 11400124}
   m_Layer: 0
   m_Name: AS7
   m_TagString: Untagged
@@ -347,6 +366,7 @@ GameObject:
   - 212: {fileID: 21200034}
   - 60: {fileID: 6000034}
   - 114: {fileID: 11400008}
+  - 114: {fileID: 11400148}
   m_Layer: 0
   m_Name: EU5
   m_TagString: Untagged
@@ -365,6 +385,7 @@ GameObject:
   - 212: {fileID: 21200036}
   - 60: {fileID: 6000036}
   - 114: {fileID: 11400052}
+  - 114: {fileID: 11400156}
   m_Layer: 0
   m_Name: AS11
   m_TagString: Untagged
@@ -383,6 +404,7 @@ GameObject:
   - 212: {fileID: 21200038}
   - 60: {fileID: 6000038}
   - 114: {fileID: 11400072}
+  - 114: {fileID: 11400182}
   m_Layer: 0
   m_Name: OCE2
   m_TagString: Untagged
@@ -398,6 +420,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400044}
+  - 114: {fileID: 11400092}
   m_Layer: 0
   m_Name: Oceania
   m_TagString: Untagged
@@ -416,6 +439,7 @@ GameObject:
   - 212: {fileID: 21200040}
   - 60: {fileID: 6000040}
   - 114: {fileID: 11400060}
+  - 114: {fileID: 11400140}
   m_Layer: 0
   m_Name: AS2
   m_TagString: Untagged
@@ -434,6 +458,7 @@ GameObject:
   - 212: {fileID: 21200042}
   - 60: {fileID: 6000042}
   - 114: {fileID: 11400082}
+  - 114: {fileID: 11400138}
   m_Layer: 0
   m_Name: SUL2
   m_TagString: Untagged
@@ -452,6 +477,7 @@ GameObject:
   - 212: {fileID: 21200044}
   - 60: {fileID: 6000044}
   - 114: {fileID: 11400020}
+  - 114: {fileID: 11400158}
   m_Layer: 0
   m_Name: AF1
   m_TagString: Untagged
@@ -470,6 +496,7 @@ GameObject:
   - 212: {fileID: 21200046}
   - 60: {fileID: 6000046}
   - 114: {fileID: 11400024}
+  - 114: {fileID: 11400132}
   m_Layer: 0
   m_Name: AF2
   m_TagString: Untagged
@@ -488,6 +515,7 @@ GameObject:
   - 212: {fileID: 21200048}
   - 60: {fileID: 6000048}
   - 114: {fileID: 11400078}
+  - 114: {fileID: 11400174}
   m_Layer: 0
   m_Name: SUL3
   m_TagString: Untagged
@@ -506,6 +534,7 @@ GameObject:
   - 212: {fileID: 21200050}
   - 60: {fileID: 6000050}
   - 114: {fileID: 11400076}
+  - 114: {fileID: 11400150}
   m_Layer: 0
   m_Name: SUL1
   m_TagString: Untagged
@@ -521,6 +550,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400058}
+  - 114: {fileID: 11400086}
+  - 114: {fileID: 11400084}
   m_Layer: 0
   m_Name: Mapa
   m_TagString: Untagged
@@ -539,6 +570,7 @@ GameObject:
   - 212: {fileID: 21200052}
   - 60: {fileID: 6000052}
   - 114: {fileID: 11400054}
+  - 114: {fileID: 11400128}
   m_Layer: 0
   m_Name: AS5
   m_TagString: Untagged
@@ -558,6 +590,7 @@ GameObject:
   - 60: {fileID: 6000054}
   - 114: {fileID: 11400068}
   - 68: {fileID: 6800000}
+  - 114: {fileID: 11400176}
   m_Layer: 0
   m_Name: OCE1
   m_TagString: Untagged
@@ -576,6 +609,7 @@ GameObject:
   - 212: {fileID: 21200056}
   - 60: {fileID: 6000056}
   - 114: {fileID: 11400030}
+  - 114: {fileID: 11400144}
   m_Layer: 0
   m_Name: NA4
   m_TagString: Untagged
@@ -594,6 +628,7 @@ GameObject:
   - 212: {fileID: 21200058}
   - 60: {fileID: 6000058}
   - 114: {fileID: 11400038}
+  - 114: {fileID: 11400160}
   m_Layer: 0
   m_Name: NA7
   m_TagString: Untagged
@@ -610,6 +645,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400068}
   - 212: {fileID: 21200060}
+  - 114: {fileID: 11400094}
   m_Layer: 0
   m_Name: America do Norte
   m_TagString: Untagged
@@ -628,6 +664,7 @@ GameObject:
   - 212: {fileID: 21200062}
   - 60: {fileID: 6000060}
   - 114: {fileID: 11400016}
+  - 114: {fileID: 11400122}
   m_Layer: 0
   m_Name: AF3
   m_TagString: Untagged
@@ -646,6 +683,7 @@ GameObject:
   - 212: {fileID: 21200064}
   - 60: {fileID: 6000062}
   - 114: {fileID: 11400004}
+  - 114: {fileID: 11400146}
   m_Layer: 0
   m_Name: EU1
   m_TagString: Untagged
@@ -664,6 +702,7 @@ GameObject:
   - 212: {fileID: 21200066}
   - 60: {fileID: 6000064}
   - 114: {fileID: 11400032}
+  - 114: {fileID: 11400164}
   m_Layer: 0
   m_Name: NA8
   m_TagString: Untagged
@@ -682,6 +721,7 @@ GameObject:
   - 212: {fileID: 21200068}
   - 60: {fileID: 6000066}
   - 114: {fileID: 11400018}
+  - 114: {fileID: 11400142}
   m_Layer: 0
   m_Name: AF5
   m_TagString: Untagged
@@ -697,6 +737,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400078}
+  - 114: {fileID: 11400096}
   m_Layer: 0
   m_Name: Europa
   m_TagString: Untagged
@@ -715,6 +756,7 @@ GameObject:
   - 212: {fileID: 21200070}
   - 60: {fileID: 6000068}
   - 114: {fileID: 11400074}
+  - 114: {fileID: 11400180}
   m_Layer: 0
   m_Name: OCE4
   m_TagString: Untagged
@@ -733,6 +775,7 @@ GameObject:
   - 212: {fileID: 21200072}
   - 60: {fileID: 6000070}
   - 114: {fileID: 11400066}
+  - 114: {fileID: 11400114}
   m_Layer: 0
   m_Name: AS3
   m_TagString: Untagged
@@ -751,6 +794,7 @@ GameObject:
   - 212: {fileID: 21200074}
   - 60: {fileID: 6000072}
   - 114: {fileID: 11400048}
+  - 114: {fileID: 11400112}
   m_Layer: 0
   m_Name: AS9
   m_TagString: Untagged
@@ -769,6 +813,7 @@ GameObject:
   - 212: {fileID: 21200076}
   - 60: {fileID: 6000074}
   - 114: {fileID: 11400002}
+  - 114: {fileID: 11400118}
   m_Layer: 0
   m_Name: EU2
   m_TagString: Untagged
@@ -787,6 +832,7 @@ GameObject:
   - 212: {fileID: 21200078}
   - 60: {fileID: 6000076}
   - 114: {fileID: 11400070}
+  - 114: {fileID: 11400178}
   m_Layer: 0
   m_Name: OCE3
   m_TagString: Untagged
@@ -805,6 +851,7 @@ GameObject:
   - 212: {fileID: 21200080}
   - 60: {fileID: 6000078}
   - 114: {fileID: 11400044}
+  - 114: {fileID: 11400170}
   m_Layer: 0
   m_Name: AS12
   m_TagString: Untagged
@@ -823,6 +870,7 @@ GameObject:
   - 212: {fileID: 21200082}
   - 60: {fileID: 6000080}
   - 114: {fileID: 11400028}
+  - 114: {fileID: 11400134}
   m_Layer: 0
   m_Name: NA2
   m_TagString: Untagged
@@ -839,6 +887,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400094}
   - 212: {fileID: 21200084}
+  - 114: {fileID: 11400088}
   m_Layer: 0
   m_Name: America do Sul
   m_TagString: Untagged
@@ -857,6 +906,7 @@ GameObject:
   - 212: {fileID: 21200086}
   - 60: {fileID: 6000082}
   - 114: {fileID: 11400026}
+  - 114: {fileID: 11400100}
   m_Layer: 0
   m_Name: NA3
   m_TagString: Untagged
@@ -1171,7 +1221,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.3215456, y: -7.18051243, z: 0}
+  m_LocalPosition: {x: 13.6085262, y: -8.09267902, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400062}
@@ -1347,7 +1397,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100070}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.31480002, y: 8.69632149, z: 0}
+  m_LocalPosition: {x: -1.33895779, y: 8.62384796, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400008}
@@ -1383,7 +1433,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100076}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.207733393, y: 11.7839413, z: -6.81117651e-13}
+  m_LocalPosition: {x: -.15941906, y: 11.7839413, z: -6.81117651e-13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400008}
@@ -5024,6 +5074,996 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe7720bd535eb194dae204ae45c9dd32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11400084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4477c869edc674547822ed69aa064368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  players: []
+  playersColors: []
+  currentMap: {fileID: 11400086}
+--- !u!114 &11400086
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7e1697668b85aa4dabe77fece897b07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  freeTroops: 0
+  territories:
+  - {fileID: 11400176}
+  - {fileID: 11400178}
+  - {fileID: 11400180}
+  - {fileID: 11400182}
+  - {fileID: 11400108}
+  - {fileID: 11400140}
+  - {fileID: 11400114}
+  - {fileID: 11400166}
+  - {fileID: 11400128}
+  - {fileID: 11400106}
+  - {fileID: 11400124}
+  - {fileID: 11400162}
+  - {fileID: 11400112}
+  - {fileID: 11400154}
+  - {fileID: 11400156}
+  - {fileID: 11400170}
+  - {fileID: 11400150}
+  - {fileID: 11400138}
+  - {fileID: 11400174}
+  - {fileID: 11400126}
+  - {fileID: 11400152}
+  - {fileID: 11400134}
+  - {fileID: 11400100}
+  - {fileID: 11400144}
+  - {fileID: 11400130}
+  - {fileID: 11400104}
+  - {fileID: 11400160}
+  - {fileID: 11400164}
+  - {fileID: 11400120}
+  - {fileID: 11400158}
+  - {fileID: 11400132}
+  - {fileID: 11400122}
+  - {fileID: 11400110}
+  - {fileID: 11400142}
+  - {fileID: 11400102}
+  - {fileID: 11400146}
+  - {fileID: 11400118}
+  - {fileID: 11400168}
+  - {fileID: 11400116}
+  - {fileID: 11400148}
+  - {fileID: 11400172}
+  - {fileID: 11400136}
+  continents:
+  - {fileID: 11400092}
+  - {fileID: 11400098}
+  - {fileID: 11400088}
+  - {fileID: 11400094}
+  - {fileID: 11400090}
+  - {fileID: 11400096}
+--- !u!114 &11400088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 956da6cb5e9bc8043bab95b6bc447d30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  territories:
+  - {fileID: 11400150}
+  - {fileID: 11400138}
+  - {fileID: 11400174}
+  - {fileID: 11400126}
+--- !u!114 &11400090
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 956da6cb5e9bc8043bab95b6bc447d30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  territories:
+  - {fileID: 11400158}
+  - {fileID: 11400132}
+  - {fileID: 11400122}
+  - {fileID: 11400110}
+  - {fileID: 11400142}
+  - {fileID: 11400102}
+--- !u!114 &11400092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 956da6cb5e9bc8043bab95b6bc447d30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  territories:
+  - {fileID: 11400176}
+  - {fileID: 11400178}
+  - {fileID: 11400180}
+  - {fileID: 11400182}
+--- !u!114 &11400094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 956da6cb5e9bc8043bab95b6bc447d30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  territories:
+  - {fileID: 11400152}
+  - {fileID: 11400134}
+  - {fileID: 11400100}
+  - {fileID: 11400144}
+  - {fileID: 11400130}
+  - {fileID: 11400104}
+  - {fileID: 11400160}
+  - {fileID: 11400164}
+  - {fileID: 11400120}
+--- !u!114 &11400096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 956da6cb5e9bc8043bab95b6bc447d30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  territories:
+  - {fileID: 11400146}
+  - {fileID: 11400118}
+  - {fileID: 11400168}
+  - {fileID: 11400116}
+  - {fileID: 11400148}
+  - {fileID: 11400172}
+  - {fileID: 11400136}
+--- !u!114 &11400098
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 956da6cb5e9bc8043bab95b6bc447d30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  name: 
+  territories:
+  - {fileID: 11400108}
+  - {fileID: 11400140}
+  - {fileID: 11400114}
+  - {fileID: 11400166}
+  - {fileID: 11400128}
+  - {fileID: 11400106}
+  - {fileID: 11400124}
+  - {fileID: 11400162}
+  - {fileID: 11400112}
+  - {fileID: 11400154}
+  - {fileID: 11400156}
+  - {fileID: 11400170}
+--- !u!114 &11400100
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400134}
+  - {fileID: 11400144}
+  - {fileID: 11400166}
+  continent: {fileID: 11400094}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400102
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400142}
+  - {fileID: 11400122}
+  continent: {fileID: 11400090}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400104
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400160}
+  - {fileID: 11400130}
+  - {fileID: 11400152}
+  continent: {fileID: 11400094}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400106
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400172}
+  - {fileID: 11400128}
+  - {fileID: 11400124}
+  - {fileID: 11400140}
+  - {fileID: 11400112}
+  continent: {fileID: 11400098}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400154}
+  - {fileID: 11400166}
+  - {fileID: 11400114}
+  - {fileID: 11400170}
+  continent: {fileID: 11400098}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400110
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400158}
+  - {fileID: 11400142}
+  - {fileID: 11400122}
+  continent: {fileID: 11400090}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400112
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400162}
+  - {fileID: 11400124}
+  - {fileID: 11400156}
+  - {fileID: 11400154}
+  - {fileID: 11400106}
+  - {fileID: 11400140}
+  - {fileID: 11400170}
+  continent: {fileID: 11400098}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400114
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400108}
+  - {fileID: 11400170}
+  - {fileID: 11400166}
+  continent: {fileID: 11400098}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400116
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400168}
+  - {fileID: 11400158}
+  - {fileID: 11400132}
+  - {fileID: 11400128}
+  - {fileID: 11400172}
+  - {fileID: 11400148}
+  continent: {fileID: 11400096}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400118
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400146}
+  - {fileID: 11400148}
+  - {fileID: 11400168}
+  continent: {fileID: 11400096}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400120
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400138}
+  - {fileID: 11400160}
+  - {fileID: 11400164}
+  continent: {fileID: 11400094}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400122
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400110}
+  - {fileID: 11400142}
+  - {fileID: 11400102}
+  continent: {fileID: 11400090}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400124
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400106}
+  - {fileID: 11400128}
+  - {fileID: 11400112}
+  - {fileID: 11400162}
+  - {fileID: 11400180}
+  continent: {fileID: 11400098}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400126
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400150}
+  - {fileID: 11400174}
+  continent: {fileID: 11400088}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400128
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400132}
+  - {fileID: 11400116}
+  - {fileID: 11400172}
+  - {fileID: 11400124}
+  - {fileID: 11400106}
+  continent: {fileID: 11400098}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400164}
+  - {fileID: 11400144}
+  - {fileID: 11400134}
+  - {fileID: 11400160}
+  - {fileID: 11400104}
+  continent: {fileID: 11400094}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400142}
+  - {fileID: 11400158}
+  - {fileID: 11400128}
+  - {fileID: 11400116}
+  continent: {fileID: 11400090}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400134
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400144}
+  - {fileID: 11400130}
+  - {fileID: 11400100}
+  - {fileID: 11400152}
+  continent: {fileID: 11400094}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400136
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400172}
+  - {fileID: 11400148}
+  - {fileID: 11400146}
+  continent: {fileID: 11400096}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400138
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400150}
+  - {fileID: 11400174}
+  - {fileID: 11400120}
+  continent: {fileID: 11400088}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400106}
+  - {fileID: 11400172}
+  - {fileID: 11400170}
+  - {fileID: 11400112}
+  continent: {fileID: 11400098}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400142
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400132}
+  - {fileID: 11400158}
+  - {fileID: 11400110}
+  - {fileID: 11400122}
+  - {fileID: 11400102}
+  continent: {fileID: 11400090}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400144
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400164}
+  - {fileID: 11400130}
+  - {fileID: 11400134}
+  - {fileID: 11400100}
+  continent: {fileID: 11400094}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400146
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400136}
+  - {fileID: 11400118}
+  - {fileID: 11400152}
+  continent: {fileID: 11400096}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400148
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400136}
+  - {fileID: 11400118}
+  - {fileID: 11400116}
+  - {fileID: 11400172}
+  - {fileID: 11400168}
+  continent: {fileID: 11400096}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400150
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400138}
+  - {fileID: 11400174}
+  - {fileID: 11400126}
+  - {fileID: 11400158}
+  continent: {fileID: 11400088}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400152
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400104}
+  - {fileID: 11400134}
+  - {fileID: 11400146}
+  continent: {fileID: 11400094}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400154
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400112}
+  - {fileID: 11400156}
+  - {fileID: 11400108}
+  - {fileID: 11400166}
+  - {fileID: 11400170}
+  continent: {fileID: 11400098}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400156
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400112}
+  - {fileID: 11400154}
+  - {fileID: 11400166}
+  continent: {fileID: 11400098}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400150}
+  - {fileID: 11400110}
+  - {fileID: 11400132}
+  - {fileID: 11400142}
+  - {fileID: 11400116}
+  - {fileID: 11400168}
+  continent: {fileID: 11400090}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400160
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400120}
+  - {fileID: 11400164}
+  - {fileID: 11400130}
+  - {fileID: 11400104}
+  continent: {fileID: 11400094}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400162
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400124}
+  - {fileID: 11400178}
+  - {fileID: 11400112}
+  - {fileID: 11400180}
+  continent: {fileID: 11400098}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400164
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400120}
+  - {fileID: 11400160}
+  - {fileID: 11400130}
+  - {fileID: 11400144}
+  continent: {fileID: 11400094}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400166
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400156}
+  - {fileID: 11400154}
+  - {fileID: 11400108}
+  - {fileID: 11400114}
+  - {fileID: 11400100}
+  continent: {fileID: 11400098}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400168
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400116}
+  - {fileID: 11400148}
+  - {fileID: 11400118}
+  - {fileID: 11400158}
+  continent: {fileID: 11400096}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400170
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400114}
+  - {fileID: 11400108}
+  - {fileID: 11400154}
+  - {fileID: 11400112}
+  - {fileID: 11400140}
+  continent: {fileID: 11400098}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400172
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400136}
+  - {fileID: 11400148}
+  - {fileID: 11400116}
+  - {fileID: 11400128}
+  - {fileID: 11400106}
+  - {fileID: 11400140}
+  continent: {fileID: 11400096}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400174
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400126}
+  - {fileID: 11400150}
+  - {fileID: 11400138}
+  continent: {fileID: 11400088}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400176
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400178}
+  - {fileID: 11400182}
+  continent: {fileID: 11400092}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400162}
+  - {fileID: 11400176}
+  - {fileID: 11400180}
+  continent: {fileID: 11400092}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400180
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400182}
+  - {fileID: 11400178}
+  - {fileID: 11400124}
+  - {fileID: 11400162}
+  continent: {fileID: 11400092}
+  name: 
+  troopSpawn: {fileID: 0}
+--- !u!114 &11400182
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb46ff0e8af45bf4483cb895662675ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbors:
+  - {fileID: 11400176}
+  - {fileID: 11400180}
+  continent: {fileID: 11400092}
+  name: 
+  troopSpawn: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
