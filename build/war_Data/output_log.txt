@@ -1,0 +1,20 @@
+Initialize engine version: 4.5.0f6 (fd4616464986)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 10.0]
+    Renderer: Intel(R) HD Graphics (ID=0x46)
+    Vendor:   Intel
+    VRAM:     128 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Felipe Godoy\Documents\trabalhos\ES.2014.2\trab_war\build\war_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Felipe Godoy\Documents\trabalhos\ES.2014.2\trab_war\build\war_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Felipe Godoy\Documents\trabalhos\ES.2014.2\trab_war\build\war_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Felipe Godoy\Documents\trabalhos\ES.2014.2\trab_war\build\war_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Felipe Godoy\Documents\trabalhos\ES.2014.2\trab_war\build\war_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Felipe Godoy\Documents\trabalhos\ES.2014.2\trab_war\build\war_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+- Completed reload, in  0.080 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\Felipe Godoy\Documents\trabalhos\ES.2014.2\trab_war\build\war_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Felipe Godoy\Documents\trabalhos\ES.2014.2\trab_war\build\war_Data\Managed\System.dll (this message is harmless)
