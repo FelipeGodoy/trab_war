@@ -12,7 +12,7 @@ public class Troop : MonoBehaviour {
 			return currentTerritory;
 		}
 		set{
-			currentTerritory.RemoveTroop(this);
+			if(currentTerritory != null)currentTerritory.RemoveTroop(this);
 			currentTerritory = value;
 			currentTerritory.AddTroop(this);
 		}

@@ -9,6 +9,15 @@ public class Territory : MonoBehaviour {
 	public string name;
 	public Transform troopSpawn;
 
+	public Vector3 SpawnPosition{
+		get{
+			if(troopSpawn == null){
+				return this.transform.position;
+			}
+			return troopSpawn.transform.position;
+		}
+	}
+
 	public Player CurrentPlayer{get; set;}
 
 	public int TroopsCount{
@@ -47,7 +56,7 @@ public class Territory : MonoBehaviour {
 				else{
 					Gizmos.color = Color.blue;
 				}
-				Gizmos.DrawLine(this.transform.position, territory.transform.position);
+				Gizmos.DrawLine(this.SpawnPosition, territory.SpawnPosition);
 
 			}
 		}

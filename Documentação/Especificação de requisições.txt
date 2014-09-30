@@ -1,0 +1,65 @@
+Espeficicação das requisições entre o cliente e servidor.
+
+-- As requisições devem ser do tipo http.
+
+-- O código do servidor deverá ficar em um repositório diferente do cliente.
+
+-- As requisições serão respondidas no formato JSON
+
+-- Um jogo será preparado para ser iniciado quando um cliente mandar a requisição "/jogos/new" do tipo POST. 
+Neste momento o servidor criará uma instancia de jogo, mas o jogo somente será iniciado ao comando do jogador que criou a instância, e com o mínimo de 3 jogadores e máximo 6.
+Uma instância de jogo que não for iniciada em até X minutos será expirada. Cada jogo terá um id único e sequencial. 
+Os parametros da requisição serão:
+{nome_jogo:"nome_teste",
+ jogador:"nome_jogador",
+ quantidade_territorios:"42",
+ quantidade_objetivos:"???",
+ quantidade_jogadores:"3~6"}
+
+A resposta dessa requisição será:
+{sucesso:"true/false",
+id_jogo:"???", 
+Player:"1~6",
+id_objetivo:"???"}  
+Sucesso da criação do jogo, o id do jogo criado e o número de jogador que o criador terá.
+
+-- A requisição "/jogos" -- GET retornará todas as intâncias de jogos que ainda não foram iniciadas e os seus IDs. 
+Resposta {
+	jogos:{
+			1:{id:"321", nome:"teste"},
+			2:{...}...
+	}
+}
+
+-- A requisição "/jogos/ingresso" -- POST será para um jogador ingressar em um jogo. 
+Os parâmetros serão {id_jogo:"???", jogador:"nome_jogador", bot:"true/false"}
+A resposta será: 
+{
+sucesso:"true/false",
+jogador:"1~6",
+id_objetivo} 
+Sucesso, e o número de jogador.
+
+
+-- A requisição "/jogos/jogada" -- POST será uma jogada de um jogador.
+Os parâmetros serão 
+{ id_jogo:"???",
+ id_ultima_jogada:"???",
+ jogador:"1~6",
+ termina_turno:"true/false",
+ termina_jogo:"???",
+ tipo_jogada:"???",
+ id_territorio_origem:"???",
+ id_territorio_destino:"???",
+ dado:{1:"1~6",2:"1~6"...},
+ tabuleiro:{1:{jogador:"1~6", tropas:"???"}}}
+ 
+ Nem todos os parametros são obrigatórios para uma jogada. O servidor deverá armazenar os parametros  das requisições de jogada do tipo POST em e replica-las nas requisições GET do mesmo jogo.
+ 
+ 
+
+
+
+
+
+

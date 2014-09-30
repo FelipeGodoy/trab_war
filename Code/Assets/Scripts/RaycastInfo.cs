@@ -26,8 +26,11 @@ public class RaycastInfo : MonoBehaviour {
 					SetColorNeighbors(territory);
 					if(Input.GetMouseButtonDown(0)){
 						GameObject g = (GameObject)Instantiate(troopPrefab);
-						g.transform.position = territoryInfo.transform.position;
+						g.transform.parent = territory.transform;
+						g.transform.position = territory.SpawnPosition;
 						g.transform.Translate(troopOffset);
+						TroopInTerritory troopIn = g.AddComponent<TroopInTerritory>();
+						troopIn.territory = territory;
 						AngularSpeedStart a = g.AddComponent<AngularSpeedStart>();
 						a.angularSpeed.x = Random.Range(-18f,18f);
 						a.angularSpeed.y = Random.Range(-18f,18f);
