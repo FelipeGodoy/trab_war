@@ -1,0 +1,42 @@
+# Pastas a ignorar
+# linhas descomentadas ignoram uma pasta/arquivo
+# o '!' nega o ignorado
+
+.DS_Store
+
+code/Unity/dev/Temp
+code/Unity/dev/Library
+code/Unity/dev/obj
+code/Unity/dev/Assets/-tk2d.asset.meta
+code/Unity/dev/Assets/-tk2d.asset
+
+Temp
+Library
+obj
+Assets/-tk2d.asset.meta
+Assets/-tk2d.asset
+
+*.userprefs
+*.userprefs.meta
+code/Unity/dev/*.unityproj
+code/Unity/dev/*.csproj
+code/Unity/dev/*.pidb
+code/Unity/dev/*.sln
+code/Unity/dev/*.booproj
+*.suo
+*.db
+*.pdb
+*.pdb.meta
+
+code/Unity/dev/UnitTestResults.xml
+
+/_UpgradeReport_Files
+
+UpgradeLog.XML
+UpgradeLog.htm
+UpgradeLog.htm.meta
+Thumbs.db.meta
+/code/Unity/dev/*.sublime-workspace
+/code/Unity/dev/*.sublime-project
+/code/Unity/dev/Assets/Resources/AlbumArtSmall.jpg.meta
+/code/Unity/dev/Assets/Resources/Folder.jpg.meta
