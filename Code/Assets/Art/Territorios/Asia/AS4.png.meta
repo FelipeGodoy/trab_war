@@ -1,10 +1,6 @@
 fileFormatVersion: 2
 guid: c8e32726cf9f3c14cb7b18976da87547
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: WARISK_0000s_0002s_0003_Layer-21
-    21300002: AdN4
-    21300004: AS4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -24,7 +20,7 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1

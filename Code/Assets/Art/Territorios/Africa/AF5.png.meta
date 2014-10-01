@@ -1,9 +1,6 @@
 fileFormatVersion: 2
 guid: acd32ac05a2a1254a9408c3b52b8c52c
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: WARISK_0000s_0004s_0004_Layer-38
-    21300002: AF5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -23,7 +20,7 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 1024
   textureSettings:
     filterMode: 1
