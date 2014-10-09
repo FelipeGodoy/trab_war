@@ -3,10 +3,15 @@ using System.Collections;
 
 public class AngularSpeedStart : MonoBehaviour {
 
-	public Vector3 angularSpeed = new Vector3(-40,20,40);
+	public Vector3 angularSpeedMin = new Vector3(-18,-18,-18);
+	public Vector3 angularSpeedMax = new Vector3(18,18,18);
+	public float maxAngularVelocity = 100f;
 
 	void Start () {
-		rigidbody.maxAngularVelocity = 100f;
-		rigidbody.AddTorque(angularSpeed,ForceMode.VelocityChange);
+		rigidbody.maxAngularVelocity = this.maxAngularVelocity;
+		rigidbody.AddTorque(Random.Range(angularSpeedMin.x, angularSpeedMax.x),
+		                    Random.Range(angularSpeedMin.y, angularSpeedMax.y),
+		                    Random.Range(angularSpeedMin.z, angularSpeedMax.z),
+		                    ForceMode.VelocityChange);
 	}
 }

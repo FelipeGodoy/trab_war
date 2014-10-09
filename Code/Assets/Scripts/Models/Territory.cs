@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class Territory : MonoBehaviour {
 
+	private Player _currentPlayer;
 	private HashSet<Troop> troops;
 	public List<Territory> neighbors;
 	public Continent continent;
@@ -18,7 +19,15 @@ public class Territory : MonoBehaviour {
 		}
 	}
 
-	public Player CurrentPlayer{get; set;}
+	public Player CurrentPlayer{
+		get{
+			return _currentPlayer;
+		}
+		set{
+			_currentPlayer = value;
+			_currentPlayer.AddTerritory(this);
+		}
+	}
 
 	public int TroopsCount{
 		get{
@@ -40,11 +49,26 @@ public class Territory : MonoBehaviour {
 	}
 
 	public bool RemoveTroop(Troop troop){
-		return troops.Remove(troop);
+		if(troops.Remove(troop)){
+			Destroy(troop.gameObject);
+			return true;
+		}
+		return false;
 	}
 
 	public bool AddTroop(Troop troop){
 		return troops.Add(troop);
+	}
+
+	public bool AddTroop(){
+		Troop troop = Troop.Create(this);
+		if(troops.Add(troop)){
+			return true;
+		}
+		else{
+			Destroy(troop.gameObject);
+		}
+		return false;
 	}
 
 	void OnDrawGizmos(){

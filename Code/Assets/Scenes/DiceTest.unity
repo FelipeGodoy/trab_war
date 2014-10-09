@@ -249,6 +249,46 @@ Prefab:
   m_RootGameObject: {fileID: 1995265136}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &459207148
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 459207150}
+  - 114: {fileID: 459207149}
+  m_Layer: 0
+  m_Name: RequestObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &459207149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 459207148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd628079679d2c64cbdbaa1f0a639504, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: http://polar-tor-7274.herokuapp.com/testes
+--- !u!4 &459207150
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 459207148}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.29896235, y: 1.82179141, z: -.0754013062}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
 --- !u!1 &850419554
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,7 +457,7 @@ SpringJoint:
   m_Damper: .200000003
   m_MinDistance: 0
   m_MaxDistance: 0
-  m_BreakForce: 4
+  m_BreakForce: 2.5
   m_BreakTorque: Infinity
   m_EnableCollision: 0
 --- !u!54 &1154466957
@@ -460,6 +500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a108b196348da614e98995fd8b9e1674, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distance: 1
   offset: 1.13999999
   magnitude: 10
   speed: .100000001

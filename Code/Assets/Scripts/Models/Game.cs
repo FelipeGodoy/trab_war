@@ -3,8 +3,9 @@ using System.Collections.Generic;
 
 public class Game : MonoBehaviour {
 
+	public const int MAX_PLAYERS = 6;
+
 	public List<Player> players;
-	public List<Color> playersColors;
 	public static Game Instance{get; set;}
 	public Map currentMap;
 
@@ -16,6 +17,13 @@ public class Game : MonoBehaviour {
 		if(currentMap == null){
 			currentMap = GetComponent<Map>();
 		}
+	}
+
+	public bool AddPlayer(Player player){
+		if(players.Count >= MAX_PLAYERS){
+			return false;
+		}
+		return true;
 	}
 
 }

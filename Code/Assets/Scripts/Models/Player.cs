@@ -1,27 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-[System.Serializable]
-public class Player {
+public class Player : MonoBehaviour{
 
 	private HashSet<Territory> territories;
 	private List<Symbol> symbols;
 
 	public string name;
+	public Material troopMaterial;
+
 	public int tradesCount;
+
+	void Awake(){
+		if(this.territories == null){
+			this.territories = new HashSet<Territory>();
+		}
+		if(this.symbols == null){
+			this.symbols = new List<Symbol>();
+		}
+	}
 
 	public int TerritoriesCount{
 		get{
 			return territories.Count;
-		}
-	}
-
-	void Awake(){
-		if(territories == null){
-			territories = new HashSet<Territory>();
-		}
-		if(symbols == null){
-			symbols = new List<Symbol>();
 		}
 	}
 

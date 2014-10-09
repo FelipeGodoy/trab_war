@@ -1344,7 +1344,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.6085262, y: -8.09267902, z: 0}
+  m_LocalPosition: {x: 15.0187578, y: -7.72016478, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400062}
@@ -5309,14 +5309,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4477c869edc674547822ed69aa064368, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: []
-  playersColors:
-  - {r: 1, g: 1, b: 1, a: 0}
-  - {r: .986206889, g: 1, b: 0, a: 0}
-  - {r: 0, g: 1, b: .00689649582, a: 0}
-  - {r: 0, g: .420689344, b: 1, a: 0}
-  - {r: .944827557, g: 0, b: 1, a: 0}
-  - {r: 1, g: 0, b: 0, a: 0}
+  players:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   currentMap: {fileID: 11400086}
 --- !u!114 &11400086
 MonoBehaviour:
@@ -5624,11 +5623,10 @@ MonoBehaviour:
   neighbors:
   - {fileID: 11400162}
   - {fileID: 11400124}
-  - {fileID: 11400156}
+  - {fileID: 11400170}
   - {fileID: 11400154}
   - {fileID: 11400106}
   - {fileID: 11400140}
-  - {fileID: 11400170}
   continent: {fileID: 11400098}
   name: 
   troopSpawn: {fileID: 0}
@@ -5741,7 +5739,6 @@ MonoBehaviour:
   - {fileID: 11400128}
   - {fileID: 11400112}
   - {fileID: 11400162}
-  - {fileID: 11400180}
   continent: {fileID: 11400098}
   name: 
   troopSpawn: {fileID: 0}
@@ -6041,9 +6038,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   neighbors:
-  - {fileID: 11400112}
-  - {fileID: 11400154}
   - {fileID: 11400166}
+  - {fileID: 11400154}
   continent: {fileID: 11400098}
   name: 
   troopSpawn: {fileID: 400112}
@@ -6272,7 +6268,6 @@ MonoBehaviour:
   neighbors:
   - {fileID: 11400182}
   - {fileID: 11400178}
-  - {fileID: 11400124}
   - {fileID: 11400162}
   continent: {fileID: 11400092}
   name: 
