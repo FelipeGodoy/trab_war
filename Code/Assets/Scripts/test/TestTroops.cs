@@ -12,10 +12,14 @@ public class TestTroops : MonoBehaviour {
 			Territory territory = territories[i];
 			territory.CurrentPlayer = player1;
 			territory.AddTroop();
+			territory.AddTroop();
+			territory.AddTroop();
 		}
 		for(int i = territories.Length/2; i < territories.Length; i++){
 			Territory territory = territories[i];
 			territory.CurrentPlayer = player2;
+			territory.AddTroop();
+			territory.AddTroop();
 			territory.AddTroop();
 		}
 	}

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 public class Troop : MonoBehaviour {
 
+	private static GameObject prefab = Resources.Load<GameObject>("troop");
+
 	private Territory currentTerritory;
 
 	public int Weight{get;set;}
@@ -19,10 +21,8 @@ public class Troop : MonoBehaviour {
 	public Player CurrentPlayer{ get{ return CurrentTerritory.CurrentPlayer;}}
 
 	public static Troop Create(Territory territory){
-		GameObject prefab = Resources.Load<GameObject>("troop");
 		GameObject g = Instantiate(prefab) as GameObject;
 		g.AddComponent<AngularSpeedStart>();
-		g.GetComponent<TroopInTerritory>().territory = territory;
 		g.transform.parent = territory.transform;
 		Troop troop = g.GetComponent<Troop>();
 		troop.currentTerritory = territory;
