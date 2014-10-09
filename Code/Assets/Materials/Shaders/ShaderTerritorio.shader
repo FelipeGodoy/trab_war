@@ -69,7 +69,7 @@
 			fixed4 frag(v2f IN) : SV_Target
 			{
 				fixed4 c = IN.color;
-				c.rgb *= tex2D(_MainTex, IN.texcoord).a;
+				c *= tex2D(_MainTex, IN.texcoord).a;
 				return c;
 			}
 		ENDCG
@@ -138,9 +138,6 @@
 	            		mainColor = fixed4(0,0,0,0);
 	            	}
 				}
-	 
-	            
-	            
 	            return mainColor;
 			}
 		ENDCG
