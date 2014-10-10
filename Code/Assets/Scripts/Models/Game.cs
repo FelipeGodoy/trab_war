@@ -35,7 +35,6 @@ public class Game : MonoBehaviour {
 	public bool IsRunning{get; protected set;}
 
 	void Awake(){
-		
 		Instance = this;
 		if(playersModels == null){
 			playersModels = new List<Player>();
@@ -43,6 +42,10 @@ public class Game : MonoBehaviour {
 		if(currentMap == null){
 			currentMap = GetComponent<Map>();
 		}
+	}
+
+	public bool ComputeShot(Shot shot){
+		return shot.Do();
 	}
 
 	public void Begin(){

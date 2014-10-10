@@ -3,7 +3,19 @@ using System.Collections.Generic;
 
 public class Player : MonoBehaviour{
 
-	private HashSet<Territory> territories;
+	private HashSet<Territory> _territories;
+	private HashSet<Territory> territories{
+		get{
+			if(_territories == null){
+				_territories = new HashSet<Territory>();
+			}
+			return _territories;
+		}
+		set{
+			_territories = value;
+		}
+	}
+
 	private List<Symbol> symbols;
 
 	public string armyName;

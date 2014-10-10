@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class Territory : MonoBehaviour {
 
 	private Player _currentPlayer;
-	private HashSet<Troop> troops;
+	private List<Troop> troops;
 	public List<Territory> neighbors;
 	public Continent continent;
 	public string name;
@@ -24,6 +24,13 @@ public class Territory : MonoBehaviour {
 			return _currentPlayer;
 		}
 		set{
+			if(troops == null){
+				troops = new List<Troop>();
+			}
+			if(neighbors == null){
+				neighbors = new List<Territory>();
+			}
+			troops.Clear();
 			_currentPlayer = value;
 			_currentPlayer.AddTerritory(this);
 		}
@@ -41,11 +48,21 @@ public class Territory : MonoBehaviour {
 
 	void Awake(){
 		if(troops == null){
-			troops = new HashSet<Troop>();
+			troops = new List<Troop>();
 		}
 		if(neighbors == null){
 			neighbors = new List<Territory>();
 		}
+	}
+
+	public bool RemoveTroops(int troopsCount){
+		if(troopsCount <= 1)return RemoveTroop();
+		return RemoveTroop() && RemoveTroops(troopsCount - 1);
+	}
+
+	public bool RemoveTroop(){
+		if(troops.Count <= 0) return false;
+		return RemoveTroop(troops[0]);
 	}
 
 	public bool RemoveTroop(Troop troop){
@@ -56,19 +73,19 @@ public class Territory : MonoBehaviour {
 		return false;
 	}
 
-	public bool AddTroop(Troop troop){
-		return troops.Add(troop);
+	public void AddTroop(Troop troop){
+		troops.Add(troop);
 	}
 
-	public bool AddTroop(){
+	public void AddTroop(){
 		Troop troop = Troop.Create(this);
-		if(troops.Add(troop)){
-			return true;
+		troops.Add(troop);
+	}
+
+	public void AddTroops(int troopsCount){
+		for(int i =0; i < troopsCount; i++){
+			AddTroop();
 		}
-		else{
-			Destroy(troop.gameObject);
-		}
-		return false;
 	}
 
 	void OnDrawGizmos(){
