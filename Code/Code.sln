@@ -5,6 +5,8 @@ Project("{CA0DBAD9-2A87-4B2F-69B5-49293387925E}") = "Code", "Assembly-CSharp-fir
 EndProject
 Project("{CA0DBAD9-2A87-4B2F-69B5-49293387925E}") = "Code", "Assembly-CSharp.csproj", "{FF99ED3D-F043-626D-7AEA-F3F55EEB4561}"
 EndProject
+Project("{CA0DBAD9-2A87-4B2F-69B5-49293387925E}") = "Code", "Assembly-CSharp-Editor.csproj", "{DF79757D-BBC4-CCD3-AEC5-3C27E689F176}"
+EndProject
 Project("{CA0DBAD9-2A87-4B2F-69B5-49293387925E}") = "Code", "Assembly-UnityScript-firstpass.unityproj", "{8337E4A1-DBA8-8579-4EBA-476AFD296B3E}"
 EndProject
 Project("{CA0DBAD9-2A87-4B2F-69B5-49293387925E}") = "Code", "Assembly-UnityScript-Editor.unityproj", "{7B60F9A4-1050-A0D1-986C-3DC22CA2717D}"
@@ -23,6 +25,10 @@ Global
 		{FF99ED3D-F043-626D-7AEA-F3F55EEB4561}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF99ED3D-F043-626D-7AEA-F3F55EEB4561}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF99ED3D-F043-626D-7AEA-F3F55EEB4561}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF79757D-BBC4-CCD3-AEC5-3C27E689F176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF79757D-BBC4-CCD3-AEC5-3C27E689F176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF79757D-BBC4-CCD3-AEC5-3C27E689F176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF79757D-BBC4-CCD3-AEC5-3C27E689F176}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8337E4A1-DBA8-8579-4EBA-476AFD296B3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8337E4A1-DBA8-8579-4EBA-476AFD296B3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8337E4A1-DBA8-8579-4EBA-476AFD296B3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,7 +41,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																																																																			GlobalSection(MonoDevelopProperties) = preSolution
+																																																																																																							GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

@@ -46,11 +46,15 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Libraries\JSON\JSONObject.cs" />
+     <Compile Include="Assets\Libraries\JSON\JSONTemplates.cs" />
+     <Compile Include="Assets\Libraries\JSON\VectorTemplates.cs" />
      <Compile Include="Assets\Scripts\Accelerometer.cs" />
      <Compile Include="Assets\Scripts\AngularSpeedStart.cs" />
      <Compile Include="Assets\Scripts\DiceSideInfo.cs" />
      <Compile Include="Assets\Scripts\Models\Continent.cs" />
      <Compile Include="Assets\Scripts\Models\Game.cs" />
+     <Compile Include="Assets\Scripts\Models\Goal.cs" />
      <Compile Include="Assets\Scripts\Models\Map.cs" />
      <Compile Include="Assets\Scripts\Models\Player.cs" />
      <Compile Include="Assets\Scripts\Models\Symbol.cs" />
@@ -69,6 +73,7 @@
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ShowAlphaChannel.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\GlowConeTap.shader" />
+     <None Include="Assets\Libraries\JSON\readme.txt" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\SunShaftsComposite.shader" />
      <None Include="Assets\Materials\Shaders\ShaderTerritorio.shader" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\ColorCorrectionCurves.shader" />
