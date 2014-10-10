@@ -13,6 +13,11 @@ public class Player : MonoBehaviour{
 	public int tradesCount;
 
 	public Goal Goal{get; set;}
+	public List<Territory> Territories{
+		get{
+			return new List<Territory>(this.territories);
+		}
+	}
 
 //	void Awake(){
 //		if(this.territories == null){
@@ -42,8 +47,12 @@ public class Player : MonoBehaviour{
 		return territories.Remove(territory);
 	}
 
+	public bool HaveTerritory(Territory territory){
+		return territories.Contains(territory);
+	}
+
 	public bool CheckGoal(){
-		return this.Goal.Check(Game.Instance.currentMap,this);
+		return this.Goal.Check(Game.Instance,this);
 	}
 
 }
