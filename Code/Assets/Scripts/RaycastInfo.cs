@@ -27,6 +27,9 @@ public class RaycastInfo : MonoBehaviour {
 					if(Input.GetMouseButtonDown(0)){
 						territory.AddTroop();
 					}
+					if(Input.GetMouseButtonDown(1)){
+						territory.RemoveTroop();
+					}
 				}
 			}
 		}

@@ -34,7 +34,7 @@ public class TroopInTerritory : MonoBehaviour {
 			else{
 				parentRigidbody.position = lastPosition;
 				parentRigidbody.velocity = Vector3.zero;
-//				parentRigidbody.angularVelocity = Vector3.zero;
+				parentRigidbody.angularVelocity = Vector3.zero;
 			}
 		}
 	}

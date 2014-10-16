@@ -51,6 +51,8 @@
      <Compile Include="Assets\Libraries\JSON\VectorTemplates.cs" />
      <Compile Include="Assets\Scripts\Accelerometer.cs" />
      <Compile Include="Assets\Scripts\AngularSpeedStart.cs" />
+     <Compile Include="Assets\Scripts\Controllers\StageController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\TurnController.cs" />
      <Compile Include="Assets\Scripts\DiceSideInfo.cs" />
      <Compile Include="Assets\Scripts\Models\Continent.cs" />
      <Compile Include="Assets\Scripts\Models\Game.cs" />
@@ -63,6 +65,8 @@
      <Compile Include="Assets\Scripts\Models\Shot.cs" />
      <Compile Include="Assets\Scripts\Models\Shots\AllockTroopShot.cs" />
      <Compile Include="Assets\Scripts\Models\Shots\AttackShot.cs" />
+     <Compile Include="Assets\Scripts\Models\Shots\MoveShot.cs" />
+     <Compile Include="Assets\Scripts\Models\Stage.cs" />
      <Compile Include="Assets\Scripts\Models\Symbol.cs" />
      <Compile Include="Assets\Scripts\Models\Territory.cs" />
      <Compile Include="Assets\Scripts\Models\Troop.cs" />
