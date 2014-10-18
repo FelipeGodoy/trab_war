@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{FF99ED3D-F043-626D-7AEA-F3F55EEB4561}</ProjectGuid>
+	<ProjectGuid>{1DEF3981-DCB4-4BBF-0629-08855F8A2920}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,23 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Accelerometer.cs" />
-     <Compile Include="Assets\Scripts\AngularSpeedStart.cs" />
-     <Compile Include="Assets\Scripts\DiceSideInfo.cs" />
-     <Compile Include="Assets\Scripts\Models\Continent.cs" />
-     <Compile Include="Assets\Scripts\Models\Game.cs" />
-     <Compile Include="Assets\Scripts\Models\Map.cs" />
-     <Compile Include="Assets\Scripts\Models\Player.cs" />
-     <Compile Include="Assets\Scripts\Models\Symbol.cs" />
-     <Compile Include="Assets\Scripts\Models\Territory.cs" />
-     <Compile Include="Assets\Scripts\Models\Troop.cs" />
-     <Compile Include="Assets\Scripts\RaycastInfo.cs" />
-     <Compile Include="Assets\Scripts\TerritoryInfo.cs" />
-     <Compile Include="Assets\Scripts\TroopColor.cs" />
-     <Compile Include="Assets\Scripts\UI\EmptyPanel.cs" />
-     <Compile Include="Assets\Scripts\UI\IaPanel.cs" />
-     <Compile Include="Assets\Scripts\UI\PlayerPanel.cs" />
-     <Compile Include="Assets\Scripts\Utils\TroopInTerritory.cs" />
+     <Compile Include="Assets\Scripts\UI\PlayerPanel.js" />
      <None Include="Assets\Materials\Shaders\ShaderTerritorio.shader" />
      <None Include="Assets\Materials\Shaders\TroopShader.shader" />
      <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
@@ -72,8 +56,8 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{603F2218-A226-5626-8F27-CAC41C96AC10}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{603F2218-A226-5626-8F27-CAC41C96AC10}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

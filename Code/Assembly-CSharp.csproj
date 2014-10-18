@@ -59,6 +59,9 @@
      <Compile Include="Assets\Scripts\RaycastInfo.cs" />
      <Compile Include="Assets\Scripts\TerritoryInfo.cs" />
      <Compile Include="Assets\Scripts\TroopColor.cs" />
+     <Compile Include="Assets\Scripts\UI\EmptyPanel.cs" />
+     <Compile Include="Assets\Scripts\UI\IaPanel.cs" />
+     <Compile Include="Assets\Scripts\UI\PlayerPanel.cs" />
      <Compile Include="Assets\Scripts\Utils\TroopInTerritory.cs" />
      <None Include="Assets\Materials\Shaders\ShaderTerritorio.shader" />
      <None Include="Assets\Materials\Shaders\TroopShader.shader" />
