@@ -53,9 +53,9 @@
      <Compile Include="Assets\Scripts\AngularSpeedStart.cs" />
      <Compile Include="Assets\Scripts\Controllers\Game.cs" />
      <Compile Include="Assets\Scripts\Controllers\StageController.cs" />
-     <Compile Include="Assets\Scripts\Controllers\StageControllers\PCAllockStageController.cs" />
-     <Compile Include="Assets\Scripts\Controllers\StageControllers\PCAttackStageController.cs" />
-     <Compile Include="Assets\Scripts\Controllers\StageControllers\PCMoveStageController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\StageControllers\Player Character Stage Controllers\PCAllockStageController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\StageControllers\Player Character Stage Controllers\PCAttackStageController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\StageControllers\Player Character Stage Controllers\PCMoveStageController.cs" />
      <Compile Include="Assets\Scripts\Controllers\TurnController.cs" />
      <Compile Include="Assets\Scripts\Controllers\TurnControllers\PCTurnController.cs" />
      <Compile Include="Assets\Scripts\DiceSideInfo.cs" />

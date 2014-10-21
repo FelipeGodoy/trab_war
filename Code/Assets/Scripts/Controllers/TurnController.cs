@@ -7,6 +7,21 @@ public abstract class TurnController{
 	protected StageController stageController;
 
 	private Player _player;
+
+	public static TurnController Create(Player.PlayerType playerType){
+		switch(playerType){
+		case Player.PlayerType.PLAYER_CHARACTER :{
+			return new PCTurnController();
+		}
+		}
+		return null;
+	}
+
+	public StageController StageController{
+		get{
+			return stageController;
+		}
+	}
 	
 	protected Player Player{
 		get{

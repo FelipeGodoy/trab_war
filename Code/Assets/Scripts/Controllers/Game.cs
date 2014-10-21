@@ -34,6 +34,8 @@ public class Game : MonoBehaviour {
 
 	public bool IsRunning{get; protected set;}
 
+	public TurnController CurrentTurnController{get; protected set;}
+
 	void Awake(){
 		Instance = this;
 		if(playersModels == null){
@@ -69,8 +71,22 @@ public class Game : MonoBehaviour {
 		IsRunning = false;
 	}
 
+	public void Update(){
+		if(CurrentTurnController != null){
+			CurrentTurnController.Update();
+		}
+	}
+
 	public void EndTurn(){
-		TurnPlayerIndex = (TurnPlayerIndex + 1) % playersOrder.Count;
+		Player[] championsPlayers = this.ChampionsPlayers();
+		if(championsPlayers.Length == 0){
+			TurnPlayerIndex = (TurnPlayerIndex + 1) % playersOrder.Count;
+			this.CurrentTurnController = TurnController.Create(this.CurrentPlayer.Type);
+			this.CurrentTurnController.Start();
+		}
+		else{
+			Debug.Log("Alguem ganhou");
+		}
 	}
 
 	public Player[] ChampionsPlayers(){
