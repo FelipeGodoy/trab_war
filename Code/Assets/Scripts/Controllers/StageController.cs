@@ -6,6 +6,7 @@ public abstract class StageController{
 
 	public StageController(){
 		this.turnController = null;
+
 	}
 
 	public StageController(TurnController turnController){
