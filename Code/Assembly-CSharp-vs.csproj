@@ -51,11 +51,13 @@
      <Compile Include="Assets\Libraries\JSON\VectorTemplates.cs" />
      <Compile Include="Assets\Scripts\Accelerometer.cs" />
      <Compile Include="Assets\Scripts\AngularSpeedStart.cs" />
+     <Compile Include="Assets\Scripts\Controllers\Game.cs" />
      <Compile Include="Assets\Scripts\Controllers\StageController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\StageControllers\PCAllockStageController.cs" />
      <Compile Include="Assets\Scripts\Controllers\TurnController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\TurnControllers\PCTurnController.cs" />
      <Compile Include="Assets\Scripts\DiceSideInfo.cs" />
      <Compile Include="Assets\Scripts\Models\Continent.cs" />
-     <Compile Include="Assets\Scripts\Models\Game.cs" />
      <Compile Include="Assets\Scripts\Models\Goal.cs" />
      <Compile Include="Assets\Scripts\Models\Goals\DestroyPlayerGoal.cs" />
      <Compile Include="Assets\Scripts\Models\Goals\GoalFactory.cs" />
@@ -66,6 +68,7 @@
      <Compile Include="Assets\Scripts\Models\Shots\AllockTroopShot.cs" />
      <Compile Include="Assets\Scripts\Models\Shots\AttackShot.cs" />
      <Compile Include="Assets\Scripts\Models\Shots\MoveShot.cs" />
+     <Compile Include="Assets\Scripts\Models\Shots\RemoveTroopShot.cs" />
      <Compile Include="Assets\Scripts\Models\Stage.cs" />
      <Compile Include="Assets\Scripts\Models\Symbol.cs" />
      <Compile Include="Assets\Scripts\Models\Territory.cs" />

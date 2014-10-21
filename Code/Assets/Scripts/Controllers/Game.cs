@@ -26,7 +26,7 @@ public class Game : MonoBehaviour {
 
 	public int TurnPlayerIndex{get; protected set;}
 
-	public Player TurnPlayer{
+	public Player CurrentPlayer{
 		get{
 			return PlayersOrder[TurnPlayerIndex];
 		}
@@ -58,7 +58,7 @@ public class Game : MonoBehaviour {
 
 	public void Setup(int[] playersOrder){
 		foreach(Player player in playersModels){
-			player.Setup();
+			player.CleanUp();
 		}
 		foreach(int order in playersOrder){
 			PlayersOrder.Add(playersModels[order]);

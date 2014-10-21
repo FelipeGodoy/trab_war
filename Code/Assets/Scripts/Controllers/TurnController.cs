@@ -6,6 +6,17 @@ public abstract class TurnController{
 	protected Stage stage;
 	protected StageController stageController;
 
+	private Player _player;
+	
+	protected Player Player{
+		get{
+			if(_player == null){
+				_player = Game.Instance.CurrentPlayer;
+			}
+			return _player;
+		}
+	}
+
 	public void NextStage(){
 		stage = StageUtils.NextStage(stage);
 		stageController.OnStageEnd();

@@ -5390,7 +5390,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 956da6cb5e9bc8043bab95b6bc447d30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: America do sul
+  troopsBonus: 4
   territories:
   - {fileID: 11400150}
   - {fileID: 11400138}
@@ -5407,7 +5408,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 956da6cb5e9bc8043bab95b6bc447d30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: Africa
+  troopsBonus: 7
   territories:
   - {fileID: 11400158}
   - {fileID: 11400132}
@@ -5426,7 +5428,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 956da6cb5e9bc8043bab95b6bc447d30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: Oceania
+  troopsBonus: 4
   territories:
   - {fileID: 11400176}
   - {fileID: 11400178}
@@ -5443,7 +5446,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 956da6cb5e9bc8043bab95b6bc447d30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: America do norte
+  troopsBonus: 7
   territories:
   - {fileID: 11400152}
   - {fileID: 11400134}
@@ -5465,7 +5469,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 956da6cb5e9bc8043bab95b6bc447d30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: Europa
+  troopsBonus: 6
   territories:
   - {fileID: 11400146}
   - {fileID: 11400118}
@@ -5485,7 +5490,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 956da6cb5e9bc8043bab95b6bc447d30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: 
+  name: Asia
+  troopsBonus: 11
   territories:
   - {fileID: 11400108}
   - {fileID: 11400140}

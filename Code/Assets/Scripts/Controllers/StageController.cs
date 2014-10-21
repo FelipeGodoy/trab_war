@@ -2,17 +2,43 @@
 using System.Collections;
 
 public abstract class StageController{
-	protected TurnController turnController;
+	public TurnController turnController;
+
+	public StageController(){
+		this.turnController = null;
+	}
 
 	public StageController(TurnController turnController){
 		this.turnController = turnController;
+		OnStageStart();
 	}
 
-	public abstract void OnStageStart();
-	public abstract void Update();
-	public abstract void OnStageEnd();
+	private Player _player;
+
+	protected Player Player{
+		get{
+			if(_player == null){
+				_player = Game.Instance.CurrentPlayer;
+			}
+			return _player;
+		}
+	}
+
+	protected virtual bool ComputeShot(Shot shot){
+		return Game.Instance.ComputeShot(shot);
+	}
+
+	public virtual void Update(){}
+	public virtual void OnStageStart(){}
+	public virtual void OnStageEnd(){}
+	public virtual void OnClickTerritory(Territory territory){}
+	public virtual void OnPressTerritory(Territory territory){}
+	public virtual void OnKeepPressedTerritory(Territory territory){}
+	public virtual void OnReleaseTerritory(Territory territory){}
+	public virtual void OnDragTerritory(Territory source, Territory target){}
 
 	public void EndStage(){
+		OnStageEnd();
 		turnController.NextStage();
 	}
 

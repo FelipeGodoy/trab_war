@@ -7,6 +7,7 @@ public class TestRequest : MonoBehaviour {
 
 	void Start () {
 		Request r = Request.Create(url);
+		r.SetFields("a","1","b","2");
 		r.Get(Callback);
 	}
 
