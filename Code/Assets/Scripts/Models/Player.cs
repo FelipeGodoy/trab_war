@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class Player : MonoBehaviour{
 
-	public enum PlayerType{PLAYER_CHARACTER, NON_PLAYER_CHARACTER, ONLINE_PLAYER};
+	public enum PlayerType{PLAYER_CHARACTER, NON_PLAYER_CHARACTER, REMOTE_PLAYER_CHARACTER};
 	public PlayerType Type{get; set;}
 
 	private HashSet<Territory> _territories;
@@ -31,23 +31,6 @@ public class Player : MonoBehaviour{
 	public List<Territory> Territories{
 		get{
 			return new List<Territory>(this.territories);
-		}
-	}
-
-	public TurnController TurnController{
-		get{
-			switch(this.Type){
-			case PlayerType.PLAYER_CHARACTER :{
-				return null;
-			}
-			case PlayerType.NON_PLAYER_CHARACTER :{
-				return null;
-			}
-			case PlayerType.ONLINE_PLAYER:{
-				return null;
-			}
-			default : return null;
-			}
 		}
 	}
 
