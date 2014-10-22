@@ -13,7 +13,6 @@ public class RaycastInfo : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		RaycastHit raycast;
-
 		if(Physics.Raycast(this.camera.ScreenPointToRay(Input.mousePosition),out raycast)){
 //			trans.position = raycast.point;
 			Vector2 point = new Vector2(raycast.point.x, raycast.point.y);

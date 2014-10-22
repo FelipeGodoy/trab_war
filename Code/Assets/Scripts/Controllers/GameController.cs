@@ -60,7 +60,10 @@ public class GameController : MonoBehaviour {
 	}
 
 	public void Begin(){
-		Resume();
+		IsRunning = true;
+		this.TurnPlayerIndex = 0;
+		this.CurrentTurnController = TurnController.Create(this.CurrentPlayer.type);
+		this.CurrentTurnController.Start();
 	}
 
 	public void Resume(){
@@ -74,6 +77,7 @@ public class GameController : MonoBehaviour {
 		foreach(int order in playersOrder){
 			PlayersOrder.Add(playersModels[order]);
 		}
+		IsRunning = false;
 	}
 
 	public void Stop(){

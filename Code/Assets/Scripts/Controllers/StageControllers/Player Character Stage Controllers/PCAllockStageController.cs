@@ -8,7 +8,7 @@ public class PCAlockStageController : StageController {
 	protected Dictionary<Territory,int> troopsAllocked;
 
 	public override void OnStageStart(){
-		freeTroops = this.Player.TroopsToEarn();
+		this.freeTroops = this.Player.TroopsToEarn();
 		troopsAllocked = new Dictionary<Territory, int>();
 		foreach(Territory territory in this.Player.Territories){
 			troopsAllocked[territory] = 0;
@@ -16,6 +16,11 @@ public class PCAlockStageController : StageController {
 	}
 
 	public override void OnClickTerritory(Territory territory){
+//		Debug.Log(Player.TerritoriesCount);
+//		Debug.Log("have territory? "+territory.gameObject.name+" "+Player.HaveTerritory(territory));
+//		Debug.Log("free troops: "+freeTroops);
+//		Debug.Log("usedTroops: "+usedTroops);
+//		Debug.Log(Player.Territories);
 		if(Player.HaveTerritory(territory) && usedTroops < freeTroops){
 			usedTroops ++;
 			ComputeShot(new AllockTroopShot(this.Player,territory,1));
