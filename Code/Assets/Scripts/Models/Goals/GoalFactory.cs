@@ -1,11 +1,11 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class GoalFactory{
 
 	public static Goal Create(int id){
 		if(id >=0 && id <= 5){
-			return new DestroyPlayerGoal(Game.Instance.playersModels[id]);	
+			return new DestroyPlayerGoal(GameController.Instance.playersModels[id]);	
 		}
 		switch(id){
 		case 6:

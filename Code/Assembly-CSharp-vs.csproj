@@ -51,7 +51,7 @@
      <Compile Include="Assets\Libraries\JSON\VectorTemplates.cs" />
      <Compile Include="Assets\Scripts\Accelerometer.cs" />
      <Compile Include="Assets\Scripts\AngularSpeedStart.cs" />
-     <Compile Include="Assets\Scripts\Controllers\Game.cs" />
+     <Compile Include="Assets\Scripts\Controllers\GameController.cs" />
      <Compile Include="Assets\Scripts\Controllers\StageController.cs" />
      <Compile Include="Assets\Scripts\Controllers\StageControllers\Player Character Stage Controllers\PCAllockStageController.cs" />
      <Compile Include="Assets\Scripts\Controllers\StageControllers\Player Character Stage Controllers\PCAttackStageController.cs" />
@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\Controllers\TurnController.cs" />
      <Compile Include="Assets\Scripts\Controllers\TurnControllers\PCTurnController.cs" />
      <Compile Include="Assets\Scripts\DiceSideInfo.cs" />
+     <Compile Include="Assets\Scripts\Input\MouseListener.cs" />
      <Compile Include="Assets\Scripts\Models\Continent.cs" />
      <Compile Include="Assets\Scripts\Models\Goal.cs" />
      <Compile Include="Assets\Scripts\Models\Goals\DestroyPlayerGoal.cs" />

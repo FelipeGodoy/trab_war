@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class Player : MonoBehaviour{
 
 	public enum PlayerType{PLAYER_CHARACTER, NON_PLAYER_CHARACTER, REMOTE_PLAYER_CHARACTER};
-	public PlayerType Type{get; set;}
+	public PlayerType type;
 
 	private HashSet<Territory> _territories;
 	private HashSet<Territory> territories{
@@ -67,13 +67,13 @@ public class Player : MonoBehaviour{
 	}
 
 	public bool CheckGoal(){
-		return this.Goal.Check(Game.Instance,this);
+		return this.Goal.Check(GameController.Instance,this);
 	}
 
 	public int TroopsToEarn(){
 		int troops = this.TerritoriesCount;
 		List<Territory> territories = this.Territories;
-		foreach(Continent continent in Game.Instance.currentMap.continents){
+		foreach(Continent continent in GameController.Instance.currentMap.continents){
 			troops += continent.CheckBonus(Territories);
 		}
 		return troops;

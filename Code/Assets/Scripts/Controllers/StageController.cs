@@ -19,14 +19,14 @@ public abstract class StageController{
 	protected Player Player{
 		get{
 			if(_player == null){
-				_player = Game.Instance.CurrentPlayer;
+				_player = GameController.Instance.CurrentPlayer;
 			}
 			return _player;
 		}
 	}
 
 	protected virtual bool ComputeShot(Shot shot){
-		return Game.Instance.ComputeShot(shot);
+		return GameController.Instance.ComputeShot(shot);
 	}
 
 	public virtual void Update(){}
@@ -35,6 +35,7 @@ public abstract class StageController{
 	public virtual void OnClickTerritory(Territory territory){}
 	public virtual void OnPressTerritory(Territory territory){}
 	public virtual void OnKeepPressedTerritory(Territory territory){}
+	public virtual void OnStopPressTerritory(Territory territory){}
 	public virtual void OnReleaseTerritory(Territory territory){}
 	public virtual void OnDragTerritory(Territory source, Territory target){}
 

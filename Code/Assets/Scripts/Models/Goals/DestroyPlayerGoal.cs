@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class DestroyPlayerGoal : Goal {
@@ -9,7 +9,7 @@ public class DestroyPlayerGoal : Goal {
 		this.playerToDestroy = player;
 	}
 
-	public override bool Check(Game game, Player player){
+	public override bool Check(GameController game, Player player){
 		return this.playerToDestroy.TerritoriesCount == 0;
 	}
 }

@@ -26,7 +26,7 @@ public abstract class TurnController{
 	protected Player Player{
 		get{
 			if(_player == null){
-				_player = Game.Instance.CurrentPlayer;
+				_player = GameController.Instance.CurrentPlayer;
 			}
 			return _player;
 		}
@@ -34,7 +34,6 @@ public abstract class TurnController{
 
 	public void NextStage(){
 		stage = StageUtils.NextStage(stage);
-		stageController.OnStageEnd();
 		stageController = StageToController(stage);
 		if(stageController != null){
 			stageController.OnStageStart();
@@ -54,7 +53,7 @@ public abstract class TurnController{
 
 	public void EndTurn(){
 		OnTurnEnd();
-		Game.Instance.EndTurn();
+		GameController.Instance.EndTurn();
 	}
 
 	public void Update(){

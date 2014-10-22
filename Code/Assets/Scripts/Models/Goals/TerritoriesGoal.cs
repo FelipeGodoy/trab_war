@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections.Generic;
 
 public class TerritoriesGoal : Goal {
@@ -21,7 +21,7 @@ public class TerritoriesGoal : Goal {
 		this.territoriesCount = adictionalTerritories;
 	}
 
-	public override bool Check(Game game, Player player){
+	public override bool Check(GameController game, Player player){
 		List<Territory> checkTerritories = new List<Territory>(this.territories);
 		checkTerritories.RemoveAll(t => player.HaveTerritory(t));
 		if(checkTerritories.Count == 0){

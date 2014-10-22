@@ -1,12 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-public class Game : MonoBehaviour {
+public class GameController : MonoBehaviour {
 
 	public const int MAX_PLAYERS = 6;
 
 	public List<Player> playersModels;
-	public static Game Instance{get; set;}
+	public static GameController Instance{get; set;}
 	public Map currentMap;
 
 	private List<Player> playersOrder;
@@ -35,6 +35,15 @@ public class Game : MonoBehaviour {
 	public bool IsRunning{get; protected set;}
 
 	public TurnController CurrentTurnController{get; protected set;}
+
+	public StageController CurrentStageController{
+		get{
+			if(CurrentTurnController != null && CurrentTurnController.StageController != null){
+				return CurrentTurnController.StageController;
+			}
+			return null;
+		}
+	}
 
 	void Awake(){
 		Instance = this;
@@ -81,7 +90,7 @@ public class Game : MonoBehaviour {
 		Player[] championsPlayers = this.ChampionsPlayers();
 		if(championsPlayers.Length == 0){
 			TurnPlayerIndex = (TurnPlayerIndex + 1) % playersOrder.Count;
-			this.CurrentTurnController = TurnController.Create(this.CurrentPlayer.Type);
+			this.CurrentTurnController = TurnController.Create(this.CurrentPlayer.type);
 			this.CurrentTurnController.Start();
 		}
 		else{
@@ -107,4 +116,35 @@ public class Game : MonoBehaviour {
 		return true;
 	}
 
+	public void OnClickTerritory(Territory territory){
+		if(CurrentStageController != null){
+			CurrentStageController.OnClickTerritory(territory);
+		}
+	}
+	public void OnPressTerritory(Territory territory){
+		if(CurrentStageController != null){
+			CurrentStageController.OnPressTerritory(territory);
+		}
+	}
+	public void OnKeepPressedTerritory(Territory territory){
+		if(CurrentStageController != null){
+			CurrentStageController.OnKeepPressedTerritory(territory);
+		}
+	}
+	public void OnStopPressTerritory(Territory territory){
+		if(CurrentStageController != null){
+			CurrentStageController.OnStopPressTerritory(territory);
+		}
+	}
+	public void OnReleaseTerritory(Territory territory){
+		if(CurrentStageController != null){
+			CurrentStageController.OnReleaseTerritory(territory);
+		}
+	}
+	public void OnDragTerritory(Territory source, Territory target){
+		if(CurrentStageController != null){
+			CurrentStageController.OnDragTerritory(source, target);
+		}
+	}
+	
 }
