@@ -25,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: -.0437549353, y: 2.77107882, z: -5.4419136}
+  m_LocalPosition: {x: -10.0001078, y: 2.94290662, z: -4.88452911}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -37,7 +37,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 414.920013
   m_Drag: 0
   m_AngularDrag: .0500000007
   m_UseGravity: 0
@@ -56,6 +56,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a108b196348da614e98995fd8b9e1674, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distance: 1
   offset: 1.13999999
   magnitude: 10
   speed: .100000001
@@ -71,7 +72,7 @@ SpringJoint:
   m_ConnectedBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -.40380168, y: .282720625, z: -.278522253}
+  m_ConnectedAnchor: {x: .278131187, y: .30951038, z: -.358526379}
   m_Spring: 20
   m_Damper: .200000003
   m_MinDistance: 0

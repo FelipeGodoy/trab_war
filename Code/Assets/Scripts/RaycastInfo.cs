@@ -13,7 +13,6 @@ public class RaycastInfo : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		RaycastHit raycast;
-
 		if(Physics.Raycast(this.camera.ScreenPointToRay(Input.mousePosition),out raycast)){
 //			trans.position = raycast.point;
 			Vector2 point = new Vector2(raycast.point.x, raycast.point.y);
@@ -25,16 +24,10 @@ public class RaycastInfo : MonoBehaviour {
 					SetColorTerritoryInfo(territoryInfo);
 					SetColorNeighbors(territory);
 					if(Input.GetMouseButtonDown(0)){
-						GameObject g = (GameObject)Instantiate(troopPrefab);
-						g.transform.parent = territory.transform;
-						g.transform.position = territory.SpawnPosition;
-						g.transform.Translate(troopOffset);
-						TroopInTerritory troopIn = g.AddComponent<TroopInTerritory>();
-						troopIn.territory = territory;
-						AngularSpeedStart a = g.AddComponent<AngularSpeedStart>();
-						a.angularSpeed.x = Random.Range(-18f,18f);
-						a.angularSpeed.y = Random.Range(-18f,18f);
-						a.angularSpeed.z = Random.Range(-18f,18f);
+						territory.AddTroop();
+					}
+					if(Input.GetMouseButtonDown(1)){
+						territory.RemoveTroop();
 					}
 				}
 			}
