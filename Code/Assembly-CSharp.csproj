@@ -90,6 +90,7 @@
      <Compile Include="Assets\Scripts\Utils\TroopInTerritory.cs" />
      <Compile Include="Assets\Scripts\request\Request.cs" />
      <Compile Include="Assets\Scripts\request\RequestController.cs" />
+     <Compile Include="Assets\Scripts\test\TestDice.cs" />
      <Compile Include="Assets\Scripts\test\TestRequest.cs" />
      <Compile Include="Assets\Scripts\test\TestTroops.cs" />
      <None Include="Assets\Standard Assets\Image Effects (Pro Only)\_Sources\Shaders\_BloomAndFlares\BlendOneOne.shader" />

@@ -3,6 +3,7 @@ using System.Collections;
 
 public class RaycastInfo : MonoBehaviour {
 //	public Transform trans;
+	public LayerMask floorLayer;
 	public float animationTime = 0.5f;
 	public iTween.EaseType ease = iTween.EaseType.easeInBack;
 	public Color animationColor = new Color(0.9f,0.9f,0.9f);
@@ -13,7 +14,7 @@ public class RaycastInfo : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		RaycastHit raycast;
-		if(Physics.Raycast(this.camera.ScreenPointToRay(Input.mousePosition),out raycast)){
+		if(Physics.Raycast(this.camera.ScreenPointToRay(Input.mousePosition),out raycast,Mathf.Infinity,floorLayer)){
 //			trans.position = raycast.point;
 			Vector2 point = new Vector2(raycast.point.x, raycast.point.y);
 			Collider2D hitCollider = Physics2D.OverlapPoint(point);

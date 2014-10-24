@@ -4,6 +4,7 @@ using System.Collections;
 public class MouseListener : MonoBehaviour {
 
 	public Camera cam;
+	public LayerMask floorLayer;
 	public float clickPixelsOffset = 3f;
 
 	protected bool mousePressedOnLastFrame;
@@ -15,8 +16,6 @@ public class MouseListener : MonoBehaviour {
 	protected Vector3 lastMousePosition;
 	protected Territory sourceTerritory;
 	protected Territory targetTerritory;
-
-	protected string[] selectablesByTag = {"floor", "dice", "troop"};
 
 	void Start () {
 		if(cam == null) cam = Camera.main;
@@ -67,7 +66,7 @@ public class MouseListener : MonoBehaviour {
 
 	private Territory RaycastTerritory(Vector3 screenPosition){
 		RaycastHit raycastHit;
-		if(Physics.Raycast(cam.ScreenPointToRay(screenPosition), out raycastHit)){
+		if(Physics.Raycast(cam.ScreenPointToRay(screenPosition), out raycastHit,Mathf.Infinity,floorLayer)){
 			Vector2 point = new Vector2(raycastHit.point.x, raycastHit.point.y);
 			Collider2D hitCollider = Physics2D.OverlapPoint(point);
 			if(hitCollider){
