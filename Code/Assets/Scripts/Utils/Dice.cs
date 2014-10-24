@@ -28,6 +28,7 @@ public class Dice : MonoBehaviour {
 
 	void Awake(){
 		instance = this;
+		this.enabled = false;
 	}
 
 	public void CreateDices(Vector3 position, int attackCount, int defenseCount, DiceCallback callback){
@@ -40,6 +41,7 @@ public class Dice : MonoBehaviour {
 			this.defenseDices[i] = InstanciateDice(position,diceDefensePrefab);
 		}
 		this.callback = callback;
+		this.enabled = true;
 	}
 
 	private DiceSideInfo InstanciateDice(Vector3 position, GameObject prefab){
@@ -69,6 +71,7 @@ public class Dice : MonoBehaviour {
 			defenseNumber[i] = dice.diceNumber;
 		}
 		callback(attackNumbers,defenseNumber);
+		this.enabled = false;
 	}
 
 }
