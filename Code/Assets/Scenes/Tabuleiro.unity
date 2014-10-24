@@ -592,8 +592,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  firstPlay: 0
   armyName: 
-  name: 
+  name: Jogador6
   troopMaterial: {fileID: 2100000, guid: 191dd8efab4619a409076ef286589cc5, type: 2}
   tradesCount: 0
 --- !u!1 &218558899
@@ -828,8 +829,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  firstPlay: 0
   armyName: 
-  name: 
+  name: Jogador2
   troopMaterial: {fileID: 2100000, guid: 0b9cf7aad50393744b53b55fc5766507, type: 2}
   tradesCount: 0
 --- !u!1 &276482998
@@ -1890,8 +1892,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  firstPlay: 0
   armyName: 
-  name: 
+  name: Jogador4
   troopMaterial: {fileID: 2100000, guid: a68ad9bb713f50e448c21be8437d373f, type: 2}
   tradesCount: 0
 --- !u!1 &746965147
@@ -2226,8 +2229,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  firstPlay: 0
   armyName: 
-  name: 
+  name: Jogador3
   troopMaterial: {fileID: 2100000, guid: c86a801abf25e7642847be0e7e61b5ed, type: 2}
   tradesCount: 0
 --- !u!1001 &813448799
@@ -4966,7 +4970,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 11.96
+  orthographic size: 14.5600004
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -4996,7 +5000,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1319459047}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c9f58fee23abec046a63778fc20b17fd, type: 3}
   m_Name: 
@@ -5921,8 +5925,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  firstPlay: 0
   armyName: 
-  name: 
+  name: Jogador5
   troopMaterial: {fileID: 2100000, guid: 19744c5c92614614c8e12a27732ba9d9, type: 2}
   tradesCount: 0
 --- !u!1 &1550339555
@@ -6258,8 +6263,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
+  firstPlay: 0
   armyName: 
-  name: 
+  name: Jogador1
   troopMaterial: {fileID: 2100000, guid: d69e925899a5c0b47ba0df166562ea2d, type: 2}
   tradesCount: 0
 --- !u!1 &1647749069
@@ -6431,6 +6437,34 @@ Prefab:
     - target: {fileID: 400008, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400012, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
+      propertyPath: name
+      value: Jogador1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
+      propertyPath: name
+      value: Jogador2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400006, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
+      propertyPath: name
+      value: Jogador3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
+      propertyPath: name
+      value: Jogador4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400010, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
+      propertyPath: name
+      value: Jogador5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
+      propertyPath: name
+      value: Jogador6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400012, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
+      propertyPath: type
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}

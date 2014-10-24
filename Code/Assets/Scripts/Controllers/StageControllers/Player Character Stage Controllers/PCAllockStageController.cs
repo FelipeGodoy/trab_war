@@ -7,6 +7,13 @@ public class PCAlockStageController : StageController {
 	protected int usedTroops;
 	protected Dictionary<Territory,int> troopsAllocked;
 
+	public override void OnGUI(){
+		GUI.Label(new Rect(10,10,100,20),"tropas livres: "+(freeTroops-usedTroops));
+		if(GUI.Button(new Rect(10,40,100,20),"Passar")){
+			turnController.NextStage();
+		}
+	}
+
 	public override void OnStageStart(){
 		this.freeTroops = this.Player.TroopsToEarn();
 		troopsAllocked = new Dictionary<Territory, int>();

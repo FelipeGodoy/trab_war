@@ -22,4 +22,8 @@ public class PCTurnController : TurnController{
 		stageController.turnController = this;
 		return stageController;
 	}
+
+	public override void OnTurnGUI(){
+		GUI.Label(new Rect(200,10,150,20),"Jogador: "+this.Player.name);
+	}
 }

@@ -5,6 +5,7 @@ public class Player : MonoBehaviour{
 
 	public enum PlayerType{PLAYER_CHARACTER, NON_PLAYER_CHARACTER, REMOTE_PLAYER_CHARACTER};
 	public PlayerType type;
+	public bool firstPlay;
 
 	private HashSet<Territory> _territories;
 	private HashSet<Territory> territories{
@@ -46,6 +47,7 @@ public class Player : MonoBehaviour{
 	public void CleanUp(){
 		this.territories.Clear();
 		this.symbols.Clear();
+		this.firstPlay = true;
 	}
 
 	public int TerritoriesCount{
@@ -67,6 +69,7 @@ public class Player : MonoBehaviour{
 	}
 
 	public bool CheckGoal(){
+		if(this.Goal == null)return false;
 		return this.Goal.Check(GameController.Instance,this);
 	}
 

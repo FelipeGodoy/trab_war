@@ -24,10 +24,10 @@ public class RaycastInfo : MonoBehaviour {
 					SetColorTerritoryInfo(territoryInfo);
 					SetColorNeighbors(territory);
 					if(Input.GetMouseButtonDown(0)){
-						territory.AddTroop();
+//						territory.AddTroop();
 					}
 					if(Input.GetMouseButtonDown(1)){
-						territory.RemoveTroop();
+//						territory.RemoveTroop();
 					}
 				}
 			}

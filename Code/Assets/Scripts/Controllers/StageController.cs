@@ -29,6 +29,7 @@ public abstract class StageController{
 		return GameController.Instance.ComputeShot(shot);
 	}
 
+	public virtual void OnGUI(){}
 	public virtual void Update(){}
 	public virtual void OnStageStart(){}
 	public virtual void OnStageEnd(){}

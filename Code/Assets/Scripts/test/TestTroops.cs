@@ -12,11 +12,11 @@ public class TestTroops : MonoBehaviour {
 		Territory[] territories = GameController.Instance.currentMap.territories;
 		for(int i = 0; i < territories.Length /2; i++){
 			Territory territory = territories[i];
-			GameController.Instance.ComputeShot(new AllockTroopShot(player1,territory,3));
+			GameController.Instance.ComputeShot(new AllockTroopShot(player1,territory,1));
 		}
 		for(int i = territories.Length/2; i < territories.Length; i++){
 			Territory territory = territories[i];
-			GameController.Instance.ComputeShot(new AllockTroopShot(player2,territory,3));
+			GameController.Instance.ComputeShot(new AllockTroopShot(player2,territory,1));
 		}
 		GameController.Instance.Begin();
 //		print(player1.Territories.Count);

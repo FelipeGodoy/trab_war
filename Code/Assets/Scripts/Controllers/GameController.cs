@@ -90,6 +90,12 @@ public class GameController : MonoBehaviour {
 		}
 	}
 
+	void OnGUI(){
+		if(CurrentTurnController != null){
+			CurrentTurnController.OnGUI();
+		}
+	}
+
 	public void EndTurn(){
 		Player[] championsPlayers = this.ChampionsPlayers();
 		if(championsPlayers.Length == 0){
