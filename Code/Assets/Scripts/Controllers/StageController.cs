@@ -39,6 +39,7 @@ public abstract class StageController{
 	public virtual void OnStopPressTerritory(Territory territory){}
 	public virtual void OnReleaseTerritory(Territory territory){}
 	public virtual void OnDragTerritory(Territory source, Territory target){}
+	public virtual void OnDragNDropTerritory(Territory source, Territory target){}
 
 	public void EndStage(){
 		OnStageEnd();

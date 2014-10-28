@@ -34,7 +34,7 @@ public class MouseListener : MonoBehaviour {
 			Territory territory = RaycastTerritory(mousePosition);
 			if(territory != targetTerritory){
 				GameController.Instance.OnStopPressTerritory(targetTerritory);
-				if(!mouseButtonDown && targetTerritory != null && targetTerritory != territory){
+				if(!mouseButtonDown && targetTerritory != null){
 					GameController.Instance.OnDragTerritory(sourceTerritory,territory);
 				}
 			}
@@ -54,6 +54,9 @@ public class MouseListener : MonoBehaviour {
 			if(targetTerritory != null) GameController.Instance.OnStopPressTerritory(targetTerritory);
 			if(sourceTerritory != null && sourceTerritory == targetTerritory && Vector3.Distance(mousePosition, mouseDownPosition) <= clickPixelsOffset){
 				GameController.Instance.OnClickTerritory(targetTerritory);
+			}
+			if(sourceTerritory != targetTerritory && sourceTerritory != null && targetTerritory != null){
+				GameController.Instance.OnDragNDropTerritory(sourceTerritory,targetTerritory);
 			}
 			sourceTerritory = null;
 			targetTerritory = null;

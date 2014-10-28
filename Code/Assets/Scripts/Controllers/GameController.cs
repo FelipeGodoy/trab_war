@@ -80,12 +80,12 @@ public class GameController : MonoBehaviour {
 		IsRunning = false;
 	}
 
-	public void Stop(){
+	public void Pause(){
 		IsRunning = false;
 	}
 
 	public void Update(){
-		if(CurrentTurnController != null){
+		if(CurrentTurnController != null && IsRunning){
 			CurrentTurnController.Update();
 		}
 	}
@@ -127,33 +127,39 @@ public class GameController : MonoBehaviour {
 	}
 
 	public void OnClickTerritory(Territory territory){
-		if(CurrentStageController != null){
+		if(CurrentStageController != null && IsRunning){
 			CurrentStageController.OnClickTerritory(territory);
 		}
 	}
 	public void OnPressTerritory(Territory territory){
-		if(CurrentStageController != null){
+		if(CurrentStageController != null && IsRunning){
 			CurrentStageController.OnPressTerritory(territory);
 		}
 	}
 	public void OnKeepPressedTerritory(Territory territory){
-		if(CurrentStageController != null){
+		if(CurrentStageController != null && IsRunning){
 			CurrentStageController.OnKeepPressedTerritory(territory);
 		}
 	}
 	public void OnStopPressTerritory(Territory territory){
-		if(CurrentStageController != null){
+		if(CurrentStageController != null && IsRunning){
 			CurrentStageController.OnStopPressTerritory(territory);
 		}
 	}
 	public void OnReleaseTerritory(Territory territory){
-		if(CurrentStageController != null){
+		if(CurrentStageController != null && IsRunning){
 			CurrentStageController.OnReleaseTerritory(territory);
 		}
 	}
 	public void OnDragTerritory(Territory source, Territory target){
-		if(CurrentStageController != null){
+		if(CurrentStageController != null && IsRunning){
 			CurrentStageController.OnDragTerritory(source, target);
+		}
+	}
+
+	public void OnDragNDropTerritory(Territory source, Territory target){
+		if(CurrentStageController != null && IsRunning){
+			CurrentStageController.OnDragNDropTerritory(source, target);
 		}
 	}
 	

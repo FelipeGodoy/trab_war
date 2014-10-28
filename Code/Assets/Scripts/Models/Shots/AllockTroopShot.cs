@@ -13,7 +13,7 @@ public class AllockTroopShot : Shot {
 	}
 
 	public override bool Do(){
-		territory.CurrentPlayer = this.player;
+		if(this.player != territory.CurrentPlayer) territory.CurrentPlayer = this.player;
 		territory.AddTroops(troopsCount);
 		this.player.AddTerritory(territory);
 		return true;

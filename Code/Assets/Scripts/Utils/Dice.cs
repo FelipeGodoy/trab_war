@@ -31,6 +31,13 @@ public class Dice : MonoBehaviour {
 		this.enabled = false;
 	}
 
+	public void ClearDices(){
+		DiceSideInfo[] dices = gameObject.GetComponentsInChildren<DiceSideInfo>();
+		foreach(DiceSideInfo dice in dices){
+			Destroy(dice.gameObject);
+		}
+	}
+
 	public void CreateDices(Vector3 position, int attackCount, int defenseCount, DiceCallback callback){
 		this.attackDices = new DiceSideInfo[attackCount];
 		this.defenseDices = new DiceSideInfo[defenseCount];

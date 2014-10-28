@@ -30,7 +30,6 @@ public class Territory : MonoBehaviour {
 			if(neighbors == null){
 				neighbors = new List<Territory>();
 			}
-			troops.Clear();
 			_currentPlayer = value;
 			_currentPlayer.AddTerritory(this);
 		}
@@ -56,7 +55,8 @@ public class Territory : MonoBehaviour {
 	}
 
 	public bool RemoveTroops(int troopsCount){
-		if(troopsCount <= 1)return RemoveTroop();
+		if(troopsCount <= 0)return false;
+		if(troopsCount == 1)return RemoveTroop();
 		return RemoveTroop() && RemoveTroops(troopsCount - 1);
 	}
 
