@@ -7,32 +7,34 @@ public class TroopInTerritory : MonoBehaviour {
 	public Territory territory;
 
 	private Rigidbody parentRigidbody;
-
+	private Vector3 lastTroopPosition;
 	private Vector3 lastPosition;
 
 	void Start(){
 		territory = troop.CurrentTerritory;
 		parentRigidbody = troop.rigidbody;
-		lastPosition = parentRigidbody.position;
+		lastTroopPosition = parentRigidbody.position;
+		lastPosition = transform.position;
 	}
 
 	void Update(){
-		if(this.territory != null && lastPosition != parentRigidbody.position){
-			Vector2 point = new Vector2(parentRigidbody.position.x, parentRigidbody.position.y);
+		if(this.territory != null && lastPosition != transform.position){
+			Vector2 point = new Vector2(transform.position.x, transform.position.y);
 			Collider2D hitCollider = Physics2D.OverlapPoint(point);
 			if(hitCollider){
 				Territory otherTerritory = hitCollider.GetComponentInChildren<Territory>();
 				if(this.territory == otherTerritory){
-					lastPosition = parentRigidbody.position;
+					lastTroopPosition = parentRigidbody.position;
+					lastPosition = transform.position;
 				}
 				else{
-					parentRigidbody.position = lastPosition;
+					parentRigidbody.position = lastTroopPosition;
 					parentRigidbody.velocity = Vector3.zero;
 					parentRigidbody.angularVelocity = Vector3.zero;
 				}
 			}
 			else{
-				parentRigidbody.position = lastPosition;
+				parentRigidbody.position = lastTroopPosition;
 				parentRigidbody.velocity = Vector3.zero;
 				parentRigidbody.angularVelocity = Vector3.zero;
 			}

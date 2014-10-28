@@ -88,6 +88,7 @@
      <Compile Include="Assets\Scripts\UI\SwapLevel.cs" />
      <Compile Include="Assets\Scripts\Utils\Dice.cs" />
      <Compile Include="Assets\Scripts\Utils\TroopInTerritory.cs" />
+     <Compile Include="Assets\Scripts\Utils\TroopInTerritoryBounds.cs" />
      <Compile Include="Assets\Scripts\request\Request.cs" />
      <Compile Include="Assets\Scripts\request\RequestController.cs" />
      <Compile Include="Assets\Scripts\test\TestDice.cs" />
