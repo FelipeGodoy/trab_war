@@ -8,6 +8,7 @@ public class PCAttackStageController : StageController {
 	}
 
 	public override void OnGUI(){
+		GUI.Label(new Rect(200,30,150,20),"Atacando");
 		if(GUI.Button(new Rect(10,40,100,20),"Passar")){
 			turnController.NextStage();
 		}

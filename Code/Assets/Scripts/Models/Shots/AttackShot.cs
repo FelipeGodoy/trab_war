@@ -50,7 +50,7 @@ public class AttackShot : Shot{
 		bool destRemoves = destinationTerritory.RemoveTroops(destTroopsDown);
 		bool conquested = destinationTerritory.TroopsCount <= 0;
 		if(conquested){
-			destinationTerritory.CurrentPlayer = player;
+			destinationTerritory.CurrentPlayer = this.player;
 			destinationTerritory.AddTroops(attackNumbers.Length - sourceTroopsDown);
 			sourceTerritory.RemoveTroops(attackNumbers.Length);
 		}

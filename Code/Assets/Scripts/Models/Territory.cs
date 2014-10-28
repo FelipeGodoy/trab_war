@@ -30,6 +30,7 @@ public class Territory : MonoBehaviour {
 			if(neighbors == null){
 				neighbors = new List<Territory>();
 			}
+			if(_currentPlayer != null)_currentPlayer.RemoveTerritory(this);
 			_currentPlayer = value;
 			_currentPlayer.AddTerritory(this);
 		}

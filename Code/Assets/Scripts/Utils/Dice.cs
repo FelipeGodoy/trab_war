@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Dice : MonoBehaviour {
 
-	private const float MAGNITUDE_VELOCITY_MIN = 0.01f;
+	private const float MAGNITUDE_VELOCITY_MIN = 0.1f;
 
 	public GameObject diceDefensePrefab;
 	public GameObject diceAttackPrefab;
