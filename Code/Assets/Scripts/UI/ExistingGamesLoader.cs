@@ -25,9 +25,14 @@ public class ExistingGamesLoader : MonoBehaviour {
 	public void addOptions () {
 		//Separa em grupos
 		int tamanhoGrupo = 12;
+		int qtd = l.Count;
+		if (qtd >= 12) {
+						return;
+				}
+		float diff = (maxY - minY);
 		//for(int i = 0; i < tamanhoGrupo; i++){
 			ListOption o = (ListOption)Instantiate (option);
-			o.transform.position = next;
+			o.transform.position = pos.transform.position;
 			next.y += (maxY - minY);
 			o.transform.parent = this.transform;
 			l.AddLast(o);
@@ -38,12 +43,12 @@ public class ExistingGamesLoader : MonoBehaviour {
 			
 			Vector2 min = new Vector2 ();
 			min = model.anchorMin;
-			min.y = minY-(maxY-minY);
+			min.y = minY- qtd*diff;
 			r.anchorMin = min;
 			
 			Vector2 max = new Vector2 ();
 			max = model.anchorMax;
-			max.y = minY;
+			max.y = maxY - qtd*diff;
 			r.anchorMax = max;
 	}
 }
