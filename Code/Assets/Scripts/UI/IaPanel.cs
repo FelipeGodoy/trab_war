@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class IaPanel : MonoBehaviour {
+public class IaPanel : MonoBehaviour, IPanel {
 	public EmptyPanel emptyPanel;
 
 	public void setEmpty(){

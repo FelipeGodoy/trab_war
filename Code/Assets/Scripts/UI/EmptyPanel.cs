@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EmptyPanel : MonoBehaviour {
+public class EmptyPanel : MonoBehaviour, IPanel {
 	public IaPanel iaPanel;
 	public PlayerPanel playerPanel;
 	// Use this for initialization
