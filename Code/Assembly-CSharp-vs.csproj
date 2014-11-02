@@ -74,6 +74,7 @@
      <Compile Include="Assets\Scripts\Models\Shots\AttackShot.cs" />
      <Compile Include="Assets\Scripts\Models\Shots\MoveShot.cs" />
      <Compile Include="Assets\Scripts\Models\Shots\RemoveTroopShot.cs" />
+     <Compile Include="Assets\Scripts\Models\Shots\ShotEncoder.cs" />
      <Compile Include="Assets\Scripts\Models\Stage.cs" />
      <Compile Include="Assets\Scripts\Models\Symbol.cs" />
      <Compile Include="Assets\Scripts\Models\Territory.cs" />
@@ -83,9 +84,15 @@
      <Compile Include="Assets\Scripts\TroopColor.cs" />
      <Compile Include="Assets\Scripts\UI\ChangeMap.cs" />
      <Compile Include="Assets\Scripts\UI\EmptyPanel.cs" />
+     <Compile Include="Assets\Scripts\UI\ExistingGamesLoader.cs" />
+     <Compile Include="Assets\Scripts\UI\IPanel.cs" />
      <Compile Include="Assets\Scripts\UI\IaPanel.cs" />
+     <Compile Include="Assets\Scripts\UI\ListOption.cs" />
+     <Compile Include="Assets\Scripts\UI\LobbyHandler.cs" />
      <Compile Include="Assets\Scripts\UI\PlayerPanel.cs" />
      <Compile Include="Assets\Scripts\UI\SwapLevel.cs" />
+     <Compile Include="Assets\Scripts\UI\playerData.cs" />
+     <Compile Include="Assets\Scripts\UI\roomData.cs" />
      <Compile Include="Assets\Scripts\Utils\Dice.cs" />
      <Compile Include="Assets\Scripts\Utils\TroopInTerritory.cs" />
      <Compile Include="Assets\Scripts\Utils\TroopInTerritoryBounds.cs" />

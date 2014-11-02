@@ -4,6 +4,12 @@ using System.Collections;
 public class RequestController : MonoBehaviour {
 
 	private static RequestController instance;
+	public string url = "http://war-uff.herokuapp.com";
+
+	void Start(){
+		instance = this;
+		DontDestroyOnLoad(this.gameObject);
+	}
 
 	public static RequestController Instance{
 		get{

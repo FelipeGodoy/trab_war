@@ -8,6 +8,17 @@ public class AttackShot : Shot{
 	protected int[] attackDices;
 	protected int[] defenseDices;
 	protected AttackShotCallback callback;
+
+	public Territory SourceTerritory{get{return sourceTerritory;}}
+	public Territory TargetTerritory{get{return destinationTerritory;}}
+	public int[] AttackDices{get{return attackDices;}}
+	public int[] DefenseDices{get{return defenseDices;}}
+
+	public override Type type{
+		get{
+			return Type.ATTACK;
+		}
+	}
 		
 	public AttackShot(Player player, Territory source, Territory destination, AttackShotCallback callback){
 		this.player = player;
@@ -59,6 +70,7 @@ public class AttackShot : Shot{
 		}
 		callback(conquested);
 		GameController.Instance.Resume();
+		GameController.Instance.OnShotEnd(this);
 	}
 
 	private void SetupDicesNumbers(){

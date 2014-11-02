@@ -9,11 +9,30 @@ public class Request : ScriptableObject {
 
 	public delegate void Delegate(string message);
 
-	public static Request Create(string url, params string[] formParams){
+	public static Request Create(string path){
 		Request request = ScriptableObject.CreateInstance<Request>();
-		request.url = url;
+		request.url = RequestController.Instance.url + path;
+		request.formParams = new Dictionary<string, string>();
+		return request;
+	}
+
+	public static Request Create(string path, params string[] formParams){
+		Request request = ScriptableObject.CreateInstance<Request>();
+		request.url = RequestController.Instance.url + path;
 		request.SetFields(formParams);
 		return request;
+	}
+
+	public bool RemoveParam(string key){
+		return formParams.Remove(key);
+	}
+
+	public void AddParam(string key, string value){
+		formParams.Add(key,value);
+	}
+
+	public void ChangeParam(string key, string value){
+		formParams[key] = value;
 	}
 
 	public void SetFields(params string[] formParams){
@@ -28,8 +47,14 @@ public class Request : ScriptableObject {
 
 	public void Get(Delegate callback){
 		string url = this.url;
+		bool first = true;
 		foreach(KeyValuePair<string, string> pair in formParams){
-			url += "?" + pair.Key + "="+pair.Value;
+			if(first){ 
+				url += "?";
+				first = false;
+			}
+			else url += "&";
+			url += pair.Key + "="+pair.Value;
 		}
 		WWW www = new WWW(url);
 		RequestController.Instance.StartRequest(www, callback);

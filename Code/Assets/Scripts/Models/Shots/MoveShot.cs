@@ -6,6 +6,16 @@ public class MoveShot : Shot {
 	protected int troopsCount;
 	protected Territory sourceTerritory, destinationTerritory;
 
+	public Territory SourceTerritory{get{return sourceTerritory;}}
+	public Territory TargetTerritory{get{return destinationTerritory;}}
+	public int TroopsCount{get{return troopsCount;}}
+
+	public override Type type{
+		get{
+			return Type.MOVE;
+		}
+	}
+
 	public MoveShot(Player player, Territory source, Territory destination, int troopsCount){
 		this.player = player;
 		this.sourceTerritory = source;
@@ -25,6 +35,7 @@ public class MoveShot : Shot {
 		}
 		sourceTerritory.RemoveTroops(troopsCount);
 		destinationTerritory.AddTroops(troopsCount);
+		GameController.Instance.OnShotEnd(this);
 		return true;
 	}
 

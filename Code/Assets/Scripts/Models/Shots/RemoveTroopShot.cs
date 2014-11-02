@@ -5,6 +5,15 @@ public class RemoveTroopShot : Shot {
 	
 	protected Territory territory;
 	protected int troopsToRemove; 
+
+	public Territory Territory{get{return territory;}}
+	public int TroopsCount{get{return troopsToRemove;}}
+
+	public override Type type{
+		get{
+			return Type.REMOVE;
+		}
+	}
 	
 	public RemoveTroopShot(Territory territory, int troopsToRemove){
 		this.territory = territory;
@@ -16,11 +25,8 @@ public class RemoveTroopShot : Shot {
 			return false;
 		}
 		territory.RemoveTroops(this.troopsToRemove);
+		GameController.Instance.OnShotEnd(this);
 		return true;
-	}
-	
-	public override void Callback(){
-		
 	}
 	
 }

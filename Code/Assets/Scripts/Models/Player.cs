@@ -4,6 +4,7 @@ using System.Collections.Generic;
 public class Player : MonoBehaviour{
 
 	public enum PlayerType{PLAYER_CHARACTER, NON_PLAYER_CHARACTER, REMOTE_PLAYER_CHARACTER};
+	public int index;
 	public PlayerType type;
 	public bool firstPlay;
 

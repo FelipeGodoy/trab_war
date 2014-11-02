@@ -9,6 +9,7 @@ public class Territory : MonoBehaviour {
 	public Continent continent;
 	public string name;
 	public Transform troopSpawn;
+	public int index;
 
 	public Vector3 SpawnPosition{
 		get{

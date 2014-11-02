@@ -59,6 +59,11 @@ public class GameController : MonoBehaviour {
 		return shot.Do();
 	}
 
+	public void OnShotEnd(Shot shot){
+		JSONObject json = ShotEncoder.ToJSON(shot);
+		Debug.Log(json.ToString());
+	}
+
 	public void Begin(){
 		IsRunning = true;
 		this.TurnPlayerIndex = 0;
