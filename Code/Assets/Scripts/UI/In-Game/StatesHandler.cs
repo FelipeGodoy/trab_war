@@ -6,11 +6,17 @@ public class StatesHandler : MonoBehaviour {
 	public string alocar;
 	public string atacar;
 	public string mover;
+	public string none;
+	Text txt;
+	ChangeColor[] lights;
 
+	void Start(){
+		txt = this.GetComponentInChildren<Text> ();
+		lights = GetComponentsInChildren<ChangeColor> ();
+		}
 	public void setAlocar(){
 		ChangeColor[] t;
-		t = GetComponentsInChildren<ChangeColor> ();
-		foreach (ChangeColor c in t) {
+		foreach (ChangeColor c in lights) {
 			if(c.gameObject.name == "Light1"){
 				c.activate();
 				}
@@ -18,14 +24,12 @@ public class StatesHandler : MonoBehaviour {
 				c.deactivate();
 			}
 		}
-		Text txt = this.GetComponentInChildren<Text> ();
 		txt.text = alocar;
 	}
 
 	public void setAtacar(){
 		ChangeColor[] t;
-		t = GetComponentsInChildren<ChangeColor> ();
-		foreach (ChangeColor c in t) {
+		foreach (ChangeColor c in lights) {
 			if(c.gameObject.name == "Light2"){
 				c.activate();
 			}
@@ -33,14 +37,12 @@ public class StatesHandler : MonoBehaviour {
 				c.deactivate();
 			}
 		}
-		Text txt = this.GetComponentInChildren<Text> ();
 		txt.text = atacar;
 	}
 
 	public void setMover(){
 		ChangeColor[] t;
-		t = GetComponentsInChildren<ChangeColor> ();
-		foreach (ChangeColor c in t) {
+		foreach (ChangeColor c in lights) {
 			if(c.gameObject.name == "Light3"){
 				c.activate();
 			}
@@ -48,7 +50,14 @@ public class StatesHandler : MonoBehaviour {
 				c.deactivate();
 			}
 		}
-		Text txt = this.GetComponentInChildren<Text> ();
 		txt.text = mover;
+	}
+
+	public void setNone(){
+		ChangeColor[] t;
+		foreach (ChangeColor c in lights) {
+			c.deactivate();
+		}
+		txt.text = none;
 	}
 }
