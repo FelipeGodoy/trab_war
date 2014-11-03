@@ -24,6 +24,17 @@ public class AttackShot : Shot{
 		this.player = player;
 		this.sourceTerritory = source;
 		this.destinationTerritory = destination;
+		this.attackDices = null;
+		this.defenseDices = null;
+		this.callback = callback;
+	}
+
+	public AttackShot(Player player, Territory source, Territory destination,int[] attackDices, int[] defenseDices, AttackShotCallback callback){
+		this.player = player;
+		this.sourceTerritory = source;
+		this.destinationTerritory = destination;
+		this.attackDices = attackDices;
+		this.defenseDices = defenseDices;
 		this.callback = callback;
 	}
 
@@ -34,6 +45,10 @@ public class AttackShot : Shot{
 		   sourceTerritory.TroopsCount == 1){
 			Debug.Log("nao pode atacar");
 			return false; 
+		}
+		if(this.attackDices!= null && this.defenseDices != null){
+			DiceAnimationFinished(this.attackDices,this.defenseDices);
+			return true;
 		}
 		Dice.Instance.CreateDices(Vector3.Lerp(sourceTerritory.transform.position,destinationTerritory.transform.position,0.5f) + new Vector3(0,0,-10f),
 		                          Mathf.Min(sourceTerritory.TroopsCount - 1,3),
@@ -68,7 +83,7 @@ public class AttackShot : Shot{
 		else{
 			sourceTerritory.RemoveTroops(sourceTroopsDown);
 		}
-		callback(conquested);
+		if(callback != null) callback(conquested);
 		GameController.Instance.Resume();
 		GameController.Instance.OnShotEnd(this);
 	}

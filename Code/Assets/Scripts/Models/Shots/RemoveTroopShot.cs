@@ -15,13 +15,14 @@ public class RemoveTroopShot : Shot {
 		}
 	}
 	
-	public RemoveTroopShot(Territory territory, int troopsToRemove){
+	public RemoveTroopShot(Player player, Territory territory, int troopsToRemove){
+		this.player = player;
 		this.territory = territory;
 		this.troopsToRemove = troopsToRemove;
 	}
 	
 	public override bool Do(){
-		if(territory.TroopsCount <= this.troopsToRemove){
+		if(territory.TroopsCount <= this.troopsToRemove || territory.CurrentPlayer != player){
 			return false;
 		}
 		territory.RemoveTroops(this.troopsToRemove);

@@ -5775,6 +5775,7 @@ MonoBehaviour:
   - {fileID: 11400138}
   - {fileID: 11400174}
   - {fileID: 11400126}
+  index: 2
 --- !u!114 &11400090
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5795,6 +5796,7 @@ MonoBehaviour:
   - {fileID: 11400110}
   - {fileID: 11400142}
   - {fileID: 11400102}
+  index: 4
 --- !u!114 &11400092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5813,6 +5815,7 @@ MonoBehaviour:
   - {fileID: 11400178}
   - {fileID: 11400180}
   - {fileID: 11400182}
+  index: 0
 --- !u!114 &11400094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5836,6 +5839,7 @@ MonoBehaviour:
   - {fileID: 11400160}
   - {fileID: 11400164}
   - {fileID: 11400120}
+  index: 3
 --- !u!114 &11400096
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5857,6 +5861,7 @@ MonoBehaviour:
   - {fileID: 11400148}
   - {fileID: 11400172}
   - {fileID: 11400136}
+  index: 5
 --- !u!114 &11400098
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5883,6 +5888,7 @@ MonoBehaviour:
   - {fileID: 11400154}
   - {fileID: 11400156}
   - {fileID: 11400170}
+  index: 1
 --- !u!114 &11400100
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5901,6 +5907,7 @@ MonoBehaviour:
   continent: {fileID: 11400094}
   name: 
   troopSpawn: {fileID: 400100}
+  index: 22
 --- !u!114 &11400102
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5918,6 +5925,7 @@ MonoBehaviour:
   continent: {fileID: 11400090}
   name: 
   troopSpawn: {fileID: 0}
+  index: 34
 --- !u!114 &11400104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5936,6 +5944,7 @@ MonoBehaviour:
   continent: {fileID: 11400094}
   name: 
   troopSpawn: {fileID: 0}
+  index: 25
 --- !u!114 &11400106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5956,6 +5965,7 @@ MonoBehaviour:
   continent: {fileID: 11400098}
   name: 
   troopSpawn: {fileID: 0}
+  index: 9
 --- !u!114 &11400108
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5975,6 +5985,7 @@ MonoBehaviour:
   continent: {fileID: 11400098}
   name: 
   troopSpawn: {fileID: 0}
+  index: 4
 --- !u!114 &11400110
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5993,6 +6004,7 @@ MonoBehaviour:
   continent: {fileID: 11400090}
   name: 
   troopSpawn: {fileID: 0}
+  index: 32
 --- !u!114 &11400112
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6014,6 +6026,7 @@ MonoBehaviour:
   continent: {fileID: 11400098}
   name: 
   troopSpawn: {fileID: 0}
+  index: 12
 --- !u!114 &11400114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6032,6 +6045,7 @@ MonoBehaviour:
   continent: {fileID: 11400098}
   name: 
   troopSpawn: {fileID: 0}
+  index: 6
 --- !u!114 &11400116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6053,6 +6067,7 @@ MonoBehaviour:
   continent: {fileID: 11400096}
   name: 
   troopSpawn: {fileID: 0}
+  index: 38
 --- !u!114 &11400118
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6071,6 +6086,7 @@ MonoBehaviour:
   continent: {fileID: 11400096}
   name: 
   troopSpawn: {fileID: 0}
+  index: 36
 --- !u!114 &11400120
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6089,6 +6105,7 @@ MonoBehaviour:
   continent: {fileID: 11400094}
   name: 
   troopSpawn: {fileID: 0}
+  index: 28
 --- !u!114 &11400122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6107,6 +6124,7 @@ MonoBehaviour:
   continent: {fileID: 11400090}
   name: 
   troopSpawn: {fileID: 0}
+  index: 31
 --- !u!114 &11400124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6126,6 +6144,7 @@ MonoBehaviour:
   continent: {fileID: 11400098}
   name: 
   troopSpawn: {fileID: 0}
+  index: 10
 --- !u!114 &11400126
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6143,6 +6162,7 @@ MonoBehaviour:
   continent: {fileID: 11400088}
   name: 
   troopSpawn: {fileID: 400106}
+  index: 19
 --- !u!114 &11400128
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6163,6 +6183,7 @@ MonoBehaviour:
   continent: {fileID: 11400098}
   name: 
   troopSpawn: {fileID: 0}
+  index: 8
 --- !u!114 &11400130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6183,6 +6204,7 @@ MonoBehaviour:
   continent: {fileID: 11400094}
   name: 
   troopSpawn: {fileID: 0}
+  index: 24
 --- !u!114 &11400132
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6202,6 +6224,7 @@ MonoBehaviour:
   continent: {fileID: 11400090}
   name: 
   troopSpawn: {fileID: 0}
+  index: 30
 --- !u!114 &11400134
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6221,6 +6244,7 @@ MonoBehaviour:
   continent: {fileID: 11400094}
   name: 
   troopSpawn: {fileID: 0}
+  index: 21
 --- !u!114 &11400136
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6239,6 +6263,7 @@ MonoBehaviour:
   continent: {fileID: 11400096}
   name: 
   troopSpawn: {fileID: 0}
+  index: 41
 --- !u!114 &11400138
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6257,6 +6282,7 @@ MonoBehaviour:
   continent: {fileID: 11400088}
   name: 
   troopSpawn: {fileID: 400102}
+  index: 17
 --- !u!114 &11400140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6276,6 +6302,7 @@ MonoBehaviour:
   continent: {fileID: 11400098}
   name: 
   troopSpawn: {fileID: 0}
+  index: 5
 --- !u!114 &11400142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6296,6 +6323,7 @@ MonoBehaviour:
   continent: {fileID: 11400090}
   name: 
   troopSpawn: {fileID: 0}
+  index: 33
 --- !u!114 &11400144
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6315,6 +6343,7 @@ MonoBehaviour:
   continent: {fileID: 11400094}
   name: 
   troopSpawn: {fileID: 0}
+  index: 23
 --- !u!114 &11400146
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6333,6 +6362,7 @@ MonoBehaviour:
   continent: {fileID: 11400096}
   name: 
   troopSpawn: {fileID: 0}
+  index: 35
 --- !u!114 &11400148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6353,6 +6383,7 @@ MonoBehaviour:
   continent: {fileID: 11400096}
   name: 
   troopSpawn: {fileID: 0}
+  index: 39
 --- !u!114 &11400150
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6372,6 +6403,7 @@ MonoBehaviour:
   continent: {fileID: 11400088}
   name: 
   troopSpawn: {fileID: 400108}
+  index: 16
 --- !u!114 &11400152
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6390,6 +6422,7 @@ MonoBehaviour:
   continent: {fileID: 11400094}
   name: 
   troopSpawn: {fileID: 0}
+  index: 20
 --- !u!114 &11400154
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6410,6 +6443,7 @@ MonoBehaviour:
   continent: {fileID: 11400098}
   name: 
   troopSpawn: {fileID: 0}
+  index: 13
 --- !u!114 &11400156
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6427,6 +6461,7 @@ MonoBehaviour:
   continent: {fileID: 11400098}
   name: 
   troopSpawn: {fileID: 400112}
+  index: 14
 --- !u!114 &11400158
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6448,6 +6483,7 @@ MonoBehaviour:
   continent: {fileID: 11400090}
   name: 
   troopSpawn: {fileID: 0}
+  index: 29
 --- !u!114 &11400160
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6467,6 +6503,7 @@ MonoBehaviour:
   continent: {fileID: 11400094}
   name: 
   troopSpawn: {fileID: 0}
+  index: 26
 --- !u!114 &11400162
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6486,6 +6523,7 @@ MonoBehaviour:
   continent: {fileID: 11400098}
   name: 
   troopSpawn: {fileID: 0}
+  index: 11
 --- !u!114 &11400164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6505,6 +6543,7 @@ MonoBehaviour:
   continent: {fileID: 11400094}
   name: 
   troopSpawn: {fileID: 0}
+  index: 27
 --- !u!114 &11400166
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6525,6 +6564,7 @@ MonoBehaviour:
   continent: {fileID: 11400098}
   name: 
   troopSpawn: {fileID: 400114}
+  index: 7
 --- !u!114 &11400168
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6544,6 +6584,7 @@ MonoBehaviour:
   continent: {fileID: 11400096}
   name: 
   troopSpawn: {fileID: 0}
+  index: 37
 --- !u!114 &11400170
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6564,6 +6605,7 @@ MonoBehaviour:
   continent: {fileID: 11400098}
   name: 
   troopSpawn: {fileID: 0}
+  index: 15
 --- !u!114 &11400172
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6585,6 +6627,7 @@ MonoBehaviour:
   continent: {fileID: 11400096}
   name: 
   troopSpawn: {fileID: 0}
+  index: 40
 --- !u!114 &11400174
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6603,6 +6646,7 @@ MonoBehaviour:
   continent: {fileID: 11400088}
   name: 
   troopSpawn: {fileID: 400104}
+  index: 18
 --- !u!114 &11400176
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6620,6 +6664,7 @@ MonoBehaviour:
   continent: {fileID: 11400092}
   name: 
   troopSpawn: {fileID: 400110}
+  index: 0
 --- !u!114 &11400178
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6638,6 +6683,7 @@ MonoBehaviour:
   continent: {fileID: 11400092}
   name: 
   troopSpawn: {fileID: 0}
+  index: 2
 --- !u!114 &11400180
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6656,6 +6702,7 @@ MonoBehaviour:
   continent: {fileID: 11400092}
   name: 
   troopSpawn: {fileID: 0}
+  index: 3
 --- !u!114 &11400182
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6673,6 +6720,7 @@ MonoBehaviour:
   continent: {fileID: 11400092}
   name: 
   troopSpawn: {fileID: 0}
+  index: 1
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

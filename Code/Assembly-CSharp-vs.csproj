@@ -74,6 +74,7 @@
      <Compile Include="Assets\Scripts\Models\Shots\AttackShot.cs" />
      <Compile Include="Assets\Scripts\Models\Shots\MoveShot.cs" />
      <Compile Include="Assets\Scripts\Models\Shots\RemoveTroopShot.cs" />
+     <Compile Include="Assets\Scripts\Models\Shots\ShotDecoder.cs" />
      <Compile Include="Assets\Scripts\Models\Shots\ShotEncoder.cs" />
      <Compile Include="Assets\Scripts\Models\Stage.cs" />
      <Compile Include="Assets\Scripts\Models\Symbol.cs" />
