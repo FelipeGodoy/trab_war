@@ -8,8 +8,8 @@ public class AIMoveStageController : StageController {
 	//protected Dictionary<Territory,int> territorioNovasTropas;
 	
 	public override void OnStageStart(){
-		Territory territorio1;
-		Territory territorio2;
+		Territory territorio1 = null;
+		Territory territorio2 = null;
 		int numeroMovimentosTotal = 5;
 		int numeroMovimentosCorrente = 0;
 		int menorQtdTropas;

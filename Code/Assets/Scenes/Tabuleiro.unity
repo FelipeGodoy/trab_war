@@ -222,6 +222,7 @@ MonoBehaviour:
   continent: {fileID: 59375456}
   name: 
   troopSpawn: {fileID: 0}
+  index: 11
 --- !u!1 &6387654
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,6 +485,7 @@ MonoBehaviour:
   continent: {fileID: 1743287915}
   name: 
   troopSpawn: {fileID: 0}
+  index: 40
 --- !u!1 &40366242
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,6 +692,7 @@ MonoBehaviour:
   - {fileID: 825584117}
   - {fileID: 1094290503}
   - {fileID: 1948252354}
+  index: 1
 --- !u!1 &74165366
 GameObject:
   m_ObjectHideFlags: 0
@@ -839,6 +842,68 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 110984448}
+  m_HideIfInvisible: 0
+--- !u!1 &116436342
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 116436343}
+  - 222: {fileID: 116436345}
+  - 114: {fileID: 116436344}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &116436343
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 116436342}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 929205763}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -9.53674316e-07, y: 0}
+  m_SizeDelta: {x: -14.3000002, y: -13.6000004}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &116436344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 116436342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: .142646998, g: .713235259, b: 0, a: 1}
+  m_Sprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &116436345
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 116436342}
   m_HideIfInvisible: 0
 --- !u!1 &117474573
 GameObject:
@@ -1015,6 +1080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946faa24c27ef5647a02a02c5a959a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 5
   type: 0
   firstPlay: 0
   armyName: 
@@ -1157,6 +1223,7 @@ MonoBehaviour:
   continent: {fileID: 1414105091}
   name: 
   troopSpawn: {fileID: 0}
+  index: 24
 --- !u!1 &221597183
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,6 +1279,7 @@ MonoBehaviour:
   - {fileID: 768501754}
   - {fileID: 1697585764}
   - {fileID: 543408167}
+  index: 4
 --- !u!1 &225250186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,6 +1383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946faa24c27ef5647a02a02c5a959a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 1
   type: 0
   firstPlay: 0
   armyName: 
@@ -1656,6 +1725,7 @@ MonoBehaviour:
   continent: {fileID: 59375456}
   name: 
   troopSpawn: {fileID: 1012661019}
+  index: 7
 --- !u!1 &322372783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1687,8 +1757,10 @@ RectTransform:
   - {fileID: 543412867}
   - {fileID: 791745705}
   - {fileID: 74165368}
+  - {fileID: 2101482137}
+  - {fileID: 929205763}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -2010,6 +2082,7 @@ MonoBehaviour:
   continent: {fileID: 1743287915}
   name: 
   troopSpawn: {fileID: 0}
+  index: 38
 --- !u!1 &477596933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2165,6 +2238,7 @@ MonoBehaviour:
   continent: {fileID: 59375456}
   name: 
   troopSpawn: {fileID: 0}
+  index: 9
 --- !u!1 &516722684
 GameObject:
   m_ObjectHideFlags: 0
@@ -2402,6 +2476,7 @@ MonoBehaviour:
   continent: {fileID: 1743287915}
   name: 
   troopSpawn: {fileID: 0}
+  index: 41
 --- !u!1 &533477084
 GameObject:
   m_ObjectHideFlags: 0
@@ -2412,8 +2487,9 @@ GameObject:
   - 224: {fileID: 533477085}
   - 222: {fileID: 533477087}
   - 114: {fileID: 533477086}
+  - 114: {fileID: 533477088}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Info
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2432,10 +2508,10 @@ RectTransform:
   - {fileID: 1115119884}
   m_Father: {fileID: 322372784}
   m_RootOrder: 0
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -330.5, y: -345.5}
-  m_SizeDelta: {x: 252, y: 35}
+  m_AnchorMin: {x: .310871452, y: 0}
+  m_AnchorMax: {x: .691768467, y: .0980000049}
+  m_AnchoredPosition: {x: -.5, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &533477086
 MonoBehaviour:
@@ -2465,6 +2541,18 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 533477084}
   m_HideIfInvisible: 0
+--- !u!114 &533477088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 533477084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4391ccdc9fb0a84492297aaa787f8ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  show: 0
 --- !u!1 &537918189
 GameObject:
   m_ObjectHideFlags: 0
@@ -2612,6 +2700,7 @@ MonoBehaviour:
   continent: {fileID: 221597185}
   name: 
   troopSpawn: {fileID: 0}
+  index: 34
 --- !u!1 &543412866
 GameObject:
   m_ObjectHideFlags: 0
@@ -2659,6 +2748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c04ab05078da304f999ffdba97c01fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  show: 0
 --- !u!1 &554833929
 GameObject:
   m_ObjectHideFlags: 0
@@ -2968,6 +3058,7 @@ MonoBehaviour:
   continent: {fileID: 2060812170}
   name: 
   troopSpawn: {fileID: 537918190}
+  index: 19
 --- !u!1 &697803094
 GameObject:
   m_ObjectHideFlags: 0
@@ -3008,6 +3099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946faa24c27ef5647a02a02c5a959a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 3
   type: 0
   firstPlay: 0
   armyName: 
@@ -3054,7 +3146,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!1 &746965147
 GameObject:
   m_ObjectHideFlags: 0
@@ -3200,6 +3292,7 @@ MonoBehaviour:
   continent: {fileID: 59375456}
   name: 
   troopSpawn: {fileID: 0}
+  index: 4
 --- !u!1 &762069363
 GameObject:
   m_ObjectHideFlags: 0
@@ -3413,6 +3506,7 @@ MonoBehaviour:
   continent: {fileID: 221597185}
   name: 
   troopSpawn: {fileID: 0}
+  index: 32
 --- !u!1 &788554748
 GameObject:
   m_ObjectHideFlags: 0
@@ -3453,6 +3547,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946faa24c27ef5647a02a02c5a959a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 2
   type: 0
   firstPlay: 0
   armyName: 
@@ -3486,6 +3581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c04ab05078da304f999ffdba97c01fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  show: 0
 --- !u!224 &791745705
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3649,6 +3745,7 @@ MonoBehaviour:
   continent: {fileID: 1414105091}
   name: 
   troopSpawn: {fileID: 0}
+  index: 25
 --- !u!1 &825584112
 GameObject:
   m_ObjectHideFlags: 0
@@ -3827,6 +3924,7 @@ MonoBehaviour:
   continent: {fileID: 59375456}
   name: 
   troopSpawn: {fileID: 0}
+  index: 13
 --- !u!1 &865357847
 GameObject:
   m_ObjectHideFlags: 0
@@ -3986,6 +4084,7 @@ MonoBehaviour:
   continent: {fileID: 1743287915}
   name: 
   troopSpawn: {fileID: 0}
+  index: 37
 --- !u!1 &871808517
 GameObject:
   m_ObjectHideFlags: 0
@@ -4128,6 +4227,7 @@ MonoBehaviour:
   continent: {fileID: 1414105091}
   name: 
   troopSpawn: {fileID: 0}
+  index: 28
 --- !u!1 &905310639
 GameObject:
   m_ObjectHideFlags: 0
@@ -4277,6 +4377,70 @@ MonoBehaviour:
   continent: {fileID: 1414105091}
   name: 
   troopSpawn: {fileID: 0}
+  index: 20
+--- !u!1 &929205762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 929205763}
+  - 222: {fileID: 929205765}
+  - 114: {fileID: 929205764}
+  m_Layer: 5
+  m_Name: Passar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &929205763
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 929205762}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 116436343}
+  m_Father: {fileID: 322372784}
+  m_RootOrder: 5
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 287.899994, y: -143.399994}
+  m_SizeDelta: {x: -603, y: -308}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &929205764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 929205762}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: .569703758, g: .808823526, b: .493620217, a: .784313738}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &929205765
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 929205762}
+  m_HideIfInvisible: 0
 --- !u!1 &952164068
 GameObject:
   m_ObjectHideFlags: 0
@@ -4440,6 +4604,7 @@ MonoBehaviour:
   continent: {fileID: 59375456}
   name: 
   troopSpawn: {fileID: 0}
+  index: 10
 --- !u!1 &952965442
 GameObject:
   m_ObjectHideFlags: 0
@@ -4746,6 +4911,7 @@ MonoBehaviour:
   continent: {fileID: 1743287915}
   name: 
   troopSpawn: {fileID: 0}
+  index: 39
 --- !u!1 &1060421837
 GameObject:
   m_ObjectHideFlags: 0
@@ -4939,6 +5105,7 @@ MonoBehaviour:
   continent: {fileID: 59375456}
   name: 
   troopSpawn: {fileID: 1924857151}
+  index: 14
 --- !u!1 &1094594084
 GameObject:
   m_ObjectHideFlags: 0
@@ -5081,6 +5248,7 @@ MonoBehaviour:
   continent: {fileID: 1157122942}
   name: 
   troopSpawn: {fileID: 0}
+  index: 1
 --- !u!1 &1115119883
 GameObject:
   m_ObjectHideFlags: 0
@@ -5110,10 +5278,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 533477085}
   m_RootOrder: 0
-  m_AnchorMin: {x: .5, y: .5}
-  m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 430.100006, y: 30}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: .200000763, y: 0}
+  m_SizeDelta: {x: -9, y: -6}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1115119885
 MonoBehaviour:
@@ -5226,6 +5394,7 @@ MonoBehaviour:
   - {fileID: 1900108677}
   - {fileID: 1782496591}
   - {fileID: 1094594089}
+  index: 0
 --- !u!1 &1203311862
 GameObject:
   m_ObjectHideFlags: 0
@@ -5390,6 +5559,7 @@ MonoBehaviour:
   continent: {fileID: 59375456}
   name: 
   troopSpawn: {fileID: 0}
+  index: 5
 --- !u!1 &1208723841
 GameObject:
   m_ObjectHideFlags: 0
@@ -5534,6 +5704,7 @@ MonoBehaviour:
   continent: {fileID: 2060812170}
   name: 
   troopSpawn: {fileID: 1060421838}
+  index: 17
 --- !u!1 &1208939941
 GameObject:
   m_ObjectHideFlags: 0
@@ -5567,7 +5738,7 @@ Transform:
   - {fileID: 1543987811}
   - {fileID: 193573543}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
 --- !u!114 &1208939943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5937,6 +6108,7 @@ MonoBehaviour:
   continent: {fileID: 221597185}
   name: 
   troopSpawn: {fileID: 0}
+  index: 29
 --- !u!1 &1276149729
 GameObject:
   m_ObjectHideFlags: 0
@@ -6072,6 +6244,7 @@ MonoBehaviour:
   continent: {fileID: 221597185}
   name: 
   troopSpawn: {fileID: 0}
+  index: 30
 --- !u!1 &1283895336
 GameObject:
   m_ObjectHideFlags: 0
@@ -6233,6 +6406,7 @@ MonoBehaviour:
   continent: {fileID: 2060812170}
   name: 
   troopSpawn: {fileID: 952965443}
+  index: 18
 --- !u!1001 &1312374096
 Prefab:
   m_ObjectHideFlags: 0
@@ -6270,7 +6444,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
       propertyPath: playersModels.Array.data[0]
@@ -6477,6 +6651,7 @@ MonoBehaviour:
   continent: {fileID: 2060812170}
   name: 
   troopSpawn: {fileID: 1153619127}
+  index: 16
 --- !u!1 &1319459047
 GameObject:
   m_ObjectHideFlags: 0
@@ -6937,6 +7112,7 @@ MonoBehaviour:
   continent: {fileID: 59375456}
   name: 
   troopSpawn: {fileID: 0}
+  index: 8
 --- !u!1 &1369706109
 GameObject:
   m_ObjectHideFlags: 0
@@ -7097,6 +7273,7 @@ MonoBehaviour:
   continent: {fileID: 1157122942}
   name: 
   troopSpawn: {fileID: 1077471434}
+  index: 0
 --- !u!1 &1389082250
 GameObject:
   m_ObjectHideFlags: 0
@@ -7219,6 +7396,7 @@ MonoBehaviour:
   continent: {fileID: 1414105091}
   name: 
   troopSpawn: {fileID: 0}
+  index: 23
 --- !u!1 &1410803760
 GameObject:
   m_ObjectHideFlags: 0
@@ -7375,6 +7553,7 @@ MonoBehaviour:
   continent: {fileID: 1414105091}
   name: 
   troopSpawn: {fileID: 0}
+  index: 26
 --- !u!1 &1414105088
 GameObject:
   m_ObjectHideFlags: 0
@@ -7460,6 +7639,7 @@ MonoBehaviour:
   - {fileID: 1410803765}
   - {fileID: 1647749074}
   - {fileID: 871808522}
+  index: 3
 --- !u!1 &1415228258
 GameObject:
   m_ObjectHideFlags: 0
@@ -7760,6 +7940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946faa24c27ef5647a02a02c5a959a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 4
   type: 0
   firstPlay: 0
   armyName: 
@@ -7926,6 +8107,7 @@ MonoBehaviour:
   continent: {fileID: 221597185}
   name: 
   troopSpawn: {fileID: 0}
+  index: 31
 --- !u!1 &1566154520
 GameObject:
   m_ObjectHideFlags: 0
@@ -8058,6 +8240,7 @@ MonoBehaviour:
   continent: {fileID: 1743287915}
   name: 
   troopSpawn: {fileID: 0}
+  index: 35
 --- !u!1001 &1572529281
 Prefab:
   m_ObjectHideFlags: 0
@@ -8142,6 +8325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946faa24c27ef5647a02a02c5a959a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  index: 0
   type: 0
   firstPlay: 0
   armyName: 
@@ -8346,6 +8530,7 @@ MonoBehaviour:
   continent: {fileID: 1414105091}
   name: 
   troopSpawn: {fileID: 0}
+  index: 27
 --- !u!1001 &1665856467
 Prefab:
   m_ObjectHideFlags: 0
@@ -8383,7 +8568,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
       propertyPath: name
@@ -8577,6 +8762,7 @@ MonoBehaviour:
   continent: {fileID: 221597185}
   name: 
   troopSpawn: {fileID: 0}
+  index: 33
 --- !u!1 &1732591812
 GameObject:
   m_ObjectHideFlags: 0
@@ -8661,6 +8847,7 @@ MonoBehaviour:
   - {fileID: 1031811577}
   - {fileID: 6387659}
   - {fileID: 529158448}
+  index: 5
 --- !u!1 &1775817179
 GameObject:
   m_ObjectHideFlags: 0
@@ -8908,6 +9095,7 @@ MonoBehaviour:
   continent: {fileID: 1157122942}
   name: 
   troopSpawn: {fileID: 0}
+  index: 3
 --- !u!1 &1796312755
 GameObject:
   m_ObjectHideFlags: 0
@@ -9054,6 +9242,7 @@ MonoBehaviour:
   continent: {fileID: 59375456}
   name: 
   troopSpawn: {fileID: 0}
+  index: 6
 --- !u!1 &1860218744
 GameObject:
   m_ObjectHideFlags: 0
@@ -9233,6 +9422,7 @@ MonoBehaviour:
   continent: {fileID: 59375456}
   name: 
   troopSpawn: {fileID: 0}
+  index: 12
 --- !u!1 &1875605540
 GameObject:
   m_ObjectHideFlags: 0
@@ -9467,6 +9657,7 @@ MonoBehaviour:
   continent: {fileID: 1743287915}
   name: 
   troopSpawn: {fileID: 0}
+  index: 36
 --- !u!1 &1900108672
 GameObject:
   m_ObjectHideFlags: 0
@@ -9597,6 +9788,7 @@ MonoBehaviour:
   continent: {fileID: 1157122942}
   name: 
   troopSpawn: {fileID: 0}
+  index: 2
 --- !u!1 &1924857150
 GameObject:
   m_ObjectHideFlags: 0
@@ -9967,6 +10159,7 @@ MonoBehaviour:
   continent: {fileID: 59375456}
   name: 
   troopSpawn: {fileID: 0}
+  index: 15
 --- !u!1 &2007291572
 GameObject:
   m_ObjectHideFlags: 0
@@ -10187,6 +10380,7 @@ MonoBehaviour:
   continent: {fileID: 1414105091}
   name: 
   troopSpawn: {fileID: 0}
+  index: 21
 --- !u!1 &2024083937
 GameObject:
   m_ObjectHideFlags: 0
@@ -10325,6 +10519,7 @@ MonoBehaviour:
   - {fileID: 1208723846}
   - {fileID: 1283895341}
   - {fileID: 583503612}
+  index: 2
 --- !u!1 &2090348191
 GameObject:
   m_ObjectHideFlags: 0
@@ -10468,3 +10663,66 @@ MonoBehaviour:
   continent: {fileID: 1414105091}
   name: 
   troopSpawn: {fileID: 1732591813}
+  index: 22
+--- !u!1 &2101482136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 2101482137}
+  - 222: {fileID: 2101482139}
+  - 114: {fileID: 2101482138}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2101482137
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2101482136}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 322372784}
+  m_RootOrder: 4
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 296.200012, y: -68.5999985}
+  m_SizeDelta: {x: -619.599976, y: -323.700012}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &2101482138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2101482136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: .39199999}
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &2101482139
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2101482136}
+  m_HideIfInvisible: 0
