@@ -60,10 +60,13 @@ public class GameController : MonoBehaviour {
 	}
 
 	public void OnShotEnd(Shot shot){
-		JSONObject json = ShotEncoder.ToJSON(shot);
-		Shot other = ShotDecoder.FromJSON(json);
-		json = ShotEncoder.ToJSON(other);
-		Debug.Log(json.ToString());
+		if(shot.sendRequest){
+			RequestController.Instance.SendShot(shot);
+		}
+//		JSONObject json = ShotEncoder.ToJSON(shot);
+//		Shot other = ShotDecoder.FromJSON(json);
+//		json = ShotEncoder.ToJSON(other);
+//		Debug.Log(json.ToString());
 	}
 
 	public void Begin(){

@@ -5,14 +5,16 @@ using System.Collections.Generic;
 public class Request : ScriptableObject {
 
 	public string url;
+	public bool isPost;
 	private Dictionary<string, string> formParams;
 
 	public delegate void Delegate(string message);
 
-	public static Request Create(string path){
+	public static Request Create(string url){
 		Request request = ScriptableObject.CreateInstance<Request>();
-		request.url = RequestController.Instance.url + path;
+		request.url = url;
 		request.formParams = new Dictionary<string, string>();
+		request.isPost = false;
 		return request;
 	}
 
@@ -20,6 +22,7 @@ public class Request : ScriptableObject {
 		Request request = ScriptableObject.CreateInstance<Request>();
 		request.url = RequestController.Instance.url + path;
 		request.SetFields(formParams);
+		request.isPost = false;
 		return request;
 	}
 
