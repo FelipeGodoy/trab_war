@@ -5,9 +5,19 @@ public class AIMoveStageController : StageController {
 
 
 	private List<Territory> checados;
-	//protected Dictionary<Territory,int> territorioNovasTropas;
+	protected Dictionary<Territory,int> territoriosTropas;
+
+	public override void OnGUI(){
+		GUI.Label(new Rect(200,30,150,20),"Movendo");
+	}
 	
 	public override void OnStageStart(){
+		//test start
+		territoriosTropas = new Dictionary<Territory, int>();
+		foreach(Territory ter in Player.Territories){
+			territoriosTropas.Add(ter, ter.TroopsCount);
+		}
+		//teste end
 		Territory territorio1 = null;
 		Territory territorio2 = null;
 		int numeroMovimentosTotal = 5;

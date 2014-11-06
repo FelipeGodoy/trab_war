@@ -9,17 +9,25 @@ public class AIAttackStageController : StageController {
 	protected int menorQtdTropas;
 	protected Territory territorioAtacante;
 	protected Territory territorioAlvo;
+	protected bool atacando;
 	
 	public override void OnStageStart(){
 		numeroAtaquesTotal = 5;
 		numeroAtaquesCorrente = 0;
-		while(numeroAtaquesCorrente < numeroAtaquesTotal && this.Player.Territories.Count <= 3){
+		atacando = false;
+	}
+
+	public override void OnGUI(){
+		GUI.Label(new Rect(200,30,150,20),"Atacando");
+	}
+
+	public override void Update(){
+		if(numeroAtaquesCorrente < numeroAtaquesTotal && this.Player.Territories.Count >= 3){
 			maiorQtdTropas = 1;
 			foreach(Territory territory in this.Player.Territories){
-				if(territory.TroopsCount >= maiorQtdTropas){
+				if(territory.TroopsCount >= maiorQtdTropas && territory.HaveNeighborEnemy()){
 					maiorQtdTropas = territory.TroopsCount;
 					territorioAtacante = territory;
-
 				}
 			}
 			if(maiorQtdTropas == 1){
@@ -32,17 +40,21 @@ public class AIAttackStageController : StageController {
 					territorioAlvo = territory;
 				}
 			}
-
-			if(maiorQtdTropas > 1){
+			
+			if(maiorQtdTropas > 1 && !atacando){
+				atacando = true;
 				ComputeShot(new AttackShot(this.Player,territorioAtacante,territorioAlvo,DiceResult));
 				numeroAtaquesCorrente++;
 			}
-
+			
 		}
-		EndStage();
-	
-}
+		else{
+			EndStage();
+		}
+	}
+
 	private void DiceResult(bool conquested){
+		atacando = false;
 		Dice.Instance.ClearDices();
 	}
 }

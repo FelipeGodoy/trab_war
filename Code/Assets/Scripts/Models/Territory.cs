@@ -56,6 +56,15 @@ public class Territory : MonoBehaviour {
 		}
 	}
 
+	public bool HaveNeighborEnemy(){
+		foreach(Territory neighbor in this.neighbors){
+			if(neighbor.CurrentPlayer != this.CurrentPlayer){
+				return true;
+			}
+		}
+		return false;
+	}
+
 	public bool RemoveTroops(int troopsCount){
 		if(troopsCount <= 0)return false;
 		if(troopsCount == 1)return RemoveTroop();
