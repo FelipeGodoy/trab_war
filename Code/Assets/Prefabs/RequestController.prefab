@@ -39,7 +39,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba3cb9d0fe90b3e4ea04fed77a5fe3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: http://war-uff.herokuapp.com
+  debugMode: 0
+  defaultUrl: http://war-uff.herokuapp.com
+  testUrl: http://0.0.0.0:3000
+  shotPath: \games\shots
+  delayRequest: 1
+  shotCount: 0
+  gameId: 3
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
