@@ -56,3 +56,4 @@ Code/Assembly-UnityScript.unityproj
 Code/Code-csharp.sln
 Code/Code.sln
 *.csproj
+*.unityproj
