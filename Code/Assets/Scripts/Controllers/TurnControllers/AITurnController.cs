@@ -12,9 +12,11 @@ public class AITurnController : TurnController {
 			break;
 		}
 		case Stage.ATTACK:{
+			stageController =  new AIAttackStageController();
 			break;
 		}
 		case Stage.MOVE:{
+			stageController =  new AIMoveStageController();
 			break;
 		}
 		default : return null;

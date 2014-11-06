@@ -15,6 +15,14 @@ public class AIAllockStageController : StageController {
 		foreach(Territory territory in this.Player.Territories){
 			troopsAllocked[territory] = 0;
 		}
+		while (usedTroops<freeTroops) {
+			foreach(Territory territory in this.Player.Territories){
+				if(usedTroops<freeTroops){
+				usedTroops++;
+				ComputeShot(new AllockTroopShot(this.Player,territory,1));
+				}
+			}
+		}
 		EndStage();
 	}
 
