@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
+
 public class AIAllockStageController : StageController {
 
-	protected int freeTroops;
-	protected int usedTroops;
+	protected int freeTroops = 0;
+	protected int usedTroops = 0;
 	protected Dictionary<Territory,int> troopsAllocked;
+	protected int indice = 0;
+	protected Territory temp;
 
 	public override void OnGUI(){
 		GUI.Label(new Rect(200,30,150,20),"Alocando");
@@ -21,19 +24,29 @@ public class AIAllockStageController : StageController {
 	}
 
 	public override void Update(){
-		//int ind =0;
-		//ind = (ind+1) % Player.Territories.Count;
+		/*if(usedTroops < freeTroops){
+			this.indice++;
+			temp = this.Player.Territories[1];
+			ComputeShot(new AllockTroopShot(this.Player,temp,1));
+			this.usedTroops++;
+		}
+		else{
+			EndStage();
+		}
+	}
+}*/
 		if(usedTroops < freeTroops) {
 			foreach(Territory territory in this.Player.Territories){
 				if(usedTroops<freeTroops){
 					usedTroops++;
 					ComputeShot(new AllockTroopShot(this.Player,territory,1));
+
 				}
 			}
 		}
 		else{
 			EndStage();
 		}
-	}	
+	}
 
 }
