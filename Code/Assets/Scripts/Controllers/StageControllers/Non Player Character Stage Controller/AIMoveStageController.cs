@@ -13,10 +13,10 @@ public class AIMoveStageController : StageController {
 	
 	public override void OnStageStart(){
 		//test start
-		territoriosTropas = new Dictionary<Territory, int>();
+		/*territoriosTropas = new Dictionary<Territory, int>();
 		foreach(Territory ter in Player.Territories){
 			territoriosTropas.Add(ter, ter.TroopsCount);
-		}
+		}*/
 		//teste end
 		Territory territorio1 = null;
 		Territory territorio2 = null;
@@ -48,11 +48,13 @@ public class AIMoveStageController : StageController {
 				numeroMovimentosCorrente++;
 				checados.Add(territorio1);
 				checados.Add(territorio2);
+
 			}
 			else{
 				checados.Add(territorio1);
 			}		
 		}
+		EndStage ();
 	
 	}
 	public bool PodeMover(List<Territory> checados){
