@@ -5,6 +5,7 @@ public abstract class TurnController{
 
 	protected Stage stage;
 	protected StageController stageController;
+	protected bool sendShotOnEndTurn = true;
 
 	private Player _player;
 
@@ -15,6 +16,9 @@ public abstract class TurnController{
 		}
 		case Player.PlayerType.NON_PLAYER_CHARACTER:{
 			return new AITurnController();
+		}
+		case Player.PlayerType.REMOTE_PLAYER_CHARACTER:{
+			return new RemoteTurnController();
 		}
 		}
 		return null;
@@ -56,13 +60,23 @@ public abstract class TurnController{
 
 
 	public void EndTurn(){
+		Shot passTurnShot = new PassTurnShot(Player); 
 		OnTurnEnd();
 		GameController.Instance.EndTurn();
+		if(this.sendShotOnEndTurn && passTurnShot.sendRequest){
+			RequestController.Instance.SendShot(passTurnShot);
+		}
 	}
 
 	public void Update(){
 		if(stageController != null){
 			stageController.Update();
+		}
+	}
+
+	public void ForcedUpdate(){
+		if(stageController != null){
+			stageController.ForcedUpdate();
 		}
 	}
 

@@ -31,6 +31,7 @@ public abstract class StageController{
 
 	public virtual void OnGUI(){}
 	public virtual void Update(){}
+	public virtual void ForcedUpdate(){}
 	public virtual void OnStageStart(){}
 	public virtual void OnStageEnd(){}
 	public virtual void OnClickTerritory(Territory territory){}

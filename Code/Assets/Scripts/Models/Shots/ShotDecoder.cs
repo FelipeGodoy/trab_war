@@ -31,6 +31,9 @@ public class ShotDecoder{
 			int troopsCount = (int)json.GetField(ShotEncoder.TROOPS_COUNT).n;
 			return new RemoveTroopShot(player,target, troopsCount);
 		}
+		case(Shot.Type.PASS_TURN):{
+			return new PassTurnShot(player);
+		}
 		default: return null;
 		}
 	}

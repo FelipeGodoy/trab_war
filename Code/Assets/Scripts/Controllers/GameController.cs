@@ -95,8 +95,11 @@ public class GameController : MonoBehaviour {
 	}
 
 	public void Update(){
-		if(CurrentTurnController != null && IsRunning){
-			CurrentTurnController.Update();
+		if(CurrentTurnController != null){
+			CurrentTurnController.ForcedUpdate();
+			if(IsRunning){
+				CurrentTurnController.Update();
+			}
 		}
 	}
 

@@ -59,9 +59,11 @@
      <Compile Include="Assets\Scripts\Controllers\StageControllers\Player Character Stage Controllers\PCAllockStageController.cs" />
      <Compile Include="Assets\Scripts\Controllers\StageControllers\Player Character Stage Controllers\PCAttackStageController.cs" />
      <Compile Include="Assets\Scripts\Controllers\StageControllers\Player Character Stage Controllers\PCMoveStageController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\StageControllers\Remote Character Stages Controllers\WaitShotStageController.cs" />
      <Compile Include="Assets\Scripts\Controllers\TurnController.cs" />
      <Compile Include="Assets\Scripts\Controllers\TurnControllers\AITurnController.cs" />
      <Compile Include="Assets\Scripts\Controllers\TurnControllers\PCTurnController.cs" />
+     <Compile Include="Assets\Scripts\Controllers\TurnControllers\RemoteTurnController.cs" />
      <Compile Include="Assets\Scripts\DiceSideInfo.cs" />
      <Compile Include="Assets\Scripts\Input\MouseListener.cs" />
      <Compile Include="Assets\Scripts\Models\Continent.cs" />
@@ -75,6 +77,7 @@
      <Compile Include="Assets\Scripts\Models\Shots\AllockTroopShot.cs" />
      <Compile Include="Assets\Scripts\Models\Shots\AttackShot.cs" />
      <Compile Include="Assets\Scripts\Models\Shots\MoveShot.cs" />
+     <Compile Include="Assets\Scripts\Models\Shots\PassTurnShot.cs" />
      <Compile Include="Assets\Scripts\Models\Shots\RemoveTroopShot.cs" />
      <Compile Include="Assets\Scripts\Models\Shots\ShotDecoder.cs" />
      <Compile Include="Assets\Scripts\Models\Shots\ShotEncoder.cs" />

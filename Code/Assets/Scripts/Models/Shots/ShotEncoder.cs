@@ -43,6 +43,9 @@ public class ShotEncoder{
 			json.AddField(TROOPS_COUNT, removeShot.TroopsCount);
 			break;
 		}
+		case(Shot.Type.PASS_TURN):{
+			break;
+		}
 		default: return null;
 		}
 		json.AddField(SHOT_TYPE, (int)shot.type);

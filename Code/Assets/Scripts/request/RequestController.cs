@@ -21,6 +21,12 @@ public class RequestController : MonoBehaviour {
 
 	public List<PlayerHold> playersInfos;
 
+	public bool SendingRequest{
+		get{
+			return sending;
+		}
+	}
+
 	public string url{
 		get{
 #if LOCAL_MODE
