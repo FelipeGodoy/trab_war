@@ -5,9 +5,9 @@ using System.Collections.Generic;
 public class RequestController : MonoBehaviour {
 
 	private static RequestController instance;
-	public bool debugMode = false;
-	public string defaultUrl = "http://war-uff.herokuapp.com";
-	public string testUrl = "http://127.0.0.1:3000";
+//	public bool debugMode = false;
+	public string remoteUrl = "http://war-uff.herokuapp.com";
+	public string localUrl = "http://127.0.0.1:3000";
 	public string shotPath = "/games/shots";
 	public string connectPath = "/rooms/connect";//post, game_id, player[name], player[type_id]
 	public string startGamePath = "/games/start";
@@ -23,8 +23,11 @@ public class RequestController : MonoBehaviour {
 
 	public string url{
 		get{
-			if(debugMode) return testUrl;
-			return defaultUrl;
+#if LOCAL_MODE
+			return localUrl;
+#else
+			return remoteUrl;
+#endif
 		}
 	}
 
@@ -33,13 +36,18 @@ public class RequestController : MonoBehaviour {
 	}
 
 	void Awake(){
-		playersInfos = new List<PlayerHold>();
-		jsonShotsReceived = new List<JSONObject>();
-		shotsToSend = new List<Shot>();
-		shotCount = 0;
-		instance = this;
-		DontDestroyOnLoad(this.gameObject);
-		sending = false;
+		if(instance != null && instance != this){
+			Destroy(gameObject);
+		}
+		else{
+			playersInfos = new List<PlayerHold>();
+			jsonShotsReceived = new List<JSONObject>();
+			shotsToSend = new List<Shot>();
+			shotCount = 0;
+			instance = this;
+			DontDestroyOnLoad(this.gameObject);
+			sending = false;
+		}
 	}
 
 	void Update(){
@@ -72,12 +80,18 @@ public class RequestController : MonoBehaviour {
 	}
 
 	void Start(){
-		jsonShotsReceived = new List<JSONObject>();
-		shotsToSend = new List<Shot>();
-		shotCount = 0;
-		instance = this;
-		DontDestroyOnLoad(this.gameObject);
-		sending = false;
+		if(instance != null && instance != this){
+			Destroy(gameObject);
+		}
+		else{
+			playersInfos = new List<PlayerHold>();
+			jsonShotsReceived = new List<JSONObject>();
+			shotsToSend = new List<Shot>();
+			shotCount = 0;
+			instance = this;
+			DontDestroyOnLoad(this.gameObject);
+			sending = false;
+		}
 	}
 
 	public static RequestController Instance{
