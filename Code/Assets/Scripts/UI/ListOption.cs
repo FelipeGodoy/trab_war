@@ -2,14 +2,12 @@
 using System.Collections;
 
 public class ListOption : MonoBehaviour {
-	int ID;
-	// Use this for initialization
-	void Start () {
-	
+	public static int sala_id_selected = -1;
+	public int sala_id;
+
+
+	public void OnClick(){
+		sala_id_selected = sala_id;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }

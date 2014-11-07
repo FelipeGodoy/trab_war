@@ -41,11 +41,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debugMode: 0
   defaultUrl: http://war-uff.herokuapp.com
-  testUrl: http://0.0.0.0:3000
-  shotPath: \games\shots
+  testUrl: http://127.0.0.1:3000
+  shotPath: /games/shots
+  connectPath: /rooms/connect
+  startGamePath: /games/start
   delayRequest: 1
   shotCount: 0
   gameId: 3
+  gameName: 
+  playersInfos: []
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

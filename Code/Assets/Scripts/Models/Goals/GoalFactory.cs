@@ -21,4 +21,10 @@ public class GoalFactory{
 		}
 	}
 
+	public static int GoalsCont{
+		get{
+			return 8;
+		}
+	}
+
 }

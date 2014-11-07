@@ -99,10 +99,11 @@
      <Compile Include="Assets\Scripts\UI\ListOption.cs" />
      <Compile Include="Assets\Scripts\UI\LobbyHandler.cs" />
      <Compile Include="Assets\Scripts\UI\PlayerPanel.cs" />
+     <Compile Include="Assets\Scripts\UI\RoomData.cs" />
      <Compile Include="Assets\Scripts\UI\SwapLevel.cs" />
      <Compile Include="Assets\Scripts\UI\playerData.cs" />
-     <Compile Include="Assets\Scripts\UI\roomData.cs" />
      <Compile Include="Assets\Scripts\Utils\Dice.cs" />
+     <Compile Include="Assets\Scripts\Utils\PlayerHold.cs" />
      <Compile Include="Assets\Scripts\Utils\TroopInTerritory.cs" />
      <Compile Include="Assets\Scripts\Utils\TroopInTerritoryBounds.cs" />
      <Compile Include="Assets\Scripts\request\Request.cs" />

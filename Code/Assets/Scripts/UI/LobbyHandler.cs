@@ -8,7 +8,11 @@ public class LobbyHandler : MonoBehaviour {
 	public Request r;
 	public IPanel p;
 	public GameObject EmptyPrefab, LocalPlayerPrefab, RemotePlayerPrefab, IAPrefab;
+
+	private bool sendingRequest;
+
 	void Start () {
+		sendingRequest = false;
 		/*Request r = Request.Create(url);
 		//Enviar mensagem com nome da sala e senha
 		//Enviar dados dos players controlados por este
@@ -33,9 +37,17 @@ public class LobbyHandler : MonoBehaviour {
 		r.SetFields ("lobbyId", sendingData);
 		//r.Post (update);
 	}
-	void update(){
-		r.SetFields("playerRequests", "lobbyId");
-		r.Get(updateView);
+	void Update(){
+		if(!sendingRequest){
+			Request r = Request.Create(RequestController.Instance.url+"/games/"+RequestController.Instance.gameId+".json");
+			r.Get(OnGameRequestResponse);
+			sendingRequest = true;
+		}
+	}
+
+	public void OnGameRequestResponse(string s){
+		sendingRequest = false;
+		JSONObject json = new JSONObject(s);
 	}
 
 	void updateView(string data){

@@ -7,14 +7,19 @@ public class RequestController : MonoBehaviour {
 	private static RequestController instance;
 	public bool debugMode = false;
 	public string defaultUrl = "http://war-uff.herokuapp.com";
-	public string testUrl = "http://0.0.0.0:3000";
-	public string shotPath = "\\games\\shots";
+	public string testUrl = "http://127.0.0.1:3000";
+	public string shotPath = "/games/shots";
+	public string connectPath = "/rooms/connect";//post, game_id, player[name], player[type_id]
+	public string startGamePath = "/games/start";
 	public float delayRequest = 1f;
 	public int shotCount;
 	private List<Shot> shotsToSend;
 	private List<JSONObject> jsonShotsReceived;
 	public int gameId;
+	public string gameName;
 	private bool sending;
+
+	public List<PlayerHold> playersInfos;
 
 	public string url{
 		get{
@@ -25,6 +30,16 @@ public class RequestController : MonoBehaviour {
 
 	public void SendShot(Shot shot){
 		shotsToSend.Add(shot);
+	}
+
+	void Awake(){
+		playersInfos = new List<PlayerHold>();
+		jsonShotsReceived = new List<JSONObject>();
+		shotsToSend = new List<Shot>();
+		shotCount = 0;
+		instance = this;
+		DontDestroyOnLoad(this.gameObject);
+		sending = false;
 	}
 
 	void Update(){
