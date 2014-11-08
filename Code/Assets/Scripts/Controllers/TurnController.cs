@@ -46,6 +46,7 @@ public abstract class TurnController{
 			stageController.OnStageStart();
 		}
 		else{
+			stageController.gui.left.setActive(false);
 			this.Player.firstPlay = false;
 			EndTurn();
 		}
@@ -84,6 +85,10 @@ public abstract class TurnController{
 		if(stageController != null){
 			stageController.OnGUI();
 		}
+		stageController.gui.left.setName (this.Player.name);
+		stageController.gui.left.setNameActive ();
+		Color c = Player.troopMaterial.color;
+		stageController.gui.left.changeColor (c);
 		OnTurnGUI();
 	}
 

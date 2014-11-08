@@ -76,6 +76,10 @@ public class GameController : MonoBehaviour {
 		this.CurrentTurnController.Start();
 	}
 
+	public void nextStage(){
+		this.CurrentTurnController.NextStage ();
+	}
+
 	public void Resume(){
 		IsRunning = true;
 	}
@@ -150,11 +154,13 @@ public class GameController : MonoBehaviour {
 		}
 	}
 	public void OnKeepPressedTerritory(Territory territory){
+
 		if(CurrentStageController != null && IsRunning){
 			CurrentStageController.OnKeepPressedTerritory(territory);
 		}
 	}
 	public void OnStopPressTerritory(Territory territory){
+		//CurrentTurnController.StageController.gui.right.setActive (false);
 		if(CurrentStageController != null && IsRunning){
 			CurrentStageController.OnStopPressTerritory(territory);
 		}

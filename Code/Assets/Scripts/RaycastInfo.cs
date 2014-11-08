@@ -3,6 +3,7 @@ using System.Collections;
 
 public class RaycastInfo : MonoBehaviour {
 //	public Transform trans;
+	GUIFacade gui;
 	public LayerMask floorLayer;
 	public float animationTime = 0.5f;
 	public iTween.EaseType ease = iTween.EaseType.easeInBack;
@@ -12,6 +13,10 @@ public class RaycastInfo : MonoBehaviour {
 	public Vector3 troopOffset = new Vector3(0,0,-1);
 	
 	// Update is called once per frame
+	void Start(){
+		gui = GameObject.Find ("GUIFacade").GetComponent<GUIFacade> ();
+	}
+
 	void Update () {
 		RaycastHit raycast;
 		if(Physics.Raycast(this.camera.ScreenPointToRay(Input.mousePosition),out raycast,Mathf.Infinity,floorLayer)){
@@ -22,6 +27,8 @@ public class RaycastInfo : MonoBehaviour {
 				TerritoryInfo territoryInfo = hitCollider.GetComponentInChildren<TerritoryInfo>();
 				Territory territory = hitCollider.GetComponentInChildren<Territory>();
 				if(territoryInfo != null){
+					gui.info.setActive(true);
+					gui.info.changeInfo(territoryInfo.name,""+ territoryInfo.GetComponentsInChildren<Troop>().Length);
 					SetColorTerritoryInfo(territoryInfo);
 					SetColorNeighbors(territory);
 					if(Input.GetMouseButtonDown(0)){
@@ -31,6 +38,9 @@ public class RaycastInfo : MonoBehaviour {
 //						territory.RemoveTroop();
 					}
 				}
+			}
+			else{
+				gui.info.setActive(false);
 			}
 		}
 	}

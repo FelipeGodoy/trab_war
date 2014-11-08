@@ -8,6 +8,7 @@ public class ChangeColor : MonoBehaviour {
 
 	public void Start(){
 		active = GetComponent<Image> ().color;
+		deactivate ();
 	}
 
 	public void changeColor(){
