@@ -1,44 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class LobbyHandler : MonoBehaviour {
-	public string url;
 	public GameObject[] slots;
-	public Request r;
-	public IPanel p;
-	public GameObject EmptyPrefab, LocalPlayerPrefab, RemotePlayerPrefab, IAPrefab;
+	public PlayerHold myself;
+	public int id;
 
 	private bool sendingRequest;
 
 	void Start () {
 		sendingRequest = false;
-		/*Request r = Request.Create(url);
-		//Enviar mensagem com nome da sala e senha
-		//Enviar dados dos players controlados por este
-		r.SetFields("a","1","b","2");
-		r.Get(Callback);*/
 	}
-
-	void onChange(){
-		//Enviar dados dos players controlados por este para o servidor
-		string sendingData = "";
-		GameObject g;
-		for (int i = 0; i < 6; i++) {
-			g = slots[i];
-			if(g.tag == "LocalPlayer"){
-				//fgsfds
-			}
-			else if( g.tag == "IA"){
-				//fgsfds
-			}
-			//posiçao i
-		}
-		r.SetFields ("lobbyId", sendingData);
-		//r.Post (update);
-	}
+	//Criar animaçao de loading
+	//RequestController.Instance.gameObject.GetComponent<LoadingAnimation>().StartLoading(transform.parent);
 	void Update(){
 		if(!sendingRequest){
+			print (RequestController.Instance.url+"/games/"+RequestController.Instance.gameId+".json");
 			Request r = Request.Create(RequestController.Instance.url+"/games/"+RequestController.Instance.gameId+".json");
 			r.Get(OnGameRequestResponse);
 			sendingRequest = true;
@@ -48,60 +27,74 @@ public class LobbyHandler : MonoBehaviour {
 	public void OnGameRequestResponse(string s){
 		sendingRequest = false;
 		JSONObject json = new JSONObject(s);
-	}
-
-	void updateView(string data){
-		GameObject g;
-		for (int i = 0; i < 6; i++) {
-			g = slots[i].transform.GetChild(0).gameObject;
-			g = g.gameObject;
-			string tag = "";
-			string nome = "";
-			if(g.tag == tag){
-				if(g.tag == "RemotePlayer"){
-					Text t = g.GetComponentInChildren<Text>();
-					t.text = nome;
-				}
-				else if( g.tag == "IA"){
-					InputField name = g.GetComponentInChildren<InputField>();
-					name.value = nome;
-					//fgsfds
-				}
-			}
-			else{
-				Object o = null;
-				if(tag == "Empty"){
-					o = Instantiate (EmptyPrefab);
-				}
-				else if( tag == "RemotePlayer"){
-					o = Instantiate (RemotePlayerPrefab);
-				}
-				else if( tag == "IA"){
-					o = Instantiate (IAPrefab);
-				}
-				else if( tag == "LocalPlayer"){
-					o = Instantiate (LocalPlayerPrefab);
-				}
-				else{
-					print("ERROR: " + tag + ", " + nome);
-				}
-				swapPanels ((GameObject)o,g);
+		//DEVE ESTAR ERRADO
+		int playerId = (int)json.GetField("new_player").GetField("id").n;
+		int colorId = (int)json.GetField("new_player").GetField("color").n;
+		string name = json.GetField("new_player").GetField("name").str;
+		Player.PlayerType type = (Player.PlayerType)json.GetField("new_player").GetField("type_id").n;
+		foreach (PlayerHold ph in RequestController.Instance.playersInfos) {
+			if (ph.backend_id == playerId) {
+				ph.color = colorId;
+				ph.name = name;
+				ph.type = type;
 			}
 		}
-	}
-	
-	public static void Callback(string s){
-		//print(s);
-		//Atualizar slots de acordo com mensagem
+		PlayerHold phold = new PlayerHold(name,playerId,colorId,type);
+		RequestController.Instance.playersInfos.Add(phold);
+		UpdateView ();
 	}
 
-	public void swapPanels(GameObject novoObj, GameObject oldObj){
-			novoObj.transform.position = oldObj.transform.position;
-			RectTransform antigo, novo;
-			novo = novoObj.GetComponent<RectTransform> ();
-			antigo = oldObj.GetComponent<RectTransform> ();
-			novo.sizeDelta = new Vector2(antigo.rect.width,antigo.rect.height);
-			novoObj.transform.parent = oldObj.transform.parent.transform;
-			Destroy (oldObj);
+	void UpdateView(){
+		GameObject g;
+		Panel p;
+		bool[] hasPlayer = new bool[slots.Length];
+		foreach (PlayerHold ph in RequestController.Instance.playersInfos) {
+			g = slots[ph.order];
+			hasPlayer[ph.order] = true;
+			p = g.GetComponentInChildren<Panel>();
+			if(ph.type == Player.PlayerType.NON_PLAYER_CHARACTER){
+				p.setIA(ph.name);
+			}
+			else{
+				p.setPlayer(ph.name);
+			}
+		}
+		for(int i = 0; i < hasPlayer.Length; i++){
+			if(hasPlayer[i] == false)
+				slots[i].GetComponentInChildren<Panel>().setEmpty();
+		}
+	}
+
+	public void ExitRequest(){
+		//Requisitar saida
+		OnExitRequestResponse ("HUE");
+	}
+
+	void OnExitRequestResponse(string s){
+		Application.LoadLevel ("Menu");
+	}
+
+
+	public void AddIA(){
+		string name = "BOT "; //Arrumar lista de nomes aleatorios
+		int gameId = this.id;
+		int playerType = (int)Player.PlayerType.NON_PLAYER_CHARACTER;
+		RequestController.Instance.gameId = gameId;
+		Request r = Request.Create(RequestController.Instance.url + "/rooms/connect.json");
+		r.AddParam("player[name]",name);
+		r.AddParam("player[type_id]",""+playerType);
+		r.AddParam("game_id",""+gameId);
+		r.Post(OnConnectRoomReponse);
+	}
+
+	public void OnConnectRoomReponse(string s){
+		//DEVE ESTAR ERRADO
+		JSONObject json = new JSONObject(s);
+		string username = json.GetField("new_player").GetField("name").str;
+		int playerId = (int)json.GetField("new_player").GetField("id").n;
+		int colorId = (int)json.GetField("new_player").GetField("color").n;
+		Player.PlayerType type = (Player.PlayerType)json.GetField("new_player").GetField("type_id").n;
+		PlayerHold ph = new PlayerHold(username,playerId,colorId,type);
+		RequestController.Instance.playersInfos.Add(ph);
 	}
 }

@@ -3,7 +3,8 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class RoomData : MonoBehaviour {
-	public Text roomNameText, userNameText;
+	public Text roomNameText;
+	public Text userNameText;
 	public string roomName{get{return roomNameText.text;}}
 	public string username{get{return userNameText.text;}}
 	// Use this for initialization
@@ -11,6 +12,7 @@ public class RoomData : MonoBehaviour {
 	// Update is called once per frame
 
 	public void CreateRoom(){
+		RequestController.Instance.gameObject.GetComponent<LoadingAnimation>().StartLoading(transform.parent);
 		RequestController.Instance.playersInfos.Clear();
 		if(roomName == null || username == null) return;
 		Request r = Request.Create(RequestController.Instance.url+"/rooms.json");
@@ -40,6 +42,7 @@ public class RoomData : MonoBehaviour {
 		Player.PlayerType type = (Player.PlayerType)json.GetField("new_player").GetField("type_id").n;
 		PlayerHold ph = new PlayerHold(username,playerId,colorId,type);
 		RequestController.Instance.playersInfos.Add(ph);
+		RequestController.Instance.gameObject.GetComponent<LoadingAnimation>().EndLoading();
 		Application.LoadLevel("Lobby");
 	}
 

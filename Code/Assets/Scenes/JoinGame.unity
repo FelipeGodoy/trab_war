@@ -301,10 +301,10 @@ RectTransform:
   - {fileID: 568561696}
   m_Father: {fileID: 721681190}
   m_RootOrder: 6
-  m_AnchorMin: {x: .101000004, y: .5}
-  m_AnchorMax: {x: .5, y: .815618038}
-  m_AnchoredPosition: {x: 61.6220016, y: 52.7280006}
-  m_SizeDelta: {x: 135.070007, y: -65.9000015}
+  m_AnchorMin: {x: .0932414904, y: .783245206}
+  m_AnchorMax: {x: .702487171, y: .870754838}
+  m_AnchoredPosition: {x: -.249993801, y: .5}
+  m_SizeDelta: {x: .5, y: -1}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &620086881
 MonoBehaviour:
@@ -793,6 +793,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: b94ef3fe2697d0f43a20e6d20832bbd9, type: 2}
+      propertyPath: loadingPref
+      value: 
+      objectReference: {fileID: 100000, guid: 504d3321d268dcc47890a2f52f3df71c, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b94ef3fe2697d0f43a20e6d20832bbd9, type: 2}
   m_RootGameObject: {fileID: 1449012173}
@@ -874,6 +878,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1449012175}
   - 114: {fileID: 1449012174}
+  - 114: {fileID: 1449012176}
   m_Layer: 0
   m_Name: RequestController
   m_TagString: Untagged
@@ -893,15 +898,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba3cb9d0fe90b3e4ea04fed77a5fe3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugMode: 1
-  defaultUrl: http://war-uff.herokuapp.com
-  testUrl: http://127.0.0.1:3000
-  shotPath: \games\shots
+  remoteUrl: http://war-uff.herokuapp.com
+  localUrl: http://127.0.0.1:3000
+  shotPath: /games/shots
   connectPath: /rooms/connect
   startGamePath: /games/start
   delayRequest: 1
   shotCount: 0
   gameId: 3
+  gameName: 
+  playersInfos: []
 --- !u!4 &1449012175
 Transform:
   m_ObjectHideFlags: 0
@@ -914,6 +920,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!114 &1449012176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: b94ef3fe2697d0f43a20e6d20832bbd9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1116006375}
+  m_GameObject: {fileID: 1449012173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b5b0be010b06f448a5fcb7c933fcfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingPref: {fileID: 100000, guid: 504d3321d268dcc47890a2f52f3df71c, type: 2}
 --- !u!1 &1457163910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,9 +1450,9 @@ RectTransform:
   m_Father: {fileID: 721681190}
   m_RootOrder: 1
   m_AnchorMin: {x: .0902157724, y: .0400000028}
-  m_AnchorMax: {x: .731000006, y: .888623953}
-  m_AnchoredPosition: {x: -9, y: -22}
-  m_SizeDelta: {x: -20, y: -45.0999985}
+  m_AnchorMax: {x: .702487171, y: .764000058}
+  m_AnchoredPosition: {x: .5, y: .5}
+  m_SizeDelta: {x: -1, y: -.0999984741}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &2062934927
 MonoBehaviour:
@@ -1474,9 +1493,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d517bb08d066d64788ddf3d476c0989, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loading: {fileID: 100000, guid: 504d3321d268dcc47890a2f52f3df71c, type: 2}
   option: {fileID: 11400000, guid: fb7a7046e27ccb349ac9c4e77e28f8d9, type: 2}
   pos: {fileID: 1458562906}
-  next: {x: 0, y: 0, z: 0}
 --- !u!1 &2105496053
 GameObject:
   m_ObjectHideFlags: 0
