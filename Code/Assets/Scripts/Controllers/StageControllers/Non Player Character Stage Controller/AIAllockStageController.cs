@@ -27,11 +27,19 @@ public class AIAllockStageController : StageController {
 				indice = 0;
 			temp = this.Player.Territories[indice++];
 			ComputeShot(new AllockTroopShot(this.Player,temp,1));
+			gui.left.setActive(true);
+			gui.left.setTerritory(temp.gameObject.name, ""+temp.TroopsCount);
 			usedTroops++;
 			}
 
 		else{
 			EndStage();
 		}
+	}
+
+	public override void OnStageEnd ()
+	{
+		gui.left.setActive (false);
+		gui.right.setActive (false);
 	}
 }

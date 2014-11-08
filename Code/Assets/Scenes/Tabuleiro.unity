@@ -8429,7 +8429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  type: 0
+  type: 1
   firstPlay: 0
   armyName: 
   name: Jogador1
@@ -8699,7 +8699,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
       propertyPath: type
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
       propertyPath: type

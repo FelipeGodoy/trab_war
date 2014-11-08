@@ -42,9 +42,9 @@ public class PCMoveStageController : StageController {
 	public override void OnGUI(){
 		//GUI.Label(new Rect(200,30,150,20),"Movendo");
 		gui.setMover ();
-		if(GUI.Button(new Rect(10,40,100,20),"Passar")){
+		/*if(GUI.Button(new Rect(10,40,100,20),"Passar")){
 			turnController.NextStage();
-		}
+		}*/
 	}
 
 }

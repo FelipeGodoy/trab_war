@@ -39,7 +39,7 @@ public class PCAlockStageController : StageController {
 	}
 
 	public override void OnStageEnd(){
-		GUI.Label(new Rect(200,30,150,20),"Movendo");
+		//GUI.Label(new Rect(200,30,150,20),"Movendo");
 		gui.left.setActive (false);
 		gui.right.setActive (false);
 	}

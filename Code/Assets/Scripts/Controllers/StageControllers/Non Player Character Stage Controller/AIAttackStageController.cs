@@ -15,10 +15,12 @@ public class AIAttackStageController : StageController {
 		numeroAtaquesTotal = 5;
 		numeroAtaquesCorrente = 0;
 		atacando = false;
+		gui.left.setActive (false);
+		gui.right.setActive (false);
 	}
 
 	public override void OnGUI(){
-		GUI.Label(new Rect(200,30,150,20),"Atacando");
+		//GUI.Label(new Rect(200,30,150,20),"Atacando");
 	}
 
 	public override void Update(){
@@ -43,6 +45,13 @@ public class AIAttackStageController : StageController {
 			
 			if(maiorQtdTropas > 1 && !atacando){
 				atacando = true;
+				gui.left.setActive (true);
+				gui.left.setTexts (territorioAtacante.CurrentPlayer.name, territorioAtacante.gameObject.name, "" + territorioAtacante.TroopsCount);
+				gui.left.changeColor (territorioAtacante.CurrentPlayer.troopMaterial.color);
+				
+				gui.right.setActive (true);
+				gui.right.setTexts (territorioAlvo.CurrentPlayer.name, territorioAlvo.gameObject.name, "" + territorioAlvo.TroopsCount);
+				gui.right.changeColor (territorioAlvo.CurrentPlayer.troopMaterial.color);
 				ComputeShot(new AttackShot(this.Player,territorioAtacante,territorioAlvo,DiceResult));
 				numeroAtaquesCorrente++;
 			}
@@ -56,5 +65,7 @@ public class AIAttackStageController : StageController {
 	private void DiceResult(bool conquested){
 		atacando = false;
 		Dice.Instance.ClearDices();
+		gui.left.setActive (false);
+		gui.right.setActive (false);
 	}
 }
