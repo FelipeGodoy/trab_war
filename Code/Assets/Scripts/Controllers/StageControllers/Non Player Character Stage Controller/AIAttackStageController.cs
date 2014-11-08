@@ -19,7 +19,6 @@ public class AIAttackStageController : StageController {
 
 	public override void OnGUI(){
 		GUI.Label(new Rect(200,30,150,20),"Atacando");
-		GUI.Label(new Rect(200,60,150,20),"Teste");
 	}
 
 	public override void Update(){
