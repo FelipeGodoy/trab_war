@@ -27,4 +27,9 @@ public class PCTurnController : TurnController{
 
 		//GUI.Label(new Rect(200,10,150,20),"Jogador: "+this.Player.name);
 	}
+
+	public override void OnTurnStart(){
+		stageController.gui.showPassar ();
+		this.sendShotOnEndTurn = false;
+	}
 }

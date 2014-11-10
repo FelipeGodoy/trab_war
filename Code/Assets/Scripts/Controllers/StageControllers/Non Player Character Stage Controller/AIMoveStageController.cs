@@ -20,7 +20,7 @@ public class AIMoveStageController : StageController {
 	}
 	
 	public override void OnStageStart(){
-
+		gui.setMover ();
 		territorio1 = null;
 		territorio2 = null;
 		numeroMovimentosTotal = 5;

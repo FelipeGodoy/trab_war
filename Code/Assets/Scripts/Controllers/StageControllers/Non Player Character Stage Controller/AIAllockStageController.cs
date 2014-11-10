@@ -22,6 +22,7 @@ public class AIAllockStageController : StageController {
 	}
 
 	public override void Update(){
+		gui.setAlocar (freeTroops-usedTroops);
 		if(usedTroops < freeTroops){
 			if(this.Player.TerritoriesCount == indice)
 				indice = 0;
