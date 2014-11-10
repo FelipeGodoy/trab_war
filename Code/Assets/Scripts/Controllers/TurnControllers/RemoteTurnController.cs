@@ -8,6 +8,7 @@ public class RemoteTurnController : TurnController {
 	}
 
 	public override void OnTurnStart(){
+		stageController.gui.hidePassar ();
 		this.sendShotOnEndTurn = false;
 	}
 }

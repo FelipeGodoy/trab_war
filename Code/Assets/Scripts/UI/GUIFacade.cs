@@ -41,10 +41,14 @@ public class GUIFacade : MonoBehaviour {
 	}
 
 	public void showPassar(){
-		Behaviour[] b = passar.GetComponentsInChildren<Behaviour>();
-		foreach(Behaviour h in b){
-			h.enabled = true;
-		}
+		//if (GameObject.FindObjectOfType<GameController>().CurrentPlayer.type == Player.PlayerType.PLAYER_CHARACTER) {
+						Behaviour[] b = passar.GetComponentsInChildren<Behaviour> ();
+						foreach (Behaviour h in b) {
+								h.enabled = true;
+						}
+		/*		} else {
+						hidePassar ();
+				}*/
 	}
 
 	public void hidePassar(){

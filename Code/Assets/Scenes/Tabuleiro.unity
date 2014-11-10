@@ -1514,7 +1514,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: {r: .996078432, g: 0, b: 0, a: .784313738}
-  inactive: {r: .498039216, g: .498039216, b: .498039216, a: .784313738}
+  inactive: {r: .338235319, g: .338235319, b: .338235319, a: .784313738}
 --- !u!1 &276482998
 GameObject:
   m_ObjectHideFlags: 0
@@ -2330,7 +2330,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .1953125, g: .1953125, b: .1953125, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
@@ -4840,7 +4840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: .784313738}
+  m_Color: {r: .345588207, g: .345588207, b: .345588207, a: .784313738}
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -7870,7 +7870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: .0896551609, a: .784313738}
+  m_Color: {r: 0, g: .845588207, b: .0758113489, a: .784313738}
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -7915,7 +7915,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: {r: 1, g: 1, b: 1, a: .784313738}
-  inactive: {r: .498039216, g: .498039216, b: .498039216, a: .784313738}
+  inactive: {r: .338235319, g: .338235319, b: .338235319, a: .784313738}
 --- !u!1 &1485233307
 GameObject:
   m_ObjectHideFlags: 0
@@ -8005,7 +8005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: .503448009, b: 1, a: .784313738}
+  m_Color: {r: 0, g: .172413826, b: 1, a: .784313738}
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -8033,7 +8033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: {r: 0, g: .498039216, b: .996078432, a: .784313738}
-  inactive: {r: .498039216, g: .498039216, b: .498039216, a: .784313738}
+  inactive: {r: .338235319, g: .338235319, b: .338235319, a: .784313738}
 --- !u!1 &1543987810
 GameObject:
   m_ObjectHideFlags: 0
@@ -9080,7 +9080,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -91, y: -16}
-  m_SizeDelta: {x: 168.799988, y: 31.7999992}
+  m_SizeDelta: {x: 165.399994, y: 22.7000008}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1775817181
 MonoBehaviour:
@@ -10120,7 +10120,7 @@ RectTransform:
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 1, y: 1.23977661e-05}
-  m_SizeDelta: {x: 168.800003, y: 31.7999992}
+  m_SizeDelta: {x: 168.800003, y: 21.7000008}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1936304623
 MonoBehaviour:

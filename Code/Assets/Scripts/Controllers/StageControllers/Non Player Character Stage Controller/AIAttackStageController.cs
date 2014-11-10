@@ -15,6 +15,7 @@ public class AIAttackStageController : StageController {
 		numeroAtaquesTotal = 5;
 		numeroAtaquesCorrente = 0;
 		atacando = false;
+		gui.setAtacar ();
 		gui.left.setActive (false);
 		gui.right.setActive (false);
 	}
