@@ -1389,7 +1389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1
-  type: 0
+  type: 1
   firstPlay: 0
   armyName: 
   name: Jogador2
@@ -3147,7 +3147,7 @@ MonoBehaviour:
   startGamePath: /games/start
   delayRequest: 1
   shotCount: 0
-  gameId: 3
+  gameId: 16
   gameName: 
   playersInfos: []
 --- !u!4 &727216435
@@ -8384,7 +8384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  type: 2
+  type: 0
   firstPlay: 0
   armyName: 
   name: Jogador1
@@ -8654,11 +8654,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
       propertyPath: type
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
       propertyPath: type
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
@@ -10799,7 +10799,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b94ef3fe2697d0f43a20e6d20832bbd9, type: 2}
       propertyPath: gameId
-      value: 3
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b94ef3fe2697d0f43a20e6d20832bbd9, type: 2}
       propertyPath: debugMode

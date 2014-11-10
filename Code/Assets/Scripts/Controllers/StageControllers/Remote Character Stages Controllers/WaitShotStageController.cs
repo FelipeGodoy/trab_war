@@ -30,6 +30,7 @@ public class WaitShotStageController : StageController {
 		if(shotsBuffer.Count > 0){
 			Shot shot = shotsBuffer[0];
 			shotsBuffer.RemoveAt(0);
+			shot.sendRequest = false;
 			ComputeShot(shot);
 		}
 	}
