@@ -72,4 +72,37 @@ public class Request : ScriptableObject {
 		RequestController.Instance.StartRequest(www, callback);
 	}
 
+	public static List<PlayerHold> JSONToPlayersHolds(JSONObject json){
+		List<PlayerHold> players = new List<PlayerHold>();
+		if(json.IsArray){
+			foreach(JSONObject jsonPlayer in json.list){
+				players.Add(JSONToPlayerHold(jsonPlayer));
+			}
+		}
+		return players;
+	}
+
+	public static PlayerHold JSONToPlayerHold(JSONObject json){
+		int playerId = (int)json.GetField("id").n;
+		int colorId = (int)json.GetField("color").n;
+		string name = json.GetField("name").str;
+		Player.PlayerType type = (Player.PlayerType)json.GetField("type_id").n;
+		PlayerHold p = new PlayerHold(name,playerId,colorId,type);
+		if(!json.GetField("order").IsNull){
+			p.order = (int)json.GetField("order").n;
+		}
+		if(!json.GetField("goal_id").IsNull){
+			p.goalId = (int)json.GetField("goal_id").n;
+		}
+		if(!json.GetField("init_territories").IsNull){
+			List<JSONObject> jsonTerritories = json.GetField("init_territories").list;
+			int[] territories = new int[jsonTerritories.Count];
+			for(int i=0; i < territories.Length; i++){
+				territories[i] = (int)jsonTerritories[i].n;
+			}
+			p.initTerritories = territories;
+		}
+		return p;
+	}
+
 }

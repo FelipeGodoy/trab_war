@@ -499,7 +499,7 @@ RectTransform:
   - {fileID: 632095147}
   - {fileID: 1377763972}
   - {fileID: 1862138108}
-  - {fileID: 1315980524}
+  - {fileID: 833014749}
   m_Father: {fileID: 1488840486}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
@@ -595,6 +595,47 @@ Prefab:
   m_RootGameObject: {fileID: 1309895418}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &833014748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 833014749}
+  - 114: {fileID: 833014750}
+  m_Layer: 0
+  m_Name: roomData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &833014749
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 833014748}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.13388062, y: -7.68585205, z: 1.04263306}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 781395250}
+  m_RootOrder: 7
+--- !u!114 &833014750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 833014748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: decd7cb13b81e2342831b81f6ed43d73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNameText: {fileID: 360192356}
+  userNameText: {fileID: 1698293762}
 --- !u!1 &907730735
 GameObject:
   m_ObjectHideFlags: 0
@@ -926,7 +967,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b94ef3fe2697d0f43a20e6d20832bbd9, type: 2}
       propertyPath: debugMode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b94ef3fe2697d0f43a20e6d20832bbd9, type: 2}
@@ -1057,47 +1098,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pic: {fileID: 21300000, guid: be3e341a80faed640b6c21ce7ba8b660, type: 3}
   aim: {fileID: 907730737}
---- !u!1 &1315980521
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1315980524}
-  - 114: {fileID: 1315980522}
-  m_Layer: 0
-  m_Name: roomData
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1315980522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1315980521}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: decd7cb13b81e2342831b81f6ed43d73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomNameText: {fileID: 360192356}
-  userNameText: {fileID: 1698293762}
---- !u!4 &1315980524
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1315980521}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.13388062, y: -7.68585205, z: 1.04263306}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 781395250}
-  m_RootOrder: 7
 --- !u!1 &1377763971
 GameObject:
   m_ObjectHideFlags: 0
@@ -1173,7 +1173,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1315980522}
+      - m_Target: {fileID: 833014750}
         m_MethodName: CreateRoom
         m_Mode: 1
         m_Arguments:
@@ -1772,6 +1772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba3cb9d0fe90b3e4ea04fed77a5fe3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugMode: 0
   remoteUrl: http://war-uff.herokuapp.com
   localUrl: http://127.0.0.1:3000
   shotPath: /games/shots
@@ -1782,6 +1783,7 @@ MonoBehaviour:
   gameId: 3
   gameName: 
   playersInfos: []
+  remotePlayersInfos: []
 --- !u!4 &2079874865
 Transform:
   m_ObjectHideFlags: 0

@@ -347,6 +347,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 562928740}
   - 114: {fileID: 562928739}
+  - 114: {fileID: 562928741}
   m_Layer: 0
   m_Name: RequestController
   m_TagString: Untagged
@@ -367,8 +368,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugMode: 0
-  defaultUrl: http://war-uff.herokuapp.com
-  testUrl: http://127.0.0.1:3000
+  remoteUrl: http://war-uff.herokuapp.com
+  localUrl: http://127.0.0.1:3000
   shotPath: /games/shots
   connectPath: /rooms/connect
   startGamePath: /games/start
@@ -377,6 +378,7 @@ MonoBehaviour:
   gameId: 3
   gameName: 
   playersInfos: []
+  remotePlayersInfos: []
 --- !u!4 &562928740
 Transform:
   m_ObjectHideFlags: 0
@@ -389,6 +391,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &562928741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: b94ef3fe2697d0f43a20e6d20832bbd9,
+    type: 2}
+  m_PrefabInternal: {fileID: 1176412668}
+  m_GameObject: {fileID: 562928738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b5b0be010b06f448a5fcb7c933fcfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingPref: {fileID: 100000, guid: 504d3321d268dcc47890a2f52f3df71c, type: 2}
 --- !u!1 &650482342
 GameObject:
   m_ObjectHideFlags: 0

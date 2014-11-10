@@ -1,15 +1,13 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.UI;
+using System.Collections;
+
 
 public class RoomData : MonoBehaviour {
 	public Text roomNameText;
 	public Text userNameText;
 	public string roomName{get{return roomNameText.text;}}
-	public string username{get{return userNameText.text;}}
-	// Use this for initialization
-	
-	// Update is called once per frame
+	public string username{get{return userNameText.text;}} 
 
 	public void CreateRoom(){
 		RequestController.Instance.gameObject.GetComponent<LoadingAnimation>().StartLoading(transform.parent);
@@ -33,7 +31,7 @@ public class RoomData : MonoBehaviour {
 		r.AddParam("player[type_id]",""+playerType);
 		r.AddParam("game_id",""+gameId);
 		r.Post(OnConnectRoomReponse);
-	}
+	} 
 
 	public void OnConnectRoomReponse(string s){
 		JSONObject json = new JSONObject(s);

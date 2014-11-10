@@ -12,12 +12,13 @@ public class LobbyHandler : MonoBehaviour {
 
 	void Start () {
 		sendingRequest = false;
+		UpdateView();
 	}
 	//Criar animaçao de loading
 	//RequestController.Instance.gameObject.GetComponent<LoadingAnimation>().StartLoading(transform.parent);
 	void Update(){
 		if(!sendingRequest){
-			print (RequestController.Instance.url+"/games/"+RequestController.Instance.gameId+".json");
+//			print (RequestController.Instance.url+"/games/"+RequestController.Instance.gameId+".json");
 			Request r = Request.Create(RequestController.Instance.url+"/games/"+RequestController.Instance.gameId+".json");
 			r.Get(OnGameRequestResponse);
 			sendingRequest = true;
@@ -27,30 +28,28 @@ public class LobbyHandler : MonoBehaviour {
 	public void OnGameRequestResponse(string s){
 		sendingRequest = false;
 		JSONObject json = new JSONObject(s);
-		//DEVE ESTAR ERRADO
-		int playerId = (int)json.GetField("new_player").GetField("id").n;
-		int colorId = (int)json.GetField("new_player").GetField("color").n;
-		string name = json.GetField("new_player").GetField("name").str;
-		Player.PlayerType type = (Player.PlayerType)json.GetField("new_player").GetField("type_id").n;
-		foreach (PlayerHold ph in RequestController.Instance.playersInfos) {
-			if (ph.backend_id == playerId) {
-				ph.color = colorId;
-				ph.name = name;
-				ph.type = type;
-			}
-		}
-		PlayerHold phold = new PlayerHold(name,playerId,colorId,type);
-		RequestController.Instance.playersInfos.Add(phold);
+		List<PlayerHold> playersInfo = Request.JSONToPlayersHolds(json.GetField("players"));
+		RequestController.Instance.remotePlayersInfos = playersInfo;
 		UpdateView ();
+		if(json.GetField("active").b){
+			Application.LoadLevel("Tabuleiro");
+		}
+	}
+
+	public void StartGame(){
+		Request r = Request.Create(RequestController.Instance.url + "/games/start.json");
+		r.AddParam("game_id",""+RequestController.Instance.gameId);
+		r.Post(null);
 	}
 
 	void UpdateView(){
 		GameObject g;
 		Panel p;
 		bool[] hasPlayer = new bool[slots.Length];
-		foreach (PlayerHold ph in RequestController.Instance.playersInfos) {
-			g = slots[ph.order];
-			hasPlayer[ph.order] = true;
+		List<PlayerHold> players = RequestController.Instance.AllPlayersInfo;
+		foreach (PlayerHold ph in players) {
+			g = slots[ph.color];
+			hasPlayer[ph.color] = true;
 			p = g.GetComponentInChildren<Panel>();
 			if(ph.type == Player.PlayerType.NON_PLAYER_CHARACTER){
 				p.setIA(ph.name);
@@ -76,10 +75,9 @@ public class LobbyHandler : MonoBehaviour {
 
 
 	public void AddIA(){
-		string name = "BOT "; //Arrumar lista de nomes aleatorios
-		int gameId = this.id;
+		string name = "BOT"; //Arrumar lista de nomes aleatorios
+		int gameId = RequestController.Instance.gameId;
 		int playerType = (int)Player.PlayerType.NON_PLAYER_CHARACTER;
-		RequestController.Instance.gameId = gameId;
 		Request r = Request.Create(RequestController.Instance.url + "/rooms/connect.json");
 		r.AddParam("player[name]",name);
 		r.AddParam("player[type_id]",""+playerType);

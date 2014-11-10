@@ -55,6 +55,17 @@ public class GameController : MonoBehaviour {
 		}
 	}
 
+	void Start(){
+#if LOCAL_MODE
+		TestTroops test = gameObject.AddComponent<TestTroops>();
+		test.player1 = playersModels[0];
+		test.player2 = playersModels[1];
+#else
+		Setup(RequestController.Instance.AllPlayersInfo);
+		Begin();
+#endif
+	}
+
 	public bool ComputeShot(Shot shot){
 		return shot.Do();
 	}
@@ -84,12 +95,24 @@ public class GameController : MonoBehaviour {
 		IsRunning = true;
 	}
 
-	public void Setup(int[] playersOrder){
-		foreach(Player player in playersModels){
+	public void Setup(List<PlayerHold> playersHold){
+		playersHold.Sort( delegate(PlayerHold a, PlayerHold b) {
+			return a.order.CompareTo(b.order);
+		});
+		PlayersOrder.Clear();
+		foreach(PlayerHold ph in playersHold){
+			Player player = this.playersModels[ph.color];
 			player.CleanUp();
-		}
-		foreach(int order in playersOrder){
-			PlayersOrder.Add(playersModels[order]);
+			playersOrder.Add(player);
+			player.Goal = GoalFactory.Create(ph.goalId);
+			player.type = ph.type;
+			player.name = ph.name;
+			player.backendId = ph.backendId;
+			foreach(int i in ph.initTerritories){
+				Shot allockShot = new AllockTroopShot(player,currentMap.territories[i],1);
+				allockShot.sendRequest = false;
+				ComputeShot(allockShot);
+			}
 		}
 		IsRunning = false;
 	}

@@ -5,7 +5,7 @@ public class WarReleaseMode
 {
 	const string localMode= "LOCAL_MODE";
 
-	[MenuItem("War/Release mode/remote")]
+	[MenuItem("War/Release mode/online")]
 	public static void SetOnlineMode()
 	{
 		PlayerSettings.SetScriptingDefineSymbolsForGroup(BuildTargetGroup.WebPlayer, string.Empty);
@@ -13,14 +13,14 @@ public class WarReleaseMode
 		PlayerSettings.SetScriptingDefineSymbolsForGroup(BuildTargetGroup.Standalone, string.Empty);
 	}
 	
-	[MenuItem("War/Release mode/remote", true)]
+	[MenuItem("War/Release mode/online", true)]
 	public static bool CanChooseOnline()
 	{
 		string symbols = PlayerSettings.GetScriptingDefineSymbolsForGroup(BuildTargetGroup.WebPlayer);
 		return symbols.Contains(localMode);
 	}
 	
-	[MenuItem("War/Release mode/local")]
+	[MenuItem("War/Release mode/offline")]
 	public static void SetOfflineMode()
 	{
 		PlayerSettings.SetScriptingDefineSymbolsForGroup(BuildTargetGroup.WebPlayer, localMode);
@@ -28,7 +28,7 @@ public class WarReleaseMode
 		PlayerSettings.SetScriptingDefineSymbolsForGroup(BuildTargetGroup.Standalone, localMode);
 	}
 	
-	[MenuItem("War/Release mode/local", true)]
+	[MenuItem("War/Release mode/offline", true)]
 	public static bool CanChooseOffline()
 	{
 		string symbols = PlayerSettings.GetScriptingDefineSymbolsForGroup(BuildTargetGroup.WebPlayer);

@@ -1934,9 +1934,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1713776058}
-        m_MethodName: changeLevel
-        m_Mode: 3
+      - m_Target: {fileID: 1713776057}
+        m_MethodName: StartGame
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
@@ -2114,11 +2114,12 @@ MonoBehaviour:
   - {fileID: 2053340874}
   myself:
     name: 
-    backend_id: 0
+    backendId: 0
     color: 0
     type: 0
     order: 0
-    init_territories: 
+    initTerritories: 
+    goalId: 0
   id: 0
 --- !u!114 &1713776058
 MonoBehaviour:

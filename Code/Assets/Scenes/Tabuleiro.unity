@@ -3182,6 +3182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba3cb9d0fe90b3e4ea04fed77a5fe3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugMode: 0
   remoteUrl: http://war-uff.herokuapp.com
   localUrl: http://127.0.0.1:3000
   shotPath: /games/shots.json
@@ -3192,6 +3193,7 @@ MonoBehaviour:
   gameId: 3
   gameName: 
   playersInfos: []
+  remotePlayersInfos: []
 --- !u!4 &727216435
 Transform:
   m_ObjectHideFlags: 0
@@ -5839,7 +5841,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1208939942}
-  - 114: {fileID: 1208939943}
   m_Layer: 0
   m_Name: Players
   m_TagString: Untagged
@@ -5865,20 +5866,6 @@ Transform:
   - {fileID: 193573543}
   m_Father: {fileID: 0}
   m_RootOrder: 6
---- !u!114 &1208939943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400008, guid: 19cbf4ba1e13b204d8029813134ff9e8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1665856467}
-  m_GameObject: {fileID: 1208939941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36e9320a1e051fb4ebbe639c45421ff3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player1: {fileID: 1587539269}
-  player2: {fileID: 240411266}
 --- !u!1 &1216056977
 GameObject:
   m_ObjectHideFlags: 0
@@ -8705,7 +8692,8 @@ Prefab:
       propertyPath: type
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400008, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
   m_RootGameObject: {fileID: 1208939941}
   m_IsPrefabParent: 0

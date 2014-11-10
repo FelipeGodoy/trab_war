@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class RequestController : MonoBehaviour {
 
 	private static RequestController instance;
-//	public bool debugMode = false;
+	public bool debugMode = false;
 	public string remoteUrl = "http://war-uff.herokuapp.com";
 	public string localUrl = "http://127.0.0.1:3000";
 	public string shotPath = "/games/shots";
@@ -20,6 +20,26 @@ public class RequestController : MonoBehaviour {
 	private bool sending;
 
 	public List<PlayerHold> playersInfos;
+	public List<PlayerHold> remotePlayersInfos;
+
+	public List<PlayerHold> AllPlayersInfo{
+		get{
+			List<PlayerHold> all = new List<PlayerHold>(playersInfos);
+			foreach(PlayerHold remote in remotePlayersInfos){
+				PlayerHold local = all.Find(a => a.color == remote.color);
+				if(local != null){
+					local.initTerritories = remote.initTerritories;
+					local.order = remote.order;
+					local.goalId = remote.goalId;
+				}
+				else{
+					remote.type = Player.PlayerType.NON_PLAYER_CHARACTER;
+					all.Add(remote);
+				}
+			}
+			return all;
+		}
+	}
 
 	public bool SendingRequest{
 		get{
@@ -29,11 +49,8 @@ public class RequestController : MonoBehaviour {
 
 	public string url{
 		get{
-#if LOCAL_MODE
-			return localUrl;
-#else
-			return remoteUrl;
-#endif
+			if(debugMode) return localUrl;
+			else return remoteUrl;
 		}
 	}
 
@@ -47,6 +64,7 @@ public class RequestController : MonoBehaviour {
 		}
 		else{
 			playersInfos = new List<PlayerHold>();
+			remotePlayersInfos = new List<PlayerHold>();
 			jsonShotsReceived = new List<JSONObject>();
 			shotsToSend = new List<Shot>();
 			shotCount = 0;
@@ -91,6 +109,7 @@ public class RequestController : MonoBehaviour {
 		}
 		else{
 			playersInfos = new List<PlayerHold>();
+			remotePlayersInfos = new List<PlayerHold>();
 			jsonShotsReceived = new List<JSONObject>();
 			shotsToSend = new List<Shot>();
 			shotCount = 0;
