@@ -24,6 +24,7 @@ public class PCTurnController : TurnController{
 	}
 
 	public override void OnTurnGUI(){
-		GUI.Label(new Rect(200,10,150,20),"Jogador: "+this.Player.name);
+
+		//GUI.Label(new Rect(200,10,150,20),"Jogador: "+this.Player.name);
 	}
 }

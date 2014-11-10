@@ -4,8 +4,7 @@ using System.Collections;
 
 public class PlayerInfo : MonoBehaviour {
 	Image[] panels;
-	Text name, territoryName, troopQtd;
-	public bool show;
+	public Text name, territoryName, troopQtd;
 	// Use this for initialization
 	void Start () {
 		panels = GetComponentsInChildren<Image> ();
@@ -19,15 +18,13 @@ public class PlayerInfo : MonoBehaviour {
 				troopQtd = t;
 			}
 		}
-	}
-
-	void Update(){
-		setActive (show);
+		setActive (false);
 	}
 
 	public void changeColor(Color c){
 		foreach (Image i in panels) {
-			i.color = c;
+			if(i.gameObject.name != "TroopQtd")
+				i.color = c;
 		}	
 	}
 
@@ -37,6 +34,22 @@ public class PlayerInfo : MonoBehaviour {
 		troopQtd.text = Qtd;
 	}
 
+	public void setName(string Name){
+		name.text = Name;
+	}
+
+	public void setTerritory(string Territory, string Qtd){
+		territoryName.text = Territory;
+		troopQtd.text = Qtd;
+	}
+	public void setNameActive(){
+		Behaviour[] g = this.GetComponentsInChildren<Behaviour> ();
+		foreach(Behaviour  o in g){
+			if(o.transform != this.transform && (o.transform.parent.name == "Name" || o.name == "Name")){
+				o.enabled = true;
+			}
+		}
+	}
 	public void setActive(bool active){
 		Behaviour[] g = this.GetComponentsInChildren<Behaviour> ();
 		foreach(Behaviour  o in g){

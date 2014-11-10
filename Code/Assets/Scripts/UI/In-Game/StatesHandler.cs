@@ -14,7 +14,8 @@ public class StatesHandler : MonoBehaviour {
 		txt = this.GetComponentInChildren<Text> ();
 		lights = GetComponentsInChildren<ChangeColor> ();
 		}
-	public void setAlocar(){
+
+	public void setAlocar(int qtd){
 		ChangeColor[] t;
 		foreach (ChangeColor c in lights) {
 			if(c.gameObject.name == "Light1"){
@@ -24,7 +25,10 @@ public class StatesHandler : MonoBehaviour {
 				c.deactivate();
 			}
 		}
-		txt.text = alocar;
+		if (qtd == 1)
+			txt.text = alocar + " - " +qtd + " peça";
+		else
+			txt.text = alocar + " - " +qtd + " peças";
 	}
 
 	public void setAtacar(){

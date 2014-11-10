@@ -94,8 +94,8 @@ GameObject:
   - 224: {fileID: 22400014}
   - 222: {fileID: 22200014}
   - 114: {fileID: 11400018}
-  - 114: {fileID: 11400020}
   - 114: {fileID: 11400028}
+  - 114: {fileID: 11400002}
   m_Layer: 5
   m_Name: IaPanel
   m_TagString: IA
@@ -159,6 +159,20 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 835b62bcd928565459f634e7c071259a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emptyPanel: {fileID: 11400000, guid: a84913cb61d7f8f4bbfca7b32e31bfcb, type: 2}
+  playerPanel: {fileID: 11400000, guid: b20f4b06f8c15c84d8eef56968102085, type: 2}
+  iaPanel: {fileID: 11400002}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -289,18 +303,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &11400020
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100014}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d199c9319ae4f249a50b2f3c2292b0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  emptyPanel: {fileID: 11400008, guid: a84913cb61d7f8f4bbfca7b32e31bfcb, type: 2}
 --- !u!114 &11400022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -366,7 +368,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400020}
+      - m_Target: {fileID: 0}
         m_MethodName: setEmpty
         m_Mode: 1
         m_Arguments:

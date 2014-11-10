@@ -722,7 +722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f081a948cbee4b44eaaef47a40f87250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alocar: Distribuir
+  alocar: Alocar
   atacar: Atacar
   mover: Mover
   none: Aguarde...
@@ -1260,7 +1260,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Confirmar
+  m_Text: 'Finalizar
+
+'
 --- !u!222 &224065201
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1389,7 +1391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 1
-  type: 1
+  type: 0
   firstPlay: 0
   armyName: 
   name: Jogador2
@@ -1469,19 +1471,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 274634213}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 74165367}
-        m_MethodName: setAtacar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &274634213
@@ -1731,6 +1721,55 @@ MonoBehaviour:
   name: 
   troopSpawn: {fileID: 1012661019}
   index: 7
+--- !u!1 &281018021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 281018023}
+  - 114: {fileID: 281018022}
+  m_Layer: 5
+  m_Name: GUIFacade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &281018022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 281018021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a337f7af96732740a67673dd28353fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  states: {fileID: 74165367}
+  left: {fileID: 543412868}
+  right: {fileID: 791745704}
+  info: {fileID: 533477088}
+  passar: {fileID: 929205766}
+--- !u!224 &281018023
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 281018021}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: 329.869873, y: 17.7870026}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: .5, y: .5}
 --- !u!1 &322372783
 GameObject:
   m_ObjectHideFlags: 0
@@ -1766,7 +1805,7 @@ RectTransform:
   - {fileID: 1721108695}
   - {fileID: 1231417492}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -2516,8 +2555,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .310871452, y: 0}
   m_AnchorMax: {x: .691768467, y: .0980000049}
-  m_AnchoredPosition: {x: -.5, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -.5, y: -2.5999999}
+  m_SizeDelta: {x: -15.1999998, y: -5.19999981}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &533477086
 MonoBehaviour:
@@ -2740,8 +2779,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 77.1600037, y: -54.6299973}
-  m_SizeDelta: {x: 152.100006, y: 98.9599991}
+  m_AnchoredPosition: {x: 90.5, y: -51.6269989}
+  m_SizeDelta: {x: 181, y: 104.449997}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &543412868
 MonoBehaviour:
@@ -2754,7 +2793,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c04ab05078da304f999ffdba97c01fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  show: 0
+  name: {fileID: 0}
+  territoryName: {fileID: 0}
+  troopQtd: {fileID: 0}
 --- !u!1 &554833929
 GameObject:
   m_ObjectHideFlags: 0
@@ -3121,6 +3162,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 727216435}
   - 114: {fileID: 727216434}
+  - 114: {fileID: 727216436}
   m_Layer: 0
   m_Name: RequestController
   m_TagString: Untagged
@@ -3147,7 +3189,7 @@ MonoBehaviour:
   startGamePath: /games/start
   delayRequest: 1
   shotCount: 0
-  gameId: 16
+  gameId: 3
   gameName: 
   playersInfos: []
 --- !u!4 &727216435
@@ -3162,6 +3204,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &727216436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: b94ef3fe2697d0f43a20e6d20832bbd9,
+    type: 2}
+  m_PrefabInternal: {fileID: 2080422257}
+  m_GameObject: {fileID: 727216433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b5b0be010b06f448a5fcb7c933fcfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingPref: {fileID: 100000, guid: 504d3321d268dcc47890a2f52f3df71c, type: 2}
 --- !u!1 &746965147
 GameObject:
   m_ObjectHideFlags: 0
@@ -3596,7 +3651,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c04ab05078da304f999ffdba97c01fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  show: 0
+  name: {fileID: 0}
+  territoryName: {fileID: 0}
+  troopQtd: {fileID: 0}
 --- !u!224 &791745705
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4495,7 +4552,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 929205764}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1336647876}
+        m_MethodName: nextStage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &952164068
@@ -7799,19 +7868,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1415228260}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 74165367}
-        m_MethodName: setMover
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1415228260
@@ -7946,19 +8003,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1485233310}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 74165367}
-        m_MethodName: setAlocar
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
-            Culture=neutral, PublicKeyToken=null
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 1
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1485233310
@@ -8384,7 +8429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   index: 0
-  type: 0
+  type: 1
   firstPlay: 0
   armyName: 
   name: Jogador1
@@ -8654,11 +8699,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
       propertyPath: type
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
       propertyPath: type
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
@@ -10799,7 +10844,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b94ef3fe2697d0f43a20e6d20832bbd9, type: 2}
       propertyPath: gameId
-      value: 16
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b94ef3fe2697d0f43a20e6d20832bbd9, type: 2}
       propertyPath: debugMode

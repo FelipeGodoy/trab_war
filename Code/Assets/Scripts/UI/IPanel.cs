@@ -2,5 +2,4 @@
 using System.Collections;
 
 public interface IPanel {
-
 }

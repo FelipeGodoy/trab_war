@@ -10,7 +10,7 @@ public class InfoHandler : MonoBehaviour {
 	}
 
 	void Update(){
-		setActive (show);
+		//setActive (show);
 	}
 
 	// Update is called once per frame

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 
 public class AIAllockStageController : StageController {
@@ -18,10 +19,6 @@ public class AIAllockStageController : StageController {
 		this.freeTroops = this.Player.TroopsToEarn();
 		this.usedTroops = 0;
 		this.indice = 0;
-		troopsAllocked = new Dictionary<Territory, int>();
-		foreach(Territory territory in this.Player.Territories){
-			troopsAllocked[territory] = 0;
-		}
 	}
 
 	public override void Update(){
@@ -30,10 +27,19 @@ public class AIAllockStageController : StageController {
 				indice = 0;
 			temp = this.Player.Territories[indice++];
 			ComputeShot(new AllockTroopShot(this.Player,temp,1));
+			gui.left.setActive(true);
+			gui.left.setTerritory(temp.gameObject.name, ""+temp.TroopsCount);
 			usedTroops++;
-		}
+			}
+
 		else{
 			EndStage();
 		}
+	}
+
+	public override void OnStageEnd ()
+	{
+		gui.left.setActive (false);
+		gui.right.setActive (false);
 	}
 }

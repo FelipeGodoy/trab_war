@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: RequestController
   m_TagString: Untagged
@@ -39,9 +40,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba3cb9d0fe90b3e4ea04fed77a5fe3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugMode: 0
-  defaultUrl: http://war-uff.herokuapp.com
-  testUrl: http://127.0.0.1:3000
+  remoteUrl: http://war-uff.herokuapp.com
+  localUrl: http://127.0.0.1:3000
   shotPath: /games/shots
   connectPath: /rooms/connect
   startGamePath: /games/start
@@ -50,6 +50,18 @@ MonoBehaviour:
   gameId: 3
   gameName: 
   playersInfos: []
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b5b0be010b06f448a5fcb7c933fcfa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadingPref: {fileID: 100000, guid: 504d3321d268dcc47890a2f52f3df71c, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

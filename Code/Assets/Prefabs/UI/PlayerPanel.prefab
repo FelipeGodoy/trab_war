@@ -61,8 +61,8 @@ GameObject:
   - 224: {fileID: 22400008}
   - 222: {fileID: 22200008}
   - 114: {fileID: 11400012}
-  - 114: {fileID: 11400014}
   - 114: {fileID: 11400016}
+  - 114: {fileID: 11400000}
   m_Layer: 5
   m_Name: PlayerPanel
   m_TagString: LocalPlayer
@@ -86,6 +86,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 835b62bcd928565459f634e7c071259a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emptyPanel: {fileID: 11400000, guid: a84913cb61d7f8f4bbfca7b32e31bfcb, type: 2}
+  playerPanel: {fileID: 11400000}
+  iaPanel: {fileID: 11400002, guid: d425f873265f34d45ad6dc40f952db8f, type: 2}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -146,7 +160,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 11400010}
   m_TextComponent: {fileID: 11400006}
   inputType: 0
@@ -216,18 +230,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &11400014
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff8ba0fbeab85a94798c7394cb953906, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  emptyPanel: {fileID: 11400008, guid: a84913cb61d7f8f4bbfca7b32e31bfcb, type: 2}
 --- !u!114 &11400016
 MonoBehaviour:
   m_ObjectHideFlags: 1
