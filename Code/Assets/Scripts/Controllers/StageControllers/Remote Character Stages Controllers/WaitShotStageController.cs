@@ -53,4 +53,10 @@ public class WaitShotStageController : StageController {
 		this.waitingResponse = false;
 	}
 
+	public override void OnStageEnd ()
+	{
+		gui.left.setActive (false);
+		gui.right.setActive (false);
+	}
+
 }

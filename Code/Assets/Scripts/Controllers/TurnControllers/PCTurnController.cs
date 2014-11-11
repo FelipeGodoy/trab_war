@@ -32,4 +32,9 @@ public class PCTurnController : TurnController{
 		stageController.gui.showPassar ();
 		this.sendShotOnEndTurn = false;
 	}
+
+	public override void OnTurnEnd ()
+	{
+		(GameObject.Find ("GUIFacade")).GetComponent<GUIFacade> ().hidePassar ();
+	}
 }

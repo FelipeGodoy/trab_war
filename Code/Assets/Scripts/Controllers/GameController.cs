@@ -74,6 +74,8 @@ public class GameController : MonoBehaviour {
 		if(shot.sendRequest){
 			RequestController.Instance.SendShot(shot);
 		}
+		shot.gui.left.setActive (false);
+		shot.gui.right.setActive (false);
 //		JSONObject json = ShotEncoder.ToJSON(shot);
 //		Shot other = ShotDecoder.FromJSON(json);
 //		json = ShotEncoder.ToJSON(other);

@@ -33,6 +33,14 @@ public class MoveShot : Shot {
 		   sourceTerritory.TroopsCount <= troopsCount){
 			return false;
 		}
+		gui = GameObject.Find("GUIFacade").GetComponent<GUIFacade>();
+		gui.left.setActive (true);
+		gui.left.setTexts (sourceTerritory.CurrentPlayer.name, sourceTerritory.gameObject.name, "" + sourceTerritory.TroopsCount);
+		gui.left.changeColor (sourceTerritory.CurrentPlayer.troopMaterial.color);
+		
+		gui.right.setActive (true);
+		gui.right.setTexts (destinationTerritory.CurrentPlayer.name, destinationTerritory.gameObject.name, "" + destinationTerritory.TroopsCount);
+		gui.right.changeColor (destinationTerritory.CurrentPlayer.troopMaterial.color);
 		sourceTerritory.RemoveTroops(troopsCount);
 		destinationTerritory.AddTroops(troopsCount);
 		GameController.Instance.OnShotEnd(this);

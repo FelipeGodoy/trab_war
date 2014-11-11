@@ -27,6 +27,6 @@ public class AITurnController : TurnController {
 
 
 	public override void OnTurnStart(){
-		stageController.gui.hidePassar ();
+		//stageController.gui.hidePassar ();
 	}
 }
