@@ -666,6 +666,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: b94ef3fe2697d0f43a20e6d20832bbd9, type: 2}
+      propertyPath: debugMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b94ef3fe2697d0f43a20e6d20832bbd9, type: 2}
   m_RootGameObject: {fileID: 562928738}

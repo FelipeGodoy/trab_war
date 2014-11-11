@@ -29,6 +29,7 @@ public class LobbyHandler : MonoBehaviour {
 		sendingRequest = false;
 		JSONObject json = new JSONObject(s);
 		List<PlayerHold> playersInfo = Request.JSONToPlayersHolds(json.GetField("players"));
+		PlayerHold[] playersArray = playersInfo.ToArray();
 		RequestController.Instance.remotePlayersInfos = playersInfo;
 		UpdateView ();
 		if(json.GetField("active").b){
@@ -51,12 +52,12 @@ public class LobbyHandler : MonoBehaviour {
 			g = slots[ph.color];
 			hasPlayer[ph.color] = true;
 			p = g.GetComponentInChildren<Panel>();
-			if(ph.type == Player.PlayerType.NON_PLAYER_CHARACTER){
-				p.setIA(ph.name);
-			}
-			else{
+//			if(ph.type == Player.PlayerType.NON_PLAYER_CHARACTER){
+//				p.setIA(ph.name);
+//			}
+//			else{
 				p.setPlayer(ph.name);
-			}
+//			}
 		}
 		for(int i = 0; i < hasPlayer.Length; i++){
 			if(hasPlayer[i] == false)

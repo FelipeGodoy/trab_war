@@ -33,7 +33,7 @@ public class RequestController : MonoBehaviour {
 					local.goalId = remote.goalId;
 				}
 				else{
-					remote.type = Player.PlayerType.NON_PLAYER_CHARACTER;
+					remote.type = Player.PlayerType.REMOTE_PLAYER_CHARACTER;
 					all.Add(remote);
 				}
 			}
