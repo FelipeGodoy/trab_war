@@ -50,14 +50,6 @@ public class AIMoveStageController : StageController {
 					}
 				}
 				if(menorQtdTropas < 200){
-					gui.left.setActive (true);
-					gui.left.setTexts (territorio1.CurrentPlayer.name, territorio1.gameObject.name, "" + territorio1.TroopsCount);
-					gui.left.changeColor (territorio1.CurrentPlayer.troopMaterial.color);
-
-					gui.right.setActive (true);
-					gui.right.setTexts (territorio2.CurrentPlayer.name, territorio2.gameObject.name, "" + territorio2.TroopsCount);
-					gui.right.changeColor (territorio2.CurrentPlayer.troopMaterial.color);
-
 					ComputeShot(new MoveShot(this.Player,territorio1,territorio2,1));
 					numeroMovimentosCorrente++;
 					checados.Add(territorio1);
@@ -98,8 +90,8 @@ public class AIMoveStageController : StageController {
 
 	public override void OnStageEnd ()
 	{
-		gui.left.setActive (false);
-		gui.right.setActive (false);
+		/*gui.left.setActive (false);
+		gui.right.setActive (false);*/
 	}
 	
 }
