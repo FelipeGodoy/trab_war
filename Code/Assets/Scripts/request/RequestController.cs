@@ -26,7 +26,7 @@ public class RequestController : MonoBehaviour {
 		get{
 			List<PlayerHold> all = new List<PlayerHold>(playersInfos);
 			foreach(PlayerHold remote in remotePlayersInfos){
-				PlayerHold local = all.Find(a => a.color == remote.color);
+				PlayerHold local = playersInfos.Find(a => a.color == remote.color);
 				if(local != null){
 					local.initTerritories = remote.initTerritories;
 					local.order = remote.order;
@@ -138,8 +138,11 @@ public class RequestController : MonoBehaviour {
 		yield return www;
 		if(www.error != null){
 			Debug.LogError("Request Error: "+www.error);
+			Alert.Message("Error",www.error,delegate {
+				Application.LoadLevel("Menu");
+		});
 		}
-		if(callback != null){
+		else if(callback != null){
 			callback(www.text);
 		}
 	}

@@ -3,7 +3,6 @@ using System.Collections;
 
 public class AITurnController : TurnController {
 
-	//TODO: Retornar os controladores de estagio.
 	public override StageController StageToController(Stage stage){
 		StageController stageController = null;
 		switch(stage){

@@ -367,7 +367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba3cb9d0fe90b3e4ea04fed77a5fe3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugMode: 0
+  debugMode: 1
   remoteUrl: http://war-uff.herokuapp.com
   localUrl: http://127.0.0.1:3000
   shotPath: /games/shots
@@ -668,7 +668,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: b94ef3fe2697d0f43a20e6d20832bbd9, type: 2}
       propertyPath: debugMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b94ef3fe2697d0f43a20e6d20832bbd9, type: 2}

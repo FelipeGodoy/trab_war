@@ -12,13 +12,19 @@ public abstract class TurnController{
 	public static TurnController Create(Player.PlayerType playerType){
 		switch(playerType){
 		case Player.PlayerType.PLAYER_CHARACTER :{
-			return new PCTurnController();
+			TurnController t = new PCTurnController();
+			t.sendShotOnEndTurn = true;
+			return t;
 		}
 		case Player.PlayerType.NON_PLAYER_CHARACTER:{
-			return new AITurnController();
+			TurnController t = new AITurnController();
+			t.sendShotOnEndTurn = true;
+			return t;
 		}
 		case Player.PlayerType.REMOTE_PLAYER_CHARACTER:{
-			return new RemoteTurnController();
+			TurnController t = new RemoteTurnController();
+			t.sendShotOnEndTurn = false;
+			return t;
 		}
 		}
 		return null;

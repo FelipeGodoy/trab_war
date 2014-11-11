@@ -30,7 +30,6 @@ public class PCTurnController : TurnController{
 
 	public override void OnTurnStart(){
 		stageController.gui.showPassar ();
-		this.sendShotOnEndTurn = false;
 	}
 
 	public override void OnTurnEnd ()

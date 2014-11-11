@@ -34,8 +34,8 @@ public class ExistingGamesLoader : MonoBehaviour {
 			r.AddParam("player[name]",name);
 			r.AddParam("player[type_id]",""+tipo);
 			r.AddParam("game_id",""+roomId);
-			r.Post(OnRequestConnectResponse);
 			RequestController.Instance.playersInfos.Clear();
+			r.Post(OnRequestConnectResponse);
 		}
 	}
 
