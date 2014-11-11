@@ -87,7 +87,7 @@ GameObject:
   - 114: {fileID: 6056588}
   - 114: {fileID: 6056590}
   m_Layer: 0
-  m_Name: AS8
+  m_Name: "Vietn\xE3"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -220,7 +220,7 @@ MonoBehaviour:
   - {fileID: 1860218749}
   - {fileID: 1782496591}
   continent: {fileID: 59375456}
-  name: 
+  name: "Vietn\xE3"
   troopSpawn: {fileID: 0}
   index: 11
 --- !u!1 &6387654
@@ -236,7 +236,7 @@ GameObject:
   - 114: {fileID: 6387657}
   - 114: {fileID: 6387659}
   m_Layer: 0
-  m_Name: EU6
+  m_Name: Moscou
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -483,7 +483,7 @@ MonoBehaviour:
   - {fileID: 477596938}
   - {fileID: 1203311867}
   continent: {fileID: 1743287915}
-  name: 
+  name: Moscou
   troopSpawn: {fileID: 0}
   index: 40
 --- !u!1 &40366242
@@ -1018,6 +1018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946faa24c27ef5647a02a02c5a959a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backendId: 0
   index: 5
   type: 0
   firstPlay: 0
@@ -1038,7 +1039,7 @@ GameObject:
   - 114: {fileID: 218558902}
   - 114: {fileID: 218558904}
   m_Layer: 0
-  m_Name: NA5
+  m_Name: Ottawa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1159,7 +1160,7 @@ MonoBehaviour:
   - {fileID: 1410803765}
   - {fileID: 818908323}
   continent: {fileID: 1414105091}
-  name: 
+  name: Ottawa
   troopSpawn: {fileID: 0}
   index: 24
 --- !u!1 &221597183
@@ -1390,6 +1391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946faa24c27ef5647a02a02c5a959a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backendId: 0
   index: 1
   type: 0
   firstPlay: 0
@@ -1528,7 +1530,7 @@ GameObject:
   - 114: {fileID: 276483001}
   - 114: {fileID: 276483003}
   m_Layer: 0
-  m_Name: AS4
+  m_Name: Vladivostok
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1718,7 +1720,7 @@ MonoBehaviour:
   - {fileID: 1796312760}
   - {fileID: 2090348196}
   continent: {fileID: 59375456}
-  name: 
+  name: Vladivostok
   troopSpawn: {fileID: 1012661019}
   index: 7
 --- !u!1 &281018021
@@ -1965,7 +1967,7 @@ GameObject:
   - 114: {fileID: 466596196}
   - 114: {fileID: 466596198}
   m_Layer: 0
-  m_Name: EU4
+  m_Name: "Pol\xF4nia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2125,7 +2127,7 @@ MonoBehaviour:
   - {fileID: 6387659}
   - {fileID: 1031811577}
   continent: {fileID: 1743287915}
-  name: 
+  name: "Pol\xF4nia"
   troopSpawn: {fileID: 0}
   index: 38
 --- !u!1 &477596933
@@ -2141,7 +2143,7 @@ GameObject:
   - 114: {fileID: 477596936}
   - 114: {fileID: 477596938}
   m_Layer: 0
-  m_Name: AS6
+  m_Name: Aral
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2281,7 +2283,7 @@ MonoBehaviour:
   - {fileID: 1203311867}
   - {fileID: 1860218749}
   continent: {fileID: 59375456}
-  name: 
+  name: Aral
   troopSpawn: {fileID: 0}
   index: 9
 --- !u!1 &516722684
@@ -2364,7 +2366,7 @@ GameObject:
   - 114: {fileID: 529158446}
   - 114: {fileID: 529158448}
   m_Layer: 0
-  m_Name: EU7
+  m_Name: "Su\xE9cia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2519,7 +2521,7 @@ MonoBehaviour:
   - {fileID: 1031811577}
   - {fileID: 1566154525}
   continent: {fileID: 1743287915}
-  name: 
+  name: "Su\xE9cia"
   troopSpawn: {fileID: 0}
   index: 41
 --- !u!1 &533477084
@@ -2638,7 +2640,7 @@ GameObject:
   - 114: {fileID: 543408165}
   - 114: {fileID: 543408167}
   m_Layer: 0
-  m_Name: AF6
+  m_Name: Madagascar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2743,7 +2745,7 @@ MonoBehaviour:
   - {fileID: 1697585764}
   - {fileID: 1550339560}
   continent: {fileID: 221597185}
-  name: 
+  name: Madagascar
   troopSpawn: {fileID: 0}
   index: 34
 --- !u!1 &543412866
@@ -2953,7 +2955,7 @@ GameObject:
   - 114: {fileID: 583503610}
   - 114: {fileID: 583503612}
   m_Layer: 0
-  m_Name: SUL4
+  m_Name: Argentina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3103,7 +3105,7 @@ MonoBehaviour:
   - {fileID: 1318272683}
   - {fileID: 1283895341}
   continent: {fileID: 2060812170}
-  name: 
+  name: Argentina
   troopSpawn: {fileID: 537918190}
   index: 19
 --- !u!1 &697803094
@@ -3146,6 +3148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946faa24c27ef5647a02a02c5a959a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backendId: 0
   index: 3
   type: 0
   firstPlay: 0
@@ -3232,7 +3235,7 @@ GameObject:
   - 114: {fileID: 746965150}
   - 114: {fileID: 746965152}
   m_Layer: 0
-  m_Name: AS1
+  m_Name: Tchita
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3362,7 +3365,7 @@ MonoBehaviour:
   - {fileID: 1796312760}
   - {fileID: 1948252354}
   continent: {fileID: 59375456}
-  name: 
+  name: Tchita
   troopSpawn: {fileID: 0}
   index: 4
 --- !u!1 &762069363
@@ -3445,7 +3448,7 @@ GameObject:
   - 114: {fileID: 768501752}
   - 114: {fileID: 768501754}
   m_Layer: 0
-  m_Name: AF4
+  m_Name: Congo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3576,7 +3579,7 @@ MonoBehaviour:
   - {fileID: 1697585764}
   - {fileID: 1550339560}
   continent: {fileID: 221597185}
-  name: 
+  name: Congo
   troopSpawn: {fileID: 0}
   index: 32
 --- !u!1 &788554748
@@ -3619,6 +3622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946faa24c27ef5647a02a02c5a959a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backendId: 0
   index: 2
   type: 0
   firstPlay: 0
@@ -3689,7 +3693,7 @@ GameObject:
   - 114: {fileID: 818908321}
   - 114: {fileID: 818908323}
   m_Layer: 0
-  m_Name: NA6
+  m_Name: Labrador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3817,7 +3821,7 @@ MonoBehaviour:
   - {fileID: 218558904}
   - {fileID: 905310644}
   continent: {fileID: 1414105091}
-  name: 
+  name: Labrador
   troopSpawn: {fileID: 0}
   index: 25
 --- !u!1 &825584112
@@ -3833,7 +3837,7 @@ GameObject:
   - 114: {fileID: 825584115}
   - 114: {fileID: 825584117}
   m_Layer: 0
-  m_Name: AS10
+  m_Name: "Mong\xF3lia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3996,7 +4000,7 @@ MonoBehaviour:
   - {fileID: 276483003}
   - {fileID: 1948252354}
   continent: {fileID: 59375456}
-  name: 
+  name: "Mong\xF3lia"
   troopSpawn: {fileID: 0}
   index: 13
 --- !u!1 &865357847
@@ -4012,7 +4016,7 @@ GameObject:
   - 114: {fileID: 865357850}
   - 114: {fileID: 865357852}
   m_Layer: 0
-  m_Name: EU3
+  m_Name: Espanha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4156,7 +4160,7 @@ MonoBehaviour:
   - {fileID: 1887040454}
   - {fileID: 1271330344}
   continent: {fileID: 1743287915}
-  name: 
+  name: Espanha
   troopSpawn: {fileID: 0}
   index: 37
 --- !u!1 &871808517
@@ -4172,7 +4176,7 @@ GameObject:
   - 114: {fileID: 871808520}
   - 114: {fileID: 871808522}
   m_Layer: 0
-  m_Name: NA9
+  m_Name: "M\xE9xico"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4299,7 +4303,7 @@ MonoBehaviour:
   - {fileID: 1410803765}
   - {fileID: 1647749074}
   continent: {fileID: 1414105091}
-  name: 
+  name: "M\xE9xico"
   troopSpawn: {fileID: 0}
   index: 28
 --- !u!1 &905310639
@@ -4315,7 +4319,7 @@ GameObject:
   - 114: {fileID: 905310642}
   - 114: {fileID: 905310644}
   m_Layer: 0
-  m_Name: NA1
+  m_Name: "Groel\xE2ndia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4449,7 +4453,7 @@ MonoBehaviour:
   - {fileID: 2011450800}
   - {fileID: 1566154525}
   continent: {fileID: 1414105091}
-  name: 
+  name: "Groel\xE2ndia"
   troopSpawn: {fileID: 0}
   index: 20
 --- !u!1 &929205762
@@ -4582,7 +4586,7 @@ GameObject:
   - 114: {fileID: 952164071}
   - 114: {fileID: 952164073}
   m_Layer: 0
-  m_Name: AS7
+  m_Name: "\xCDndia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4730,7 +4734,7 @@ MonoBehaviour:
   - {fileID: 1860218749}
   - {fileID: 6056590}
   continent: {fileID: 59375456}
-  name: 
+  name: "\xCDndia"
   troopSpawn: {fileID: 0}
   index: 10
 --- !u!1 &952965442
@@ -4896,7 +4900,7 @@ GameObject:
   - 114: {fileID: 1031811575}
   - 114: {fileID: 1031811577}
   m_Layer: 0
-  m_Name: EU5
+  m_Name: Alemanha
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5037,7 +5041,7 @@ MonoBehaviour:
   - {fileID: 6387659}
   - {fileID: 865357852}
   continent: {fileID: 1743287915}
-  name: 
+  name: Alemanha
   troopSpawn: {fileID: 0}
   index: 39
 --- !u!1 &1060421837
@@ -5107,7 +5111,7 @@ GameObject:
   - 114: {fileID: 1094290501}
   - 114: {fileID: 1094290503}
   m_Layer: 0
-  m_Name: AS11
+  m_Name: "Jap\xE3o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5231,7 +5235,7 @@ MonoBehaviour:
   - {fileID: 276483003}
   - {fileID: 825584117}
   continent: {fileID: 59375456}
-  name: 
+  name: "Jap\xE3o"
   troopSpawn: {fileID: 1924857151}
   index: 14
 --- !u!1 &1094594084
@@ -5247,7 +5251,7 @@ GameObject:
   - 114: {fileID: 1094594087}
   - 114: {fileID: 1094594089}
   m_Layer: 0
-  m_Name: OCE2
+  m_Name: "Austr\xE1lia Ocidental"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5374,7 +5378,7 @@ MonoBehaviour:
   - {fileID: 1369706115}
   - {fileID: 1782496591}
   continent: {fileID: 1157122942}
-  name: 
+  name: "Austr\xE1lia Ocidental"
   troopSpawn: {fileID: 0}
   index: 1
 --- !u!1 &1115119883
@@ -5536,7 +5540,7 @@ GameObject:
   - 114: {fileID: 1203311865}
   - 114: {fileID: 1203311867}
   m_Layer: 0
-  m_Name: AS2
+  m_Name: Omsk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5685,7 +5689,7 @@ MonoBehaviour:
   - {fileID: 1948252354}
   - {fileID: 1860218749}
   continent: {fileID: 59375456}
-  name: 
+  name: Omsk
   troopSpawn: {fileID: 0}
   index: 5
 --- !u!1 &1208723841
@@ -5701,7 +5705,7 @@ GameObject:
   - 114: {fileID: 1208723844}
   - 114: {fileID: 1208723846}
   m_Layer: 0
-  m_Name: SUL2
+  m_Name: Venezuela
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5830,7 +5834,7 @@ MonoBehaviour:
   - {fileID: 1283895341}
   - {fileID: 871808522}
   continent: {fileID: 2060812170}
-  name: 
+  name: Venezuela
   troopSpawn: {fileID: 1060421838}
   index: 17
 --- !u!1 &1208939941
@@ -6122,7 +6126,7 @@ GameObject:
   - 114: {fileID: 1271330342}
   - 114: {fileID: 1271330344}
   m_Layer: 0
-  m_Name: AF1
+  m_Name: "Nig\xE9ria"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6264,7 +6268,7 @@ MonoBehaviour:
   - {fileID: 466596198}
   - {fileID: 865357852}
   continent: {fileID: 221597185}
-  name: 
+  name: "Nig\xE9ria"
   troopSpawn: {fileID: 0}
   index: 29
 --- !u!1 &1276149729
@@ -6280,7 +6284,7 @@ GameObject:
   - 114: {fileID: 1276149732}
   - 114: {fileID: 1276149734}
   m_Layer: 0
-  m_Name: AF2
+  m_Name: Egito
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6400,7 +6404,7 @@ MonoBehaviour:
   - {fileID: 1348506478}
   - {fileID: 466596198}
   continent: {fileID: 221597185}
-  name: 
+  name: Egito
   troopSpawn: {fileID: 0}
   index: 30
 --- !u!1 &1283895336
@@ -6416,7 +6420,7 @@ GameObject:
   - 114: {fileID: 1283895339}
   - 114: {fileID: 1283895341}
   m_Layer: 0
-  m_Name: SUL3
+  m_Name: "Bol\xEDvia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6562,7 +6566,7 @@ MonoBehaviour:
   - {fileID: 1318272683}
   - {fileID: 1208723846}
   continent: {fileID: 2060812170}
-  name: 
+  name: "Bol\xEDvia"
   troopSpawn: {fileID: 952965443}
   index: 18
 --- !u!1001 &1312374096
@@ -6628,6 +6632,342 @@ Prefab:
       propertyPath: playersModels.Array.data[5]
       value: 
       objectReference: {fileID: 193573544}
+    - target: {fileID: 11400176, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "Austr\xE1lia Oriental"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100062, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "Austr\xE1lia Oriental"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400182, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "Austr\xE1lia Ocidental"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100042, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "Austr\xE1lia Ocidental"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400178, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "Nova Guin\xE9"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100088, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "Nova Guin\xE9"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400180, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Sumatra
+      objectReference: {fileID: 0}
+    - target: {fileID: 100080, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Sumatra
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400108, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Tchita
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Tchita
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400140, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Omsk
+      objectReference: {fileID: 0}
+    - target: {fileID: 100046, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Omsk
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400114, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "Sib\xE9ria"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100082, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "Sib\xE9ria"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400166, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Vladivostok
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Vladivostok
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400128, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "Oriente M\xE9dio"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100060, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "Oriente M\xE9dio"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400106, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Aral
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Aral
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400124, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "\xCDndia"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100036, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "\xCDndia"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400162, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "Vietn\xE3"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "Vietn\xE3"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400112, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: China
+      objectReference: {fileID: 0}
+    - target: {fileID: 100084, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: China
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400154, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "Mong\xF3lia"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "Mong\xF3lia"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400156, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "Jap\xE3o"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100040, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "Jap\xE3o"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400170, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Dudinka
+      objectReference: {fileID: 0}
+    - target: {fileID: 100090, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Dudinka
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400150, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Brasil
+      objectReference: {fileID: 0}
+    - target: {fileID: 100056, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Brasil
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400138, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Venezuela
+      objectReference: {fileID: 0}
+    - target: {fileID: 100048, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Venezuela
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400174, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "Bol\xEDvia"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100054, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "Bol\xEDvia"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400126, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Argentina
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Argentina
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400152, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "Groel\xE2ndia"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "Groel\xE2ndia"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400134, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Mackenzie
+      objectReference: {fileID: 0}
+    - target: {fileID: 100092, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Mackenzie
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400100, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Alaska
+      objectReference: {fileID: 0}
+    - target: {fileID: 100096, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Alaska
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400144, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Vancouver
+      objectReference: {fileID: 0}
+    - target: {fileID: 100064, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Vancouver
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400130, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Ottawa
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Ottawa
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400104, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Labrador
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Labrador
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400160, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Nova York
+      objectReference: {fileID: 0}
+    - target: {fileID: 100066, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Nova York
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400164, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "Calif\xF3rnia"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100074, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "Calif\xF3rnia"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400120, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "M\xE9xico"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "M\xE9xico"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400158, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "Nig\xE9ria"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100050, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "Nig\xE9ria"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400132, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Egito
+      objectReference: {fileID: 0}
+    - target: {fileID: 100052, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Egito
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400122, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "\xC1frica do Sul"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100070, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "\xC1frica do Sul"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400110, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Congo
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Congo
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400142, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "Sud\xE3o"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100076, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "Sud\xE3o"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400102, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Madagascar
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Madagascar
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400146, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "Isl\xE2ndia"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100072, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "Isl\xE2ndia"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400118, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Inglaterra
+      objectReference: {fileID: 0}
+    - target: {fileID: 100086, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Inglaterra
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400168, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Espanha
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Espanha
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400116, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "Pol\xF4nia"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "Pol\xF4nia"
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400148, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Alemanha
+      objectReference: {fileID: 0}
+    - target: {fileID: 100038, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Alemanha
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400172, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: Moscou
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: Moscou
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400136, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: name
+      value: "Su\xE9cia"
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
+      propertyPath: m_Name
+      value: "Su\xE9cia"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f15793b5114f0874c9a4bd7337b87bc4, type: 2}
   m_RootGameObject: {fileID: 1336647874}
@@ -6646,7 +6986,7 @@ GameObject:
   - 114: {fileID: 1318272681}
   - 114: {fileID: 1318272683}
   m_Layer: 0
-  m_Name: SUL1
+  m_Name: Brasil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6807,7 +7147,7 @@ MonoBehaviour:
   - {fileID: 583503612}
   - {fileID: 1271330344}
   continent: {fileID: 2060812170}
-  name: 
+  name: Brasil
   troopSpawn: {fileID: 1153619127}
   index: 16
 --- !u!1 &1319459047
@@ -7091,7 +7431,7 @@ GameObject:
   - 114: {fileID: 1348506476}
   - 114: {fileID: 1348506478}
   m_Layer: 0
-  m_Name: AS5
+  m_Name: "Oriente M\xE9dio"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7268,7 +7608,7 @@ MonoBehaviour:
   - {fileID: 952164073}
   - {fileID: 477596938}
   continent: {fileID: 59375456}
-  name: 
+  name: "Oriente M\xE9dio"
   troopSpawn: {fileID: 0}
   index: 8
 --- !u!1 &1369706109
@@ -7285,7 +7625,7 @@ GameObject:
   - 68: {fileID: 1369706112}
   - 114: {fileID: 1369706115}
   m_Layer: 0
-  m_Name: OCE1
+  m_Name: "Austr\xE1lia Oriental"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7429,7 +7769,7 @@ MonoBehaviour:
   - {fileID: 1900108677}
   - {fileID: 1094594089}
   continent: {fileID: 1157122942}
-  name: 
+  name: "Austr\xE1lia Oriental"
   troopSpawn: {fileID: 1077471434}
   index: 0
 --- !u!1 &1389082250
@@ -7445,7 +7785,7 @@ GameObject:
   - 114: {fileID: 1389082253}
   - 114: {fileID: 1389082255}
   m_Layer: 0
-  m_Name: NA4
+  m_Name: Vancouver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7552,7 +7892,7 @@ MonoBehaviour:
   - {fileID: 2011450800}
   - {fileID: 2090348196}
   continent: {fileID: 1414105091}
-  name: 
+  name: Vancouver
   troopSpawn: {fileID: 0}
   index: 23
 --- !u!1 &1410803760
@@ -7568,7 +7908,7 @@ GameObject:
   - 114: {fileID: 1410803763}
   - 114: {fileID: 1410803765}
   m_Layer: 0
-  m_Name: NA7
+  m_Name: Nova York
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7709,7 +8049,7 @@ MonoBehaviour:
   - {fileID: 218558904}
   - {fileID: 818908323}
   continent: {fileID: 1414105091}
-  name: 
+  name: Nova York
   troopSpawn: {fileID: 0}
   index: 26
 --- !u!1 &1414105088
@@ -8074,6 +8414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946faa24c27ef5647a02a02c5a959a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backendId: 0
   index: 4
   type: 0
   firstPlay: 0
@@ -8094,7 +8435,7 @@ GameObject:
   - 114: {fileID: 1550339558}
   - 114: {fileID: 1550339560}
   m_Layer: 0
-  m_Name: AF3
+  m_Name: "\xC1frica do Sul"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8239,7 +8580,7 @@ MonoBehaviour:
   - {fileID: 1697585764}
   - {fileID: 543408167}
   continent: {fileID: 221597185}
-  name: 
+  name: "\xC1frica do Sul"
   troopSpawn: {fileID: 0}
   index: 31
 --- !u!1 &1566154520
@@ -8255,7 +8596,7 @@ GameObject:
   - 114: {fileID: 1566154523}
   - 114: {fileID: 1566154525}
   m_Layer: 0
-  m_Name: EU1
+  m_Name: "Isl\xE2ndia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8372,7 +8713,7 @@ MonoBehaviour:
   - {fileID: 1887040454}
   - {fileID: 905310644}
   continent: {fileID: 1743287915}
-  name: 
+  name: "Isl\xE2ndia"
   troopSpawn: {fileID: 0}
   index: 35
 --- !u!1 &1587539267
@@ -8415,6 +8756,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 946faa24c27ef5647a02a02c5a959a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backendId: 0
   index: 0
   type: 1
   firstPlay: 0
@@ -8502,7 +8844,7 @@ GameObject:
   - 114: {fileID: 1647749072}
   - 114: {fileID: 1647749074}
   m_Layer: 0
-  m_Name: NA8
+  m_Name: "Calif\xF3rnia"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8618,7 +8960,7 @@ MonoBehaviour:
   - {fileID: 218558904}
   - {fileID: 1389082255}
   continent: {fileID: 1414105091}
-  name: 
+  name: "Calif\xF3rnia"
   troopSpawn: {fileID: 0}
   index: 27
 --- !u!1001 &1665856467
@@ -8711,7 +9053,7 @@ GameObject:
   - 114: {fileID: 1697585762}
   - 114: {fileID: 1697585764}
   m_Layer: 0
-  m_Name: AF5
+  m_Name: "Sud\xE3o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8855,7 +9197,7 @@ MonoBehaviour:
   - {fileID: 1550339560}
   - {fileID: 543408167}
   continent: {fileID: 221597185}
-  name: 
+  name: "Sud\xE3o"
   troopSpawn: {fileID: 0}
   index: 33
 --- !u!1 &1721108694
@@ -9128,7 +9470,7 @@ GameObject:
   - 114: {fileID: 1782496589}
   - 114: {fileID: 1782496591}
   m_Layer: 0
-  m_Name: OCE4
+  m_Name: Sumatra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9293,7 +9635,7 @@ MonoBehaviour:
   - {fileID: 1900108677}
   - {fileID: 6056590}
   continent: {fileID: 1157122942}
-  name: 
+  name: Sumatra
   troopSpawn: {fileID: 0}
   index: 3
 --- !u!1 &1796312755
@@ -9309,7 +9651,7 @@ GameObject:
   - 114: {fileID: 1796312758}
   - 114: {fileID: 1796312760}
   m_Layer: 0
-  m_Name: AS3
+  m_Name: "Sib\xE9ria"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9440,7 +9782,7 @@ MonoBehaviour:
   - {fileID: 1948252354}
   - {fileID: 276483003}
   continent: {fileID: 59375456}
-  name: 
+  name: "Sib\xE9ria"
   troopSpawn: {fileID: 0}
   index: 6
 --- !u!1 &1860218744
@@ -9456,7 +9798,7 @@ GameObject:
   - 114: {fileID: 1860218747}
   - 114: {fileID: 1860218749}
   m_Layer: 0
-  m_Name: AS9
+  m_Name: China
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9620,7 +9962,7 @@ MonoBehaviour:
   - {fileID: 477596938}
   - {fileID: 1203311867}
   continent: {fileID: 59375456}
-  name: 
+  name: China
   troopSpawn: {fileID: 0}
   index: 12
 --- !u!1 &1875605540
@@ -9699,7 +10041,7 @@ GameObject:
   - 114: {fileID: 1887040452}
   - 114: {fileID: 1887040454}
   m_Layer: 0
-  m_Name: EU2
+  m_Name: Inglaterra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9855,7 +10197,7 @@ MonoBehaviour:
   - {fileID: 1031811577}
   - {fileID: 865357852}
   continent: {fileID: 1743287915}
-  name: 
+  name: Inglaterra
   troopSpawn: {fileID: 0}
   index: 36
 --- !u!1 &1900108672
@@ -9871,7 +10213,7 @@ GameObject:
   - 114: {fileID: 1900108675}
   - 114: {fileID: 1900108677}
   m_Layer: 0
-  m_Name: OCE3
+  m_Name: "Nova Guin\xE9"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9986,7 +10328,7 @@ MonoBehaviour:
   - {fileID: 1369706115}
   - {fileID: 1782496591}
   continent: {fileID: 1157122942}
-  name: 
+  name: "Nova Guin\xE9"
   troopSpawn: {fileID: 0}
   index: 2
 --- !u!1 &1924857150
@@ -10168,7 +10510,7 @@ GameObject:
   - 114: {fileID: 1948252352}
   - 114: {fileID: 1948252354}
   m_Layer: 0
-  m_Name: AS12
+  m_Name: Dudinka
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10357,7 +10699,7 @@ MonoBehaviour:
   - {fileID: 1860218749}
   - {fileID: 1203311867}
   continent: {fileID: 59375456}
-  name: 
+  name: Dudinka
   troopSpawn: {fileID: 0}
   index: 15
 --- !u!1 &2007291572
@@ -10445,7 +10787,7 @@ GameObject:
   - 114: {fileID: 2011450798}
   - 114: {fileID: 2011450800}
   m_Layer: 0
-  m_Name: NA2
+  m_Name: Mackenzie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10578,7 +10920,7 @@ MonoBehaviour:
   - {fileID: 2090348196}
   - {fileID: 905310644}
   continent: {fileID: 1414105091}
-  name: 
+  name: Mackenzie
   troopSpawn: {fileID: 0}
   index: 21
 --- !u!1 &2019733828
@@ -10860,7 +11202,7 @@ GameObject:
   - 114: {fileID: 2090348194}
   - 114: {fileID: 2090348196}
   m_Layer: 0
-  m_Name: NA3
+  m_Name: Alaska
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10988,6 +11330,6 @@ MonoBehaviour:
   - {fileID: 1389082255}
   - {fileID: 276483003}
   continent: {fileID: 1414105091}
-  name: 
+  name: Alaska
   troopSpawn: {fileID: 1732591813}
   index: 22
