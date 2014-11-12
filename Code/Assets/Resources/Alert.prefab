@@ -95,7 +95,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Message
+  m_Text: heuheuheuheuheuheu
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -121,9 +121,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Title
-
-'
+  m_Text: HUEHU
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -310,8 +308,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.253479, y: -.0263366699}
-  m_SizeDelta: {x: 2.0380249, y: .0146636963}
+  m_AnchoredPosition: {x: 328.926758, y: 181.109741}
+  m_SizeDelta: {x: -.61000061, y: 1.86999512}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22400006
 RectTransform:
