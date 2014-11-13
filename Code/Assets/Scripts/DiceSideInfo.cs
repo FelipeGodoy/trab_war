@@ -28,12 +28,12 @@ public class DiceSideInfo : MonoBehaviour {
 			if(angularVelocity.magnitude <= MIN_SPEED_TO_CHANGE && diceNumber != forcedNumber){
 				switch(dirFlag){
 				case 0:{
-					rigidbody.AddTorque(new Vector3(impulse,0f,0f),ForceMode.Impulse);
+					rigidbody.AddRelativeForce(new Vector3(impulse,0f,0f),ForceMode.Impulse);
 					dirFlag = 1;
 					break;
 				}
 				case 1:{
-					rigidbody.AddTorque(new Vector3(0f,impulse,0f),ForceMode.Impulse);
+					rigidbody.AddRelativeTorque(new Vector3(0f,impulse,0f),ForceMode.Impulse);
 					dirFlag = 0;
 					break;
 				}

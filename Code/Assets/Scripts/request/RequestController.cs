@@ -13,8 +13,8 @@ public class RequestController : MonoBehaviour {
 	public string startGamePath = "/games/start";
 	public float delayRequest = 1f;
 	public int shotCount;
-	private List<Shot> shotsToSend;
-	private List<JSONObject> jsonShotsReceived;
+	public List<Shot> shotsToSend;
+	public List<Shot> shotsReceived;
 	public int gameId;
 	public string gameName;
 	private bool sending;
@@ -65,8 +65,8 @@ public class RequestController : MonoBehaviour {
 		else{
 			playersInfos = new List<PlayerHold>();
 			remotePlayersInfos = new List<PlayerHold>();
-			jsonShotsReceived = new List<JSONObject>();
 			shotsToSend = new List<Shot>();
+			shotsReceived = new List<Shot>();
 			shotCount = 0;
 			instance = this;
 			DontDestroyOnLoad(this.gameObject);
@@ -111,8 +111,8 @@ public class RequestController : MonoBehaviour {
 		else{
 			playersInfos = new List<PlayerHold>();
 			remotePlayersInfos = new List<PlayerHold>();
-			jsonShotsReceived = new List<JSONObject>();
 			shotsToSend = new List<Shot>();
+			shotsReceived = new List<Shot>();
 			shotCount = 0;
 			instance = this;
 			DontDestroyOnLoad(this.gameObject);
@@ -139,7 +139,7 @@ public class RequestController : MonoBehaviour {
 		yield return www;
 		if(www.error != null){
 			Debug.LogError("Request Error: "+www.error);
-			Message.New("Error",www.error,delegate {
+			Alert.Message("Error",www.error,delegate {
 				Application.LoadLevel("Menu");
 		});
 		}

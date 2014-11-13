@@ -8,22 +8,25 @@ public class WaitShotStageController : StageController {
 	protected bool waitingResponse;
 	protected const float tickToRequest = 1f;
 	private float tickElapsed;
-	private List<Shot> shotsBuffer;
-
-	public override void OnGUI(){
-		GUI.Label(new Rect(50,50,50,50),""+RequestController.Instance.shotCount);
+	private List<Shot> ShotsBuffer{
+		get{
+			return RequestController.Instance.shotsReceived;
+		}
 	}
+
+//	public override void OnGUI(){
+//		GUI.Label(new Rect(50,50,50,50),""+RequestController.Instance.shotCount);
+//	}
 
 	public override void OnStageStart(){
 		this.waitingResponse = false;
 		this.gameId = RequestController.Instance.gameId;
 		this.shotsUrl = RequestController.Instance.url + "/games/shots.json";
-		this.shotsBuffer = new List<Shot>();
 		this.tickElapsed = 0f;
 	}
 
 	public override void ForcedUpdate (){
-		if(tickElapsed >= tickToRequest && !waitingResponse && !RequestController.Instance.SendingRequest){
+		if(tickElapsed >= tickToRequest && !waitingResponse && RequestController.Instance.shotsToSend.Count == 0){
 			GetRemoteShots();
 			tickElapsed = tickElapsed % tickToRequest;
 		}
@@ -31,9 +34,9 @@ public class WaitShotStageController : StageController {
 	}
 
 	public override void Update(){
-		if(shotsBuffer.Count > 0){
-			Shot shot = shotsBuffer[0];
-			shotsBuffer.RemoveAt(0);
+		if(ShotsBuffer.Count > 0){
+			Shot shot = ShotsBuffer[0];
+			ShotsBuffer.RemoveAt(0);
 			shot.sendRequest = false;
 			ComputeShot(shot);
 		}
@@ -58,8 +61,8 @@ public class WaitShotStageController : StageController {
 			});
 			foreach(JSONObject shotJson in json.list){
 				Shot shot = ShotDecoder.FromJSON(shotJson.GetField("content"));
-				if(shot != null){
-					shotsBuffer.Add(shot);
+				if(shot != null && (RequestController.Instance.shotCount + n +1) == (int)shotJson.GetField("index_in_game").n){
+					ShotsBuffer.Add(shot);
 					n++;
 				}
 			}

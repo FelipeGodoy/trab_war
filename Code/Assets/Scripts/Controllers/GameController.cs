@@ -136,6 +136,12 @@ public class GameController : MonoBehaviour {
 		if(CurrentTurnController != null){
 			CurrentTurnController.OnGUI();
 		}
+//		int i =0;
+//		foreach(Player p in playersOrder){
+//			GUI.Label(new Rect(50,50 + (20 * i),50,50),p.name);
+//			i++;
+//		}
+		GUI.Label(new Rect(50,50,50,50),""+RequestController.Instance.shotCount);
 	}
 
 	public void EndTurn(){
@@ -166,6 +172,12 @@ public class GameController : MonoBehaviour {
 			return false;
 		}
 		return true;
+	}
+
+	public void OnConfirm(){
+		if(IsRunning){
+			nextStage();
+		}
 	}
 
 	public void OnClickTerritory(Territory territory){

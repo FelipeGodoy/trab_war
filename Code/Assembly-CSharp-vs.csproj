@@ -97,8 +97,8 @@
      <Compile Include="Assets\Scripts\UI\In-Game\Alert.cs" />
      <Compile Include="Assets\Scripts\UI\In-Game\ChangeColor.cs" />
      <Compile Include="Assets\Scripts\UI\In-Game\InfoHandler.cs" />
+     <Compile Include="Assets\Scripts\UI\In-Game\Message.cs" />
      <Compile Include="Assets\Scripts\UI\In-Game\PlayerInfo.cs" />
-     <Compile Include="Assets\Scripts\UI\In-Game\PopupMessage.cs" />
      <Compile Include="Assets\Scripts\UI\In-Game\StatesHandler.cs" />
      <Compile Include="Assets\Scripts\UI\ListOption.cs" />
      <Compile Include="Assets\Scripts\UI\LoadingAnimation.cs" />
