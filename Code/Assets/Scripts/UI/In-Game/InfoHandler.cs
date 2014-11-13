@@ -14,8 +14,9 @@ public class InfoHandler : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	public void changeInfo (string territoryName, string qtd) {
+	public void changeInfo (string territoryName, string qtd, Color c) {
 		txt.text = territoryName + " (" + qtd + ")";
+		GetComponent<Image> ().color = c;
 	}
 
 	public void setActive(bool active){

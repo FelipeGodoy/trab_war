@@ -8,6 +8,8 @@ public class WaitShotStageController : StageController {
 	protected bool waitingResponse;
 	protected const float tickToRequest = 1f;
 	private float tickElapsed;
+	private int freeTroops;
+	private int usedTroops;
 	private List<Shot> ShotsBuffer{
 		get{
 			return RequestController.Instance.shotsReceived;
@@ -19,10 +21,13 @@ public class WaitShotStageController : StageController {
 //	}
 
 	public override void OnStageStart(){
+		this.freeTroops = Player.TroopsToEarn();
+		this.usedTroops = 0;
 		this.waitingResponse = false;
 		this.gameId = RequestController.Instance.gameId;
 		this.shotsUrl = RequestController.Instance.url + "/games/shots.json";
 		this.tickElapsed = 0f;
+		gui.setAlocar (freeTroops-usedTroops);
 	}
 
 	public override void ForcedUpdate (){
@@ -38,6 +43,21 @@ public class WaitShotStageController : StageController {
 			Shot shot = ShotsBuffer[0];
 			ShotsBuffer.RemoveAt(0);
 			shot.sendRequest = false;
+			switch(shot.type){
+			case Shot.Type.ALLOCK:{
+				usedTroops++;
+				gui.setAlocar (freeTroops-usedTroops);
+				break;
+			}
+			case Shot.Type.ATTACK:{
+				gui.setAtacar();
+				break;
+			}
+			case Shot.Type.MOVE:{
+				gui.setMover();
+				break;
+			}
+			}
 			ComputeShot(shot);
 		}
 	}

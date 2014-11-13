@@ -32,7 +32,7 @@ public class AllockTroopShot : Shot {
 
 	public override bool Do(){
 		if(this.player != territory.CurrentPlayer) territory.CurrentPlayer = this.player;
-		gui = (GameObject.Find ("GUIFacade")).GetComponent<GUIFacade>();
+//		gui = (GameObject.Find ("GUIFacade")).GetComponent<GUIFacade>();
 		gui.left.setActive(true);
 		gui.left.setTerritory(territory.gameObject.name, ""+troopsCount);
 		territory.AddTroops(troopsCount);

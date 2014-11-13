@@ -12,7 +12,7 @@ public class AIAllockStageController : StageController {
 	protected Territory temp;
 
 	public override void OnGUI(){
-		GUI.Label(new Rect(200,30,150,20),"Alocando");
+//		GUI.Label(new Rect(200,30,150,20),"Alocando");
 	}
 
 	public override void OnStageStart(){
@@ -29,7 +29,7 @@ public class AIAllockStageController : StageController {
 			temp = this.Player.Territories[indice++];
 			ComputeShot(new AllockTroopShot(this.Player,temp,1));
 			gui.left.setActive(true);
-			gui.left.setTerritory(temp.gameObject.name, ""+temp.TroopsCount);
+			gui.left.setTerritory(temp.name, ""+temp.TroopsCount);
 			usedTroops++;
 			}
 

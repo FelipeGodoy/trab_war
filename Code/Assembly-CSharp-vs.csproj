@@ -49,6 +49,7 @@
      <Compile Include="Assets\Libraries\JSON\JSONObject.cs" />
      <Compile Include="Assets\Libraries\JSON\JSONTemplates.cs" />
      <Compile Include="Assets\Libraries\JSON\VectorTemplates.cs" />
+     <Compile Include="Assets\Order.cs" />
      <Compile Include="Assets\Scripts\Accelerometer.cs" />
      <Compile Include="Assets\Scripts\AngularSpeedStart.cs" />
      <Compile Include="Assets\Scripts\Controllers\GameController.cs" />

@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour {
 	public List<Player> playersModels;
 	public static GameController Instance{get; set;}
 	public Map currentMap;
+	public GUIFacade gui;
 
 	private List<Player> playersOrder;
 
@@ -53,6 +54,7 @@ public class GameController : MonoBehaviour {
 		if(currentMap == null){
 			currentMap = GetComponent<Map>();
 		}
+		gui = GameObject.Find ("GUIFacade").GetComponent<GUIFacade> ();
 	}
 
 	void Start(){
@@ -141,7 +143,7 @@ public class GameController : MonoBehaviour {
 //			GUI.Label(new Rect(50,50 + (20 * i),50,50),p.name);
 //			i++;
 //		}
-		GUI.Label(new Rect(50,50,50,50),""+RequestController.Instance.shotCount);
+//		GUI.Label(new Rect(50,50,50,50),""+RequestController.Instance.shotCount);
 	}
 
 	public void EndTurn(){
@@ -149,6 +151,7 @@ public class GameController : MonoBehaviour {
 		if(championsPlayers.Length == 0){
 			TurnPlayerIndex = (TurnPlayerIndex + 1) % playersOrder.Count;
 			this.CurrentTurnController = TurnController.Create(this.CurrentPlayer.type);
+			Order.Refresh(TurnPlayerIndex);
 			this.CurrentTurnController.Start();
 		}
 		else{

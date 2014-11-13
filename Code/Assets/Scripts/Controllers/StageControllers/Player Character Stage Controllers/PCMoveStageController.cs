@@ -11,17 +11,17 @@ public class PCMoveStageController : StageController {
 	public override void OnPressTerritory(Territory territory){
 		if (territory.CurrentPlayer == this.Player) {
 			gui.left.setActive (true);
-			gui.left.setTexts (territory.CurrentPlayer.name, territory.gameObject.name, "" + territory.TroopsCount);
-			gui.left.changeColor (territory.CurrentPlayer.troopMaterial.color);
+			gui.left.setTexts (territory.CurrentPlayer.name, territory.name, "" + territory.TroopsCount);
+			gui.left.changeColor (territory.CurrentPlayer.displayColor);
 		}
 	}
 	
 	public override void OnKeepPressedTerritory(Territory territory){
 		string n = gui.left.territoryName.text;
-		if (territory != null && territory.CurrentPlayer == this.Player && territory.gameObject.name != n) {
+		if (territory != null && territory.CurrentPlayer == this.Player && territory.name != n) {
 			gui.right.setActive (true);
-			gui.right.setTexts (territory.CurrentPlayer.name, territory.gameObject.name, "" + territory.TroopsCount);
-			gui.right.changeColor (territory.CurrentPlayer.troopMaterial.color);
+			gui.right.setTexts (territory.CurrentPlayer.name, territory.name, "" + territory.TroopsCount);
+			gui.right.changeColor (territory.CurrentPlayer.displayColor);
 		}
 	}
 	

@@ -6,7 +6,11 @@ public abstract class TurnController{
 	protected Stage stage;
 	protected StageController stageController;
 	protected bool sendShotOnEndTurn = true;
-	GUIFacade gui;
+	public GUIFacade gui{
+		get{
+			return GameController.Instance.gui;
+		}
+	}
 	private Player _player;
 
 	public static TurnController Create(Player.PlayerType playerType){
@@ -63,7 +67,7 @@ public abstract class TurnController{
 		stageController = StageToController(stage);
 		stageController.OnStageStart();
 		OnTurnStart();
-		gui = GameObject.Find ("GUIFacade").GetComponent<GUIFacade> ();
+//		gui = GameObject.Find ("GUIFacade").GetComponent<GUIFacade> ();
 	}
 
 
@@ -94,7 +98,7 @@ public abstract class TurnController{
 		}
 		gui.left.setName (this.Player.name);
 		gui.left.setNameActive ();
-		Color c = Player.troopMaterial.color;
+		Color c = Player.displayColor;
 		gui.left.changeColor (c);
 		OnTurnGUI();
 	}

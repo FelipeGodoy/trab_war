@@ -30,11 +30,11 @@ public class PCAlockStageController : StageController {
 		if (!Player.HaveTerritory (territory))
 						return;
 		gui.left.setActive (true);
-		gui.left.setTerritory (territory.gameObject.name, ""+territory.TroopsCount);
+		gui.left.setTerritory (territory.name, ""+territory.TroopsCount);
 		if(usedTroops < freeTroops){
 			usedTroops ++;
 			ComputeShot(new AllockTroopShot(this.Player,territory,1));
-			gui.left.setTerritory (territory.gameObject.name, ""+territory.TroopsCount);
+			gui.left.setTerritory (territory.name, ""+territory.TroopsCount);
 		}
 	}
 

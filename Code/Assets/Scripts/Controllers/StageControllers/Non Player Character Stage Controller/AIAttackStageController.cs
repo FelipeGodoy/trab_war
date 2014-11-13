@@ -46,13 +46,6 @@ public class AIAttackStageController : StageController {
 			
 			if(maiorQtdTropas > 1 && !atacando){
 				atacando = true;
-				/*gui.left.setActive (true);
-				gui.left.setTexts (territorioAtacante.CurrentPlayer.name, territorioAtacante.gameObject.name, "" + territorioAtacante.TroopsCount);
-				gui.left.changeColor (territorioAtacante.CurrentPlayer.troopMaterial.color);
-				
-				gui.right.setActive (true);
-				gui.right.setTexts (territorioAlvo.CurrentPlayer.name, territorioAlvo.gameObject.name, "" + territorioAlvo.TroopsCount);
-				gui.right.changeColor (territorioAlvo.CurrentPlayer.troopMaterial.color);*/
 				ComputeShot(new AttackShot(this.Player,territorioAtacante,territorioAlvo,DiceResult));
 				numeroAtaquesCorrente++;
 			}
