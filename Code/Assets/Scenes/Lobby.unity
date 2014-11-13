@@ -1129,7 +1129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .249297157, g: .639705896, b: .268144518, a: .588235319}
+  m_Color: {r: 0, g: 1, b: 1, a: .588235319}
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
@@ -2121,6 +2121,7 @@ MonoBehaviour:
     initTerritories: 
     goalId: 0
   id: 0
+  names: []
 --- !u!114 &1713776058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2425,7 +2426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .282352954, g: 1, b: 0, a: .588235319}
+  m_Color: {r: .137254909, g: 1, b: 0, a: .588235319}
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0

@@ -49,7 +49,6 @@
      <Compile Include="Assets\Libraries\JSON\JSONObject.cs" />
      <Compile Include="Assets\Libraries\JSON\JSONTemplates.cs" />
      <Compile Include="Assets\Libraries\JSON\VectorTemplates.cs" />
-     <Compile Include="Assets\Order.cs" />
      <Compile Include="Assets\Scripts\Accelerometer.cs" />
      <Compile Include="Assets\Scripts\AngularSpeedStart.cs" />
      <Compile Include="Assets\Scripts\Controllers\GameController.cs" />
@@ -99,6 +98,7 @@
      <Compile Include="Assets\Scripts\UI\In-Game\ChangeColor.cs" />
      <Compile Include="Assets\Scripts\UI\In-Game\InfoHandler.cs" />
      <Compile Include="Assets\Scripts\UI\In-Game\Message.cs" />
+     <Compile Include="Assets\Scripts\UI\In-Game\Order.cs" />
      <Compile Include="Assets\Scripts\UI\In-Game\PlayerInfo.cs" />
      <Compile Include="Assets\Scripts\UI\In-Game\StatesHandler.cs" />
      <Compile Include="Assets\Scripts\UI\ListOption.cs" />
