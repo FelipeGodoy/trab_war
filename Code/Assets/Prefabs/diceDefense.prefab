@@ -43,8 +43,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: -.515099287, y: .512395382, z: -.495408207, w: .476124346}
-  m_LocalPosition: {x: -9.62038517, y: 3.22142887, z: -4.60180855}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.76319981, y: -1.2299, z: 21.6620007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -98,7 +98,7 @@ Rigidbody:
   m_GameObject: {fileID: 100000}
   serializedVersion: 2
   m_Mass: 5
-  m_Drag: 0
+  m_Drag: .100000001
   m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -155,7 +155,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1ac8218741f55642b708b83d60d217e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  diceNumber: 1
+  diceNumber: 2
+  forcedNumber: -1
+  impulse: 10
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

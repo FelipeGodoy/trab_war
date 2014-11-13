@@ -3,9 +3,10 @@ using System.Collections;
 [ExecuteInEditMode]
 public class DiceSideInfo : MonoBehaviour {
 
-
+	public delegate void Delegate();
 
 	private const float MIN_SPEED_TO_CHANGE = 0.3f;
+	private const float MIN_SPEED = 0.1f;
 
 	public int diceNumber = -1;
 	public int forcedNumber = -1;

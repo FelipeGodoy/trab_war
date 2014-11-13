@@ -39,17 +39,19 @@ public class ExistingGamesLoader : MonoBehaviour {
 		}
 	}
 
-	public void OnRequestConnectResponse(string s){
+	public void OnRequestConnectResponse(WWW www){
 		RequestController.Instance.gameObject.GetComponent<LoadingAnimation>().EndLoading();
 		load = null;
-		JSONObject json = new JSONObject(s);
-		int playerId = (int)json.GetField("new_player").GetField("id").n;
-		int colorId = (int)json.GetField("new_player").GetField("color").n;
-		string name = json.GetField("new_player").GetField("name").str;
-		Player.PlayerType type = (Player.PlayerType)json.GetField("new_player").GetField("type_id").n;
-		PlayerHold ph = new PlayerHold(name,playerId,colorId,type);
-		RequestController.Instance.playersInfos.Add(ph);
-		Application.LoadLevel("Lobby");
+		if(www.error == null){
+			JSONObject json = new JSONObject(www.text);
+			int playerId = (int)json.GetField("new_player").GetField("id").n;
+			int colorId = (int)json.GetField("new_player").GetField("color").n;
+			string name = json.GetField("new_player").GetField("name").str;
+			Player.PlayerType type = (Player.PlayerType)json.GetField("new_player").GetField("type_id").n;
+			PlayerHold ph = new PlayerHold(name,playerId,colorId,type);
+			RequestController.Instance.playersInfos.Add(ph);
+			Application.LoadLevel("Lobby");
+		}
 	}
 	
 	// Update is called once per frame
@@ -60,9 +62,10 @@ public class ExistingGamesLoader : MonoBehaviour {
 		r.Get(OnRequestUpdateRoomsResponse);
 	}
 
-	private void OnRequestUpdateRoomsResponse(string s){
+	private void OnRequestUpdateRoomsResponse(WWW www){
 		RequestController.Instance.gameObject.GetComponent<LoadingAnimation> ().EndLoading();
-		JSONObject json = new JSONObject(s);
+		if(www.error != null) return;
+		JSONObject json = new JSONObject(www.text);
 		minY = MIN_Y;
 		maxY = MAX_Y;
 		foreach(ListOption li in l){

@@ -4,6 +4,7 @@ using System.Collections;
 public class ShotDecoder{
 
 	public static Shot FromJSON(JSONObject json){
+		if(json == null || !json.HasField(ShotEncoder.SHOT_TYPE))return null;
 		Shot.Type shotType = (Shot.Type)((int)json.GetField(ShotEncoder.SHOT_TYPE).n);
 		Player player = GameController.Instance.playersModels[(int)json.GetField(ShotEncoder.PLAYER_INDEX).n];
 		switch(shotType){

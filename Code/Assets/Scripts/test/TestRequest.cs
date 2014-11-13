@@ -11,7 +11,7 @@ public class TestRequest : MonoBehaviour {
 		r.Get(Callback);
 	}
 
-	public static void Callback(string s){
-		print(s);
+	public static void Callback(WWW www){
+		print(www.text);
 	}
 }

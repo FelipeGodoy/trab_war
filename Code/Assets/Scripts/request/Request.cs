@@ -8,7 +8,7 @@ public class Request : ScriptableObject {
 	public bool isPost;
 	private Dictionary<string, string> formParams;
 
-	public delegate void Delegate(string message);
+	public delegate void Delegate(WWW www);
 
 	public static Request Create(string url){
 		Request request = ScriptableObject.CreateInstance<Request>();

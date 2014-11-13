@@ -10,6 +10,10 @@ public class WaitShotStageController : StageController {
 	private float tickElapsed;
 	private List<Shot> shotsBuffer;
 
+	public override void OnGUI(){
+		GUI.Label(new Rect(50,50,50,50),""+RequestController.Instance.shotCount);
+	}
+
 	public override void OnStageStart(){
 		this.waitingResponse = false;
 		this.gameId = RequestController.Instance.gameId;
@@ -43,13 +47,24 @@ public class WaitShotStageController : StageController {
 		r.Get(OnGetShotsResponse);
 	}
 
-	protected void OnGetShotsResponse(string s){
-		JSONObject json = new JSONObject(s);
-		foreach(JSONObject shotJson in json.list){
-			Shot shot = ShotDecoder.FromJSON(shotJson.GetField("content"));
-			shotsBuffer.Add(shot);
+	protected void OnGetShotsResponse(WWW www){
+		JSONObject json = new JSONObject(www.text);
+		if(www.error == null && json != null){
+			int n = 0;
+			json.list.Sort(delegate(JSONObject x, JSONObject y) {
+				if(!x.HasField("index_in_game"))return -1;
+				if(!y.HasField("index_in_game"))return 1;
+				return x.GetField("index_in_game").n.CompareTo(y.GetField("index_in_game").n);
+			});
+			foreach(JSONObject shotJson in json.list){
+				Shot shot = ShotDecoder.FromJSON(shotJson.GetField("content"));
+				if(shot != null){
+					shotsBuffer.Add(shot);
+					n++;
+				}
+			}
+			RequestController.Instance.shotCount += n;
 		}
-		RequestController.Instance.shotCount += json.list.Count;
 		this.waitingResponse = false;
 	}
 
