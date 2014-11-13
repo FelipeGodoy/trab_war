@@ -9416,7 +9416,7 @@ MonoBehaviour:
   index: 0
   type: 1
   firstPlay: 0
-  displayColor: {r: .478431374, g: .835294127, b: .458823532, a: 1}
+  displayColor: {r: 0, g: .886274517, b: .886274517, a: 1}
   armyName: 
   name: Jogador1
   troopMaterial: {fileID: 2100000, guid: d69e925899a5c0b47ba0df166562ea2d, type: 2}
@@ -9693,15 +9693,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
       propertyPath: displayColor.r
-      value: .478431374
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
       propertyPath: displayColor.g
-      value: .835294127
+      value: .886274517
       objectReference: {fileID: 0}
     - target: {fileID: 11400012, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
       propertyPath: displayColor.b
-      value: .458823532
+      value: .886274517
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 19cbf4ba1e13b204d8029813134ff9e8, type: 2}
       propertyPath: displayColor.b
