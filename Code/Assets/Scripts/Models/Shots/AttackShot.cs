@@ -46,29 +46,36 @@ public class AttackShot : Shot{
 			Debug.Log("nao pode atacar");
 			return false; 
 		}
-		if(this.attackDices!= null && this.defenseDices != null){
-			DiceAnimationFinished(this.attackDices,this.defenseDices);
-			return true;
-		}
 		gui = (GameObject.Find("GUIFacade")).GetComponent<GUIFacade>();
 		gui.left.setActive (true);
 		gui.left.setTexts (player.name, sourceTerritory.gameObject.name,""+ sourceTerritory.TroopsCount);
 		gui.left.changeColor (player.troopMaterial.color);
-
+		
 		gui.right.setActive (true);
 		gui.right.setTexts (destinationTerritory.CurrentPlayer.name, destinationTerritory.gameObject.name, "" + destinationTerritory.TroopsCount);
 		gui.right.changeColor (destinationTerritory.CurrentPlayer.troopMaterial.color);
-		Dice.Instance.CreateDices(Vector3.Lerp(sourceTerritory.transform.position,destinationTerritory.transform.position,0.5f) + new Vector3(0,0,-10f),
-		                          Mathf.Min(sourceTerritory.TroopsCount - 1,3),
-		                          Mathf.Min(destinationTerritory.TroopsCount,3),
-		                          DiceAnimationFinished);
-		GameController.Instance.Pause();
+		if(this.attackDices!= null && this.defenseDices != null){
+			Dice.Instance.CreateDices(Vector3.Lerp(sourceTerritory.transform.position,destinationTerritory.transform.position,0.5f) + new Vector3(0,0,-10f),
+			                          this.attackDices,
+			                          this.defenseDices,
+			                          DiceAnimationFinished);
+			GameController.Instance.Pause();
+		}
+		else{
+			Dice.Instance.CreateDices(Vector3.Lerp(sourceTerritory.transform.position,destinationTerritory.transform.position,0.5f) + new Vector3(0,0,-10f),
+			                          Mathf.Min(sourceTerritory.TroopsCount - 1,3),
+			                          Mathf.Min(destinationTerritory.TroopsCount,3),
+			                          DiceAnimationFinished);
+			GameController.Instance.Pause();
+		}
 		return true;
 	}
 
 	private void DiceAnimationFinished(int[] attackNumbers, int[] defenseNumbers){
-		this.attackDices = attackNumbers;
-		this.defenseDices = defenseNumbers;
+		if(this.attackDices == null || this.defenseDices == null){
+			this.attackDices = attackNumbers;
+			this.defenseDices = defenseNumbers;
+		}
 		SetupDicesNumbers();
 		int sourceTroopsDown =0;
 		int destTroopsDown = 0;
@@ -92,6 +99,7 @@ public class AttackShot : Shot{
 			sourceTerritory.RemoveTroops(sourceTroopsDown);
 		}
 		if(callback != null) callback(conquested);
+		Dice.Instance.ClearDices();
 		GameController.Instance.Resume();
 		GameController.Instance.OnShotEnd(this);
 	}

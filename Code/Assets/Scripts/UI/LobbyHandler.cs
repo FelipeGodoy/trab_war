@@ -8,26 +8,33 @@ public class LobbyHandler : MonoBehaviour {
 	public PlayerHold myself;
 	public int id;
 
+	protected const float tickToRequest = 1f;
+	private float tickElapsed;
+
 	private bool sendingRequest;
 
 	void Start () {
 		sendingRequest = false;
 		UpdateView();
+		tickElapsed = 0f;
 	}
 	//Criar animaçao de loading
 	//RequestController.Instance.gameObject.GetComponent<LoadingAnimation>().StartLoading(transform.parent);
 	void Update(){
-		if(!sendingRequest){
+		if(tickElapsed >= tickToRequest && !sendingRequest){
 //			print (RequestController.Instance.url+"/games/"+RequestController.Instance.gameId+".json");
 			Request r = Request.Create(RequestController.Instance.url+"/games/"+RequestController.Instance.gameId+".json");
 			r.Get(OnGameRequestResponse);
 			sendingRequest = true;
+			tickElapsed = tickElapsed % tickToRequest;
 		}
+		tickElapsed += Time.deltaTime;
 	}
 
-	public void OnGameRequestResponse(string s){
+	public void OnGameRequestResponse(WWW www){
 		sendingRequest = false;
-		JSONObject json = new JSONObject(s);
+		if(www.error != null)return;
+		JSONObject json = new JSONObject(www.text);
 		List<PlayerHold> playersInfo = Request.JSONToPlayersHolds(json.GetField("players"));
 		PlayerHold[] playersArray = playersInfo.ToArray();
 		RequestController.Instance.remotePlayersInfos = playersInfo;
@@ -86,9 +93,9 @@ public class LobbyHandler : MonoBehaviour {
 		r.Post(OnConnectRoomReponse);
 	}
 
-	public void OnConnectRoomReponse(string s){
-		//DEVE ESTAR ERRADO
-		JSONObject json = new JSONObject(s);
+	public void OnConnectRoomReponse(WWW www){
+		if(www.error != null)return;
+		JSONObject json = new JSONObject(www.text);
 		string username = json.GetField("new_player").GetField("name").str;
 		int playerId = (int)json.GetField("new_player").GetField("id").n;
 		int colorId = (int)json.GetField("new_player").GetField("color").n;

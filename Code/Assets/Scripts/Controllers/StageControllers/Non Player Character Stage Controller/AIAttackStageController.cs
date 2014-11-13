@@ -65,7 +65,6 @@ public class AIAttackStageController : StageController {
 
 	private void DiceResult(bool conquested){
 		atacando = false;
-		Dice.Instance.ClearDices();
 		gui.left.setActive (false);
 		gui.right.setActive (false);
 	}

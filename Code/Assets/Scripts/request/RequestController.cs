@@ -89,9 +89,11 @@ public class RequestController : MonoBehaviour {
 		}
 	}
 
-	public void OnResponseSendShot(string s){
-		JSONObject json = JSONObject.Create(s);
-		if(!json.HasField("error")){
+	public void OnResponseSendShot(WWW www){
+		sending = false;
+		JSONObject json = JSONObject.Create(www.text);
+		if(www.error != null || www.text == null || www.text.Equals("") || json == null || !json.HasField("shots_saved"))return;
+		if(!json.HasField("error") && json != null){
 			int savedShots = (int)json.GetField("shots_saved").n;
 			shotCount += savedShots;
 			shotsToSend.RemoveRange(0,savedShots);
@@ -99,8 +101,7 @@ public class RequestController : MonoBehaviour {
 		else{
 			Debug.LogError(json.GetField("error").str);
 		}
-		sending = false;
-		Debug.Log(!json.HasField("error") + s);
+		Debug.Log(!json.HasField("error") + www.text);
 	}
 
 	void Start(){
@@ -143,7 +144,7 @@ public class RequestController : MonoBehaviour {
 		});
 		}
 		else if(callback != null){
-			callback(www.text);
+			callback(www);
 		}
 	}
 }

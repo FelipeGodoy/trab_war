@@ -38,6 +38,27 @@ public class Dice : MonoBehaviour {
 		}
 	}
 
+	public void CreateDices(Vector3 position, int[] attackNumbers, int[] defenseNumbers, DiceCallback callback){
+		for(int i = 0; i < attackNumbers.Length; i++){
+			attackNumbers[i] = Mathf.Clamp(attackNumbers[i],1,6);
+		}
+		for(int i =0; i < defenseNumbers.Length;i++){
+			defenseNumbers[i] = Mathf.Clamp(defenseNumbers[i],1,6);
+		}
+		this.attackDices = new DiceSideInfo[attackNumbers.Length];
+		this.defenseDices = new DiceSideInfo[defenseNumbers.Length];
+		for(int i = 0; i < attackNumbers.Length;i++){
+			this.attackDices[i] = InstanciateDice(position,diceAttackPrefab);
+			this.attackDices[i].forcedNumber = attackNumbers[i];
+		}
+		for(int i = 0; i < defenseNumbers.Length;i++){
+			this.defenseDices[i] = InstanciateDice(position,diceDefensePrefab);
+			this.defenseDices[i].forcedNumber = defenseNumbers[i];
+		}
+		this.callback = callback;
+		this.enabled = true;
+	}
+
 	public void CreateDices(Vector3 position, int attackCount, int defenseCount, DiceCallback callback){
 		this.attackDices = new DiceSideInfo[attackCount];
 		this.defenseDices = new DiceSideInfo[defenseCount];
@@ -62,10 +83,14 @@ public class Dice : MonoBehaviour {
 
 	void Update(){
 		foreach(DiceSideInfo dice in this.attackDices){
-			if(dice.rigidbody.angularVelocity.magnitude > MAGNITUDE_VELOCITY_MIN || dice.rigidbody.velocity.magnitude > MAGNITUDE_VELOCITY_MIN) return;
+			if(dice.rigidbody.angularVelocity.magnitude > MAGNITUDE_VELOCITY_MIN ||
+			   dice.rigidbody.velocity.magnitude > MAGNITUDE_VELOCITY_MIN ||
+			   (Mathf.Clamp(dice.forcedNumber,1,6) == dice.forcedNumber && dice.forcedNumber != dice.diceNumber)) return;
 		}
 		foreach(DiceSideInfo dice in this.defenseDices){
-			if(dice.rigidbody.angularVelocity.magnitude > MAGNITUDE_VELOCITY_MIN || dice.rigidbody.velocity.magnitude > MAGNITUDE_VELOCITY_MIN) return;
+			if(dice.rigidbody.angularVelocity.magnitude > MAGNITUDE_VELOCITY_MIN ||
+			   dice.rigidbody.velocity.magnitude > MAGNITUDE_VELOCITY_MIN ||
+			   (Mathf.Clamp(dice.forcedNumber,1,6) == dice.forcedNumber && dice.forcedNumber != dice.diceNumber)) return;
 		}
 		int[] attackNumbers = new int[this.attackDices.Length];
 		int[] defenseNumber = new int[this.defenseDices.Length]; 

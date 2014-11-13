@@ -21,8 +21,9 @@ public class RoomData : MonoBehaviour {
 		r.Post(OnCreateRoomResponse);
 	}
 
-	public void OnCreateRoomResponse(string s){
-		JSONObject json = new JSONObject(s);
+	public void OnCreateRoomResponse(WWW www){
+		if(www.error != null)return;
+		JSONObject json = new JSONObject(www.text);
 		int gameId = (int)json.GetField("id").n;
 		int playerType = (int)Player.PlayerType.PLAYER_CHARACTER;
 		RequestController.Instance.gameId = gameId;
@@ -33,8 +34,9 @@ public class RoomData : MonoBehaviour {
 		r.Post(OnConnectRoomReponse);
 	} 
 
-	public void OnConnectRoomReponse(string s){
-		JSONObject json = new JSONObject(s);
+	public void OnConnectRoomReponse(WWW www){
+		if(www.error != null)return;
+		JSONObject json = new JSONObject(www.text);
 		int playerId = (int)json.GetField("new_player").GetField("id").n;
 		int colorId = (int)json.GetField("new_player").GetField("color").n;
 		Player.PlayerType type = (Player.PlayerType)json.GetField("new_player").GetField("type_id").n;
