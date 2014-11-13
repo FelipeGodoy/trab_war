@@ -7,10 +7,18 @@ public class LobbyHandler : MonoBehaviour {
 	public GameObject[] slots;
 	public PlayerHold myself;
 	public int id;
-
+	public string[] names;
 	private bool sendingRequest;
 
 	void Start () {
+		names = new string[]{"Leonardo Murta", "Igor", "Jefferson", "Daniel", "Gabriel", "Alessandro", "Marcelo", "Alexandre",
+		                   "Felipe", "Matheus", "Carlos", "Bruno", "Gabriel", "Gisele", "Fabiane", "Ian", "Roberto",
+		                   "Igor", "Paulo", "Karina", "Filipe", "Fernando", "Julius", "Pedro", "Maximiano", "Joao",
+		                   "Jorge", "Matheus", "Alexandre", "Luiz","Victor", "Rafael", "Marina", "Paulo",
+		                   "Thadeu", "Leonardo", "Luana", "Victor", "Marcelo", "Bernardo", "Leonardo", "Matheus",
+		                   "Raphael", "Vinicius", "Outro Gustavo", "Tito", "Ana", "Claudio","Hugo", "Gustavo T.",
+						   "Arthur", "Tomas", "Felipe", "Leandro", "Felipe", "Thiago"};
+
 		sendingRequest = false;
 		UpdateView();
 	}
@@ -76,7 +84,14 @@ public class LobbyHandler : MonoBehaviour {
 
 
 	public void AddIA(){
-		string name = "BOT"; //Arrumar lista de nomes aleatorios
+		string name = null;
+		while(name == null){
+			int idx = Random.Range (0, names.Length);
+			if(names[idx] != null){
+				name = names[idx];
+				names[idx] = null;
+			}
+		}
 		int gameId = RequestController.Instance.gameId;
 		int playerType = (int)Player.PlayerType.NON_PLAYER_CHARACTER;
 		Request r = Request.Create(RequestController.Instance.url + "/rooms/connect.json");

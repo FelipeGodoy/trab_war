@@ -28,7 +28,7 @@ public class RaycastInfo : MonoBehaviour {
 				Territory territory = hitCollider.GetComponentInChildren<Territory>();
 				if(territoryInfo != null){
 					gui.info.setActive(true);
-					gui.info.changeInfo(territoryInfo.name,""+ territoryInfo.GetComponentsInChildren<Troop>().Length);
+					gui.info.changeInfo(territoryInfo.name,""+ territoryInfo.GetComponentsInChildren<Troop>().Length, territoryInfo.color);
 					SetColorTerritoryInfo(territoryInfo);
 					SetColorNeighbors(territory);
 					if(Input.GetMouseButtonDown(0)){

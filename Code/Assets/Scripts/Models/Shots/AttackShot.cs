@@ -52,12 +52,12 @@ public class AttackShot : Shot{
 		}
 		gui = (GameObject.Find("GUIFacade")).GetComponent<GUIFacade>();
 		gui.left.setActive (true);
-		gui.left.setTexts (player.name, sourceTerritory.gameObject.name,""+ sourceTerritory.TroopsCount);
-		gui.left.changeColor (player.troopMaterial.color);
+		gui.left.setTexts (player.name, sourceTerritory.name,""+ sourceTerritory.TroopsCount);
+		gui.left.changeColor (player.displayColor);
 
 		gui.right.setActive (true);
-		gui.right.setTexts (destinationTerritory.CurrentPlayer.name, destinationTerritory.gameObject.name, "" + destinationTerritory.TroopsCount);
-		gui.right.changeColor (destinationTerritory.CurrentPlayer.troopMaterial.color);
+		gui.right.setTexts (destinationTerritory.CurrentPlayer.name, destinationTerritory.name, "" + destinationTerritory.TroopsCount);
+		gui.right.changeColor (destinationTerritory.CurrentPlayer.displayColor);
 		Dice.Instance.CreateDices(Vector3.Lerp(sourceTerritory.transform.position,destinationTerritory.transform.position,0.5f) + new Vector3(0,0,-10f),
 		                          Mathf.Min(sourceTerritory.TroopsCount - 1,3),
 		                          Mathf.Min(destinationTerritory.TroopsCount,3),

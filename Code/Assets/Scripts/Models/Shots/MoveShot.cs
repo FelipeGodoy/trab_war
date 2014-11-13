@@ -35,12 +35,12 @@ public class MoveShot : Shot {
 		}
 		gui = GameObject.Find("GUIFacade").GetComponent<GUIFacade>();
 		gui.left.setActive (true);
-		gui.left.setTexts (sourceTerritory.CurrentPlayer.name, sourceTerritory.gameObject.name, "" + sourceTerritory.TroopsCount);
-		gui.left.changeColor (sourceTerritory.CurrentPlayer.troopMaterial.color);
+		gui.left.setTexts (sourceTerritory.CurrentPlayer.name, sourceTerritory.name, "" + sourceTerritory.TroopsCount);
+		gui.left.changeColor (sourceTerritory.CurrentPlayer.displayColor);
 		
 		gui.right.setActive (true);
-		gui.right.setTexts (destinationTerritory.CurrentPlayer.name, destinationTerritory.gameObject.name, "" + destinationTerritory.TroopsCount);
-		gui.right.changeColor (destinationTerritory.CurrentPlayer.troopMaterial.color);
+		gui.right.setTexts (destinationTerritory.CurrentPlayer.name, destinationTerritory.name, "" + destinationTerritory.TroopsCount);
+		gui.right.changeColor (destinationTerritory.CurrentPlayer.displayColor);
 		sourceTerritory.RemoveTroops(troopsCount);
 		destinationTerritory.AddTroops(troopsCount);
 		GameController.Instance.OnShotEnd(this);

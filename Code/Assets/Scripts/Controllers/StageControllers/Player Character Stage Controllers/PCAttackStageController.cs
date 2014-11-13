@@ -6,8 +6,9 @@ public class PCAttackStageController : StageController {
 	public override void OnPressTerritory(Territory territory){
 		if (territory.CurrentPlayer == this.Player) {
 			gui.left.setActive (true);
-			gui.left.setTexts (territory.CurrentPlayer.name, territory.gameObject.name, "" + territory.TroopsCount);
-			gui.left.changeColor (territory.CurrentPlayer.troopMaterial.color);
+			gui.left.setTexts (territory.CurrentPlayer.name, territory.name, "" + territory.TroopsCount);
+			gui.left.changeColor (territory.CurrentPlayer.displayColor);
+
 		}
 	}
 
@@ -15,8 +16,8 @@ public class PCAttackStageController : StageController {
 		string n = gui.left.territoryName.text;
 		if (territory != null && territory.CurrentPlayer != this.Player) {
 			gui.right.setActive (true);
-			gui.right.setTexts (territory.CurrentPlayer.name, territory.gameObject.name, "" + territory.TroopsCount);
-			gui.right.changeColor (territory.CurrentPlayer.troopMaterial.color);
+			gui.right.setTexts (territory.CurrentPlayer.name, territory.name, "" + territory.TroopsCount);
+			gui.right.changeColor (territory.CurrentPlayer.displayColor);
 		}
 	}
 
@@ -29,12 +30,12 @@ public class PCAttackStageController : StageController {
 		    source.TroopsCount > 1 && source.CurrentPlayer != target.CurrentPlayer) {
 
 			gui.left.setActive (true);
-			gui.left.setTexts (source.CurrentPlayer.name, source.gameObject.name, "" + source.TroopsCount);
-			gui.left.changeColor (source.CurrentPlayer.troopMaterial.color);
+			gui.left.setTexts (source.CurrentPlayer.name, source.name, "" + source.TroopsCount);
+			gui.left.changeColor (source.CurrentPlayer.displayColor);
 
 			gui.right.setActive (true);
-			gui.right.setTexts (target.CurrentPlayer.name, target.gameObject.name, "" + target.TroopsCount);
-			gui.right.changeColor (target.CurrentPlayer.troopMaterial.color);
+			gui.right.setTexts (target.CurrentPlayer.name, target.name, "" + target.TroopsCount);
+			gui.right.changeColor (target.CurrentPlayer.displayColor);
 		}
 
 		ComputeShot(new AttackShot(this.Player,source,target,DiceResult));

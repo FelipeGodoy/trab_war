@@ -19,9 +19,9 @@ public class GUIFacade : MonoBehaviour {
 		states.setMover ();
 	}
 
-	public void setInfo(string territoryName, string qtd){
+	public void setInfo(string territoryName, string qtd, Color c){
 		info.setActive (true);
-		info.changeInfo (territoryName, qtd);
+		info.changeInfo (territoryName, qtd, c);
 	}
 
 	public void hideInfo(){

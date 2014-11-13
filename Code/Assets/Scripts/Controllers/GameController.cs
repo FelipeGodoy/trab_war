@@ -143,6 +143,7 @@ public class GameController : MonoBehaviour {
 		if(championsPlayers.Length == 0){
 			TurnPlayerIndex = (TurnPlayerIndex + 1) % playersOrder.Count;
 			this.CurrentTurnController = TurnController.Create(this.CurrentPlayer.type);
+			Order.Refresh(TurnPlayerIndex);
 			this.CurrentTurnController.Start();
 		}
 		else{

@@ -23,7 +23,7 @@ public class PlayerInfo : MonoBehaviour {
 
 	public void changeColor(Color c){
 		foreach (Image i in panels) {
-			if(i.gameObject.name != "TroopQtd")
+			//if(i.gameObject.name != "TroopQtd")
 				i.color = c;
 		}	
 	}

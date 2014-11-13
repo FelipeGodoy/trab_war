@@ -94,7 +94,7 @@ public abstract class TurnController{
 		}
 		gui.left.setName (this.Player.name);
 		gui.left.setNameActive ();
-		Color c = Player.troopMaterial.color;
+		Color c = Player.displayColor;
 		gui.left.changeColor (c);
 		OnTurnGUI();
 	}

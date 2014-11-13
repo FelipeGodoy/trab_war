@@ -8,6 +8,7 @@ public class Player : MonoBehaviour{
 	public int index;
 	public PlayerType type;
 	public bool firstPlay;
+	public Color displayColor;
 
 	private HashSet<Territory> _territories;
 	private HashSet<Territory> territories{
