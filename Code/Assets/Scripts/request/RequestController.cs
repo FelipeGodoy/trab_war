@@ -139,7 +139,7 @@ public class RequestController : MonoBehaviour {
 		yield return www;
 		if(www.error != null){
 			Debug.LogError("Request Error: "+www.error);
-			Alert.Message("Error",www.error,delegate {
+			Message.New("Error",www.error,delegate {
 				Application.LoadLevel("Menu");
 		});
 		}
