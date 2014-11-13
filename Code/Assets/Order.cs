@@ -28,12 +28,13 @@ public class Order : MonoBehaviour {
 	}
 	
 	public static void Refresh(int index){
+		//int index = GameController.Instance.TurnPlayerIndex;
 		List<PlayerHold> l = RequestController.Instance.playersInfos;
-		int count = 0;
-		index += last.playersName.Length;
+		index -= last.playersName.Length;
 		foreach (PlayerHold p in l) {
-			last.playersName[(index - p.order)%last.playersName.Length].text = p.name;
-			(last.playersName[(index - p.order)%last.playersName.Length].transform.parent.GetComponent<Image>() as Image).color = players[p.color].displayColor;
+			 last.playersName[(p.order - index)%last.playersName.Length].text = p.name;
+			(last.playersName[(p.order - index)%last.playersName.Length].transform.parent.GetComponent<Image>() as Image).color = players[p.color].displayColor;
 		}
 	}
+	
 }
