@@ -26,6 +26,8 @@ public class AITurnController : TurnController {
 
 
 	public override void OnTurnStart(){
-		//stageController.gui.hidePassar ();
+		if(Player.Territories.Count ==0){
+			EndTurn();
+		}
 	}
 }

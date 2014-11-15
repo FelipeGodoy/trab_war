@@ -29,11 +29,16 @@ public class PCTurnController : TurnController{
 	}
 
 	public override void OnTurnStart(){
-		stageController.gui.showPassar ();
+		if(Player.Territories.Count ==0){
+			EndTurn();
+		}
+		else{
+			stageController.gui.showPassar ();
+		}
 	}
 
 	public override void OnTurnEnd ()
 	{
-		(GameObject.Find ("GUIFacade")).GetComponent<GUIFacade> ().hidePassar ();
+		gui.hidePassar ();
 	}
 }

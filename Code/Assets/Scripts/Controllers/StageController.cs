@@ -3,12 +3,16 @@ using System.Collections;
 
 public abstract class StageController{
 	public TurnController turnController;
-	public GUIFacade gui;
+	public GUIFacade gui{
+		get{
+			return GameController.Instance.gui;
+		}
+	}
 
 	public StageController(){
 		this.turnController = null;
-		GameObject g = GameObject.Find ("GUIFacade");
-		gui = g.GetComponent<GUIFacade> ();
+//		GameObject g = GameObject.Find ("GUIFacade");
+//		gui = g.GetComponent<GUIFacade> ();
 	}
 
 	public StageController(TurnController turnController){

@@ -12,4 +12,10 @@ public class DestroyPlayerGoal : Goal {
 	public override bool Check(GameController game, Player player){
 		return this.playerToDestroy.TerritoriesCount == 0;
 	}
+
+	public override string Description{
+		get{
+			return "Destrua as tropas do jogador "+ this.playerToDestroy.name;
+		}
+	}
 }

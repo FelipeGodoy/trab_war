@@ -644,7 +644,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400068}
-  - 212: {fileID: 21200060}
   - 114: {fileID: 11400094}
   m_Layer: 0
   m_Name: America do Norte
@@ -886,7 +885,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400094}
-  - 212: {fileID: 21200084}
   - 114: {fileID: 11400088}
   m_Layer: 0
   m_Name: America do Sul
@@ -5695,6 +5693,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   currentMap: {fileID: 11400086}
+  gui: {fileID: 0}
 --- !u!114 &11400086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5768,7 +5767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 956da6cb5e9bc8043bab95b6bc447d30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: America do sul
+  name: "Am\xE9rica do sul"
   troopsBonus: 4
   territories:
   - {fileID: 11400150}
@@ -5787,8 +5786,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 956da6cb5e9bc8043bab95b6bc447d30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Africa
-  troopsBonus: 7
+  name: "\xC1frica"
+  troopsBonus: 5
   territories:
   - {fileID: 11400158}
   - {fileID: 11400132}
@@ -5827,7 +5826,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 956da6cb5e9bc8043bab95b6bc447d30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: America do norte
+  name: "Am\xE9rica do norte"
   troopsBonus: 7
   territories:
   - {fileID: 11400152}
@@ -7381,28 +7380,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7166e0e8e6774c940bf89e8ab8567f21, type: 3}
   m_Color: {r: 1, g: .513488829, b: .139705896, a: 1}
---- !u!212 &21200060
-SpriteRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100068}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21200062
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -7645,28 +7622,6 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0123f7af8f7a2644e922199fc781eafd, type: 3}
   m_Color: {r: 1, g: .513488829, b: .139705896, a: 1}
---- !u!212 &21200084
-SpriteRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100094}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_LightProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21200086
 SpriteRenderer:
   m_ObjectHideFlags: 1

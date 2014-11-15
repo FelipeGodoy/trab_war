@@ -71,6 +71,15 @@ public class Player : MonoBehaviour{
 		return territories.Contains(territory);
 	}
 
+	public bool HaveContinent(Continent continent){
+		foreach(Territory t in continent.territories){
+			if(!territories.Contains(t)){
+				return false;
+			}
+		}
+		return true;
+	}
+
 	public bool CheckGoal(){
 		if(this.Goal == null)return false;
 		return this.Goal.Check(GameController.Instance,this);

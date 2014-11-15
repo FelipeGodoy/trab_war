@@ -47,7 +47,7 @@ public class Territory : MonoBehaviour {
 		continent = GetComponentInParent<Continent>();
 	}
 
-	void Awake(){
+	public void Awake(){
 		if(troops == null){
 			troops = new List<Troop>();
 		}

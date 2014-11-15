@@ -40,6 +40,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba3cb9d0fe90b3e4ea04fed77a5fe3a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugMode: 1
   remoteUrl: http://war-uff.herokuapp.com
   localUrl: http://127.0.0.1:3000
   shotPath: /games/shots
@@ -50,6 +51,7 @@ MonoBehaviour:
   gameId: 3
   gameName: 
   playersInfos: []
+  remotePlayersInfos: []
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

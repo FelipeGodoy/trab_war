@@ -5,11 +5,11 @@ using System.Collections;
 public class ChangeColor : MonoBehaviour {
 	public Color active;
 	public Color inactive;
-	Image stateName;
+	public Image stateName;
 		
 	public void Start(){
 		active = GetComponent<Image> ().color;
-		stateName = GameObject.Find ("StateName").GetComponent<Image> ();
+//		stateName = GameObject.Find ("StateName").GetComponent<Image> ();
 		deactivate ();
 	}
 

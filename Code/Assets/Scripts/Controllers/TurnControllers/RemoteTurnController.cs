@@ -8,7 +8,7 @@ public class RemoteTurnController : TurnController {
 	}
 
 	public override void OnTurnStart(){
-		stageController.gui.hidePassar ();
+		stageController.gui.hidePassar();
 		this.sendShotOnEndTurn = false;
 		troopQtd = this.Player.TroopsToEarn ();
 	}

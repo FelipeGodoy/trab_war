@@ -54,7 +54,7 @@ public class GameController : MonoBehaviour {
 		if(currentMap == null){
 			currentMap = GetComponent<Map>();
 		}
-		gui = GameObject.Find ("GUIFacade").GetComponent<GUIFacade> ();
+//		gui = GameObject.Find ("GUIFacade").GetComponent<GUIFacade> ();
 	}
 
 	void Start(){
@@ -135,7 +135,7 @@ public class GameController : MonoBehaviour {
 	}
 
 	void OnGUI(){
-		if(CurrentTurnController != null){
+		if(CurrentTurnController != null && gui != null){
 			CurrentTurnController.OnGUI();
 		}
 //		int i =0;
@@ -155,7 +155,10 @@ public class GameController : MonoBehaviour {
 			this.CurrentTurnController.Start();
 		}
 		else{
-			Debug.Log("Alguem ganhou");
+			Pause();
+			Message.New("Ganhador", "O jogador "+championsPlayers[0].name+" ganhou o jogo",delegate() {
+				Application.LoadLevel("Menu");
+			});
 		}
 	}
 
@@ -178,8 +181,25 @@ public class GameController : MonoBehaviour {
 	}
 
 	public void OnConfirm(){
-		if(IsRunning){
+		if(IsRunning && CurrentPlayer.type == Player.PlayerType.PLAYER_CHARACTER){
 			nextStage();
+		}
+	}
+
+	public void OnShowGoal(){
+		if(IsRunning){
+			Player goalPlayer = CurrentPlayer;
+			if(CurrentPlayer.type != Player.PlayerType.PLAYER_CHARACTER){
+				foreach(Player p in playersOrder){
+					if(p.type == Player.PlayerType.PLAYER_CHARACTER){
+						goalPlayer = p;
+					}
+				}
+			}
+			Pause();
+			Message.New("Objetivo",goalPlayer.Goal.Description,delegate() {
+				this.Resume();
+			});
 		}
 	}
 

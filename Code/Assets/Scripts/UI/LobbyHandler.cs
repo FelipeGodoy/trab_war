@@ -82,11 +82,18 @@ public class LobbyHandler : MonoBehaviour {
 
 	public void ExitRequest(){
 		//Requisitar saida
-		OnExitRequestResponse ("HUE");
+		Request r = Request.Create(RequestController.Instance.url + "/rooms/disconnect.json");
+		int i =0;
+		foreach(PlayerHold ph in RequestController.Instance.playersInfos){
+			r.AddParam("players["+i+"]",""+ph.backendId);
+			i++;
+		}
+		r.Post(OnExitRequestResponse);
 	}
 
-	void OnExitRequestResponse(string s){
-		Application.LoadLevel ("Menu");
+	void OnExitRequestResponse(WWW www){
+		if(www.error != null || www.text == null)return;
+		Application.LoadLevel("Menu");
 	}
 
 
