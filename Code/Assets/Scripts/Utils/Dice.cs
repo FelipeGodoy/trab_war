@@ -75,7 +75,7 @@ public class Dice : MonoBehaviour {
 	private DiceSideInfo InstanciateDice(Vector3 position, GameObject prefab){
 		GameObject g = Instantiate(prefab) as GameObject;
 		g.transform.rotation = Quaternion.Euler(new Vector3(Random.Range(0f,360),Random.Range(0f,360),Random.Range(0f,360f)));
-		g.rigidbody.position = position;
+		g.GetComponent<Rigidbody>().position = position;
 		DiceSideInfo dice = g.GetComponent<DiceSideInfo>();
 		g.transform.parent = transform;
 		return dice; 
@@ -83,13 +83,13 @@ public class Dice : MonoBehaviour {
 
 	void Update(){
 		foreach(DiceSideInfo dice in this.attackDices){
-			if(dice.rigidbody.angularVelocity.magnitude > MAGNITUDE_VELOCITY_MIN ||
-			   dice.rigidbody.velocity.magnitude > MAGNITUDE_VELOCITY_MIN ||
+			if(dice.GetComponent<Rigidbody>().angularVelocity.magnitude > MAGNITUDE_VELOCITY_MIN ||
+			   dice.GetComponent<Rigidbody>().velocity.magnitude > MAGNITUDE_VELOCITY_MIN ||
 			   (Mathf.Clamp(dice.forcedNumber,1,6) == dice.forcedNumber && dice.forcedNumber != dice.diceNumber)) return;
 		}
 		foreach(DiceSideInfo dice in this.defenseDices){
-			if(dice.rigidbody.angularVelocity.magnitude > MAGNITUDE_VELOCITY_MIN ||
-			   dice.rigidbody.velocity.magnitude > MAGNITUDE_VELOCITY_MIN ||
+			if(dice.GetComponent<Rigidbody>().angularVelocity.magnitude > MAGNITUDE_VELOCITY_MIN ||
+			   dice.GetComponent<Rigidbody>().velocity.magnitude > MAGNITUDE_VELOCITY_MIN ||
 			   (Mathf.Clamp(dice.forcedNumber,1,6) == dice.forcedNumber && dice.forcedNumber != dice.diceNumber)) return;
 		}
 		int[] attackNumbers = new int[this.attackDices.Length];

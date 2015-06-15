@@ -24,7 +24,7 @@ public class RaycastInfo : MonoBehaviour {
 	void Update () {
 		if(gui == null)return;
 		RaycastHit raycast;
-		if(Physics.Raycast(this.camera.ScreenPointToRay(Input.mousePosition),out raycast,Mathf.Infinity,floorLayer)){
+		if(Physics.Raycast(this.GetComponent<Camera>().ScreenPointToRay(Input.mousePosition),out raycast,Mathf.Infinity,floorLayer)){
 //			trans.position = raycast.point;
 			Vector2 point = new Vector2(raycast.point.x, raycast.point.y);
 			Collider2D hitCollider = Physics2D.OverlapPoint(point);

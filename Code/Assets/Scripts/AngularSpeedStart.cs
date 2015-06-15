@@ -8,8 +8,8 @@ public class AngularSpeedStart : MonoBehaviour {
 	public float maxAngularVelocity = 100f;
 
 	void Start () {
-		rigidbody.maxAngularVelocity = this.maxAngularVelocity;
-		rigidbody.AddTorque(Random.Range(angularSpeedMin.x, angularSpeedMax.x),
+		GetComponent<Rigidbody>().maxAngularVelocity = this.maxAngularVelocity;
+		GetComponent<Rigidbody>().AddTorque(Random.Range(angularSpeedMin.x, angularSpeedMax.x),
 		                    Random.Range(angularSpeedMin.y, angularSpeedMax.y),
 		                    Random.Range(angularSpeedMin.z, angularSpeedMax.z),
 		                    ForceMode.VelocityChange);

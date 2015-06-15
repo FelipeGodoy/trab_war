@@ -12,7 +12,7 @@ public class TroopInTerritory : MonoBehaviour {
 
 	void Start(){
 		territory = troop.CurrentTerritory;
-		parentRigidbody = troop.rigidbody;
+		parentRigidbody = troop.GetComponent<Rigidbody>();
 		lastTroopPosition = parentRigidbody.position;
 		lastPosition = transform.position;
 	}

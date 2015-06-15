@@ -26,8 +26,8 @@ public class Troop : MonoBehaviour {
 		g.transform.parent = territory.transform;
 		Troop troop = g.GetComponent<Troop>();
 		troop.currentTerritory = territory;
-		troop.rigidbody.position = territory.SpawnPosition;
-		troop.renderer.material = troop.CurrentPlayer.troopMaterial;
+		troop.GetComponent<Rigidbody>().position = territory.SpawnPosition;
+		troop.GetComponent<Renderer>().material = troop.CurrentPlayer.troopMaterial;
 		return troop;
 	}
 
