@@ -27,7 +27,7 @@ public class ExistingGamesLoader : MonoBehaviour {
 		int roomId = ListOption.sala_id_selected;
 		if(roomId != -1){
 			RequestController.Instance.gameObject.GetComponent<LoadingAnimation>().StartLoading(transform.parent);
-			string name = transform.parent.GetComponentInChildren<InputField>().text.text;
+			string name = transform.parent.GetComponentInChildren<InputField>().text;
 			RequestController.Instance.gameId = roomId;
 			int tipo = (int)Player.PlayerType.PLAYER_CHARACTER;
 			Request r = Request.Create(RequestController.Instance.url+"/rooms/connect.json");
