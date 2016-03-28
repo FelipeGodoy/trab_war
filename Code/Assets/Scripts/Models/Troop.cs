@@ -3,7 +3,16 @@ using System.Collections.Generic;
 
 public class Troop : MonoBehaviour {
 
-	private static GameObject prefab = Resources.Load<GameObject>("troop");
+	private static GameObject _prefab;
+
+	private static GameObject prefab{
+		get{
+			if (_prefab == null) {
+				_prefab = Resources.Load<GameObject> ("troop");
+			}
+			return _prefab;
+		}
+	}
 
 	private Territory currentTerritory;
 

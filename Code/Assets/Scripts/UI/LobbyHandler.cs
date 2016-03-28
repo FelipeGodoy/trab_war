@@ -4,6 +4,9 @@ using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class LobbyHandler : MonoBehaviour {
+	public Panel emptyPanelPrefab;
+	public Panel playerPanelPrefab;
+	public Panel iaPanelPrefab;
 	public GameObject[] slots;
 	public PlayerHold myself;
 	public int id;
@@ -67,16 +70,24 @@ public class LobbyHandler : MonoBehaviour {
 			g = slots[ph.color];
 			hasPlayer[ph.color] = true;
 			p = g.GetComponentInChildren<Panel>();
-//			if(ph.type == Player.PlayerType.NON_PLAYER_CHARACTER){
-//				p.setIA(ph.name);
-//			}
-//			else{
-				p.setPlayer(ph.name);
-//			}
+			Destroy (p.gameObject);
+			if (ph.type == Player.PlayerType.NON_PLAYER_CHARACTER) {
+				p = iaPanelPrefab;
+			} else {
+				p = playerPanelPrefab;
+			}
+			Panel panel = Instantiate<Panel> (p);
+			panel.transform.SetParent (g.transform, false);
+			panel.GetComponentInChildren<InputField> ().text = ph.name;
 		}
 		for(int i = 0; i < hasPlayer.Length; i++){
-			if(hasPlayer[i] == false)
-				slots[i].GetComponentInChildren<Panel>().setEmpty();
+			if (hasPlayer [i] == false) {
+				g = slots [i];
+				p = g.GetComponentInChildren<Panel> ();
+				Destroy (p.gameObject);
+				Panel panel = Instantiate<Panel> (emptyPanelPrefab);
+				panel.transform.SetParent (g.transform, false);
+			}
 		}
 	}
 

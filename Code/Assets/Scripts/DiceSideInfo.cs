@@ -7,74 +7,137 @@ public class DiceSideInfo : MonoBehaviour {
 
 	private const float MIN_SPEED_TO_CHANGE = 0.3f;
 	private const float MIN_SPEED = 0.1f;
+	private const float MIN_SPEED_TO_CHEATING = 17f;
 
 	public int diceNumber = -1;
 	public int forcedNumber = -1;
-	public float impulse = 10f;
-
+	public float verticalInpulse = 1f;
+	public float impulse = 3f;
+	[SerializeField]
 	protected Vector3 angularVelocity;
-	protected Vector3 lastAngularVelocity = new Vector3(0f,0f,0f);
+	public GameObject cheatObject;
+	[SerializeField]
+	protected bool collided = false;
 	protected int dirFlag = 0;
+	protected float creationTime = 0f;
 
-	private readonly Vector3 defaultAngle = new Vector3(90f,0f,0f);
+	public float magnitude;
+
+	protected Rigidbody rig;
+
+	public Vector3 relativeUp{
+		get{
+			return Physics.gravity.normalized;
+		}
+	}
+
+	void OnCollisionEnter(Collision collision){
+		if (collision.collider.GetComponentInParent<DiceSideInfo> () == null || Time.time - creationTime >= 1f) {
+			collided = true;
+		}
+	}
+
+	void Start(){
+		rig = GetComponent<Rigidbody> ();
+		creationTime = Time.time;
+	}
 
 	void Update () {
-		diceNumber = DiceSideByPerspective(transform.rotation);
+		diceNumber = DiceCount();
+		magnitude = rig.angularVelocity.magnitude;
 	}
 
 	void FixedUpdate(){
 		if(forcedNumber == Mathf.Clamp(forcedNumber,1,6)){
-			angularVelocity = GetComponent<Rigidbody>().angularVelocity;
-			if(angularVelocity.magnitude <= MIN_SPEED_TO_CHANGE && diceNumber != forcedNumber){
-				switch(dirFlag){
-				case 0:{
-					GetComponent<Rigidbody>().AddTorque(new Vector3(impulse,0f,0f),ForceMode.Impulse);
+			CheckCheating ();
+			CheckImpulse ();
+		}
+	}
+
+	void CheckCheating(){
+		angularVelocity = rig.angularVelocity;
+		if (collided && cheatObject != null && angularVelocity.magnitude <= MIN_SPEED_TO_CHEATING) {
+			cheatObject.transform.localEulerAngles = DiceCountToAnglesEuler (forcedNumber);
+			cheatObject.SetActive (true);
+		}
+	}
+
+	void CheckImpulse(){
+		angularVelocity = rig.angularVelocity;
+		if(angularVelocity.magnitude <= MIN_SPEED_TO_CHANGE && diceNumber != forcedNumber){
+			dirFlag = Random.Range (0, 3);
+			Vector3 f = -(Physics.gravity * verticalInpulse);
+			rig.AddForce (f, ForceMode.Impulse);
+			switch(dirFlag){
+			case 0:{
+					rig.AddTorque(new Vector3(impulse,0f,0f),ForceMode.Impulse);
 					dirFlag = 1;
 					break;
 				}
-				case 1:{
-					GetComponent<Rigidbody>().AddTorque(new Vector3(0f,impulse,0f),ForceMode.Impulse);
-					dirFlag = 0;
+			case 1:{
+					rig.AddTorque(new Vector3(0f,impulse,0f),ForceMode.Impulse);
+					dirFlag = 2;
 					break;
 				}
-				}
+			case 2:{
+				rig.AddTorque(new Vector3(-impulse,0f,0f),ForceMode.Impulse);
+				dirFlag = 3;
+				break;
+			}
+			case 3:{
+				rig.AddTorque(new Vector3(0f,-impulse,0f),ForceMode.Impulse);
+				dirFlag = 0;
+				break;
+			}
 			}
 		}
 	}
 
-	public int DiceSideByPerspective(Quaternion angle){
-		return DiceSide(Quaternion.Inverse(Quaternion.Euler(Camera.main.transform.rotation.eulerAngles - defaultAngle)) * angle);
+	public int DiceCount(){
+		if (Vector3.Dot (transform.forward, relativeUp) >= 0.643f)
+			return 2;
+		if (Vector3.Dot (-transform.forward, relativeUp) >= 0.643f)
+			return 5;
+		if (Vector3.Dot (transform.up, relativeUp) >= 0.643f)
+			return 6;
+		if (Vector3.Dot (-transform.up, relativeUp) >= 0.643f)
+			return 1;
+		if (Vector3.Dot (transform.right, relativeUp) >= 0.643f)
+			return 4;
+		if (Vector3.Dot (-transform.right, relativeUp) >= 0.643f)
+			return 3;
+		return -1;
 	}
 
-	public int DiceSide(Quaternion angle){
-		Vector3 eulerAngles = angle.eulerAngles;
-		eulerAngles.x = Mathf.Round(eulerAngles.x / 90f) % 4f;
-		eulerAngles.y = Mathf.Round(eulerAngles.y / 90f) % 4f;
-		eulerAngles.z = Mathf.Round(eulerAngles.z / 90f) % 4f;
-		if(eulerAngles.x == 1f)
-			return 2;
-		if(eulerAngles.x == 3f)
-			return 5;
-		if(eulerAngles.x ==0f){
-			if(eulerAngles.z == 0f)
-				return 1;
-			if(eulerAngles.z == 1f)
-				return 3;
-			if(eulerAngles.z == 2f)
-				return 6;
-			else
-				return 4;
-		}
-		if(eulerAngles.x == 2f){
-			if(eulerAngles.z == 0f)
-				return 6;
-			if(eulerAngles.z == 1f)
-				return 4;
-			if(eulerAngles.z == 2f)
-				return 1;
-			else
-				return 3;
-		}
-		return -1;
+	public static Vector3 DiceCountToAnglesEuler(int diceCount){
+		if (diceCount == 2)
+			return Vector3.zero;
+		if (diceCount == 5)
+			return new Vector3(0f,180f,180f);
+		if (diceCount == 6)
+			return new Vector3(-90f,0f,0f);
+		if (diceCount == 1)
+			return new Vector3(90f,0f,0f);
+		if (diceCount == 4)
+			return new Vector3(0f,90f,0f);
+		if (diceCount == 3)
+			return new Vector3(0f,-90f,0f);
+		return Vector3.zero;
+	}
+
+	public static Vector3 DiceCountToAxis(int diceCount){
+		if (diceCount == 2)
+			return Vector3.forward;
+		if (diceCount == 5)
+			return -Vector3.forward;
+		if (diceCount == 6)
+			return Vector3.up;
+		if (diceCount == 1)
+			return -Vector3.up;
+		if (diceCount == 4)
+			return Vector3.right;
+		if (diceCount == 3)
+			return -Vector3.right;
+		return Vector3.zero;
 	}
 }

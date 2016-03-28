@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Request : ScriptableObject {
+public class Request {
 
 	public string url;
 	public bool isPost;
@@ -11,7 +11,7 @@ public class Request : ScriptableObject {
 	public delegate void Delegate(WWW www);
 
 	public static Request Create(string url){
-		Request request = ScriptableObject.CreateInstance<Request>();
+		Request request = new Request ();
 		request.url = url;
 		request.formParams = new Dictionary<string, string>();
 		request.isPost = false;
@@ -19,7 +19,7 @@ public class Request : ScriptableObject {
 	}
 
 	public static Request Create(string path, params string[] formParams){
-		Request request = ScriptableObject.CreateInstance<Request>();
+		Request request = new Request();
 		request.url = RequestController.Instance.url + path;
 		request.SetFields(formParams);
 		request.isPost = false;
